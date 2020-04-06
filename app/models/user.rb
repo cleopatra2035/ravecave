@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-
     attr_reader :password
 
     validates :username, :password_digest, :session_token, presence: true
@@ -9,9 +8,14 @@ class User < ApplicationRecord
 
     after_initialize :ensure_session_token
 
+    has_many :artists,
+        primary_key: :id,
+        foreign_key: :user_id,
+        class_name: :Artist
+
     def password=(password)
         @password = password
-        self.password_digest = BCrypt::Passowrd.create(password)
+        self.password_digest = BCrypt::Password.create(password)
     end
 
     def reset_session_token!
