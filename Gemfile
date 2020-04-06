@@ -50,7 +50,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'annotate'
-  gem 'jquery-rails'
 end
 
 group :test do
@@ -59,6 +58,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'jquery-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
