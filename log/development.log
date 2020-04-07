@@ -1382,3 +1382,180 @@ Processing by RootController#root as HTML
 Completed 200 OK in 53ms (Views: 49.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-04-07 15:27:46 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:28:15 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 60ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:30:24 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 59ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:34:34 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 451ms (Views: 447.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:46:34 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 430ms (Views: 427.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:47:37 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 118ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:49:40 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 255ms (Views: 252.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:49:52 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:51:39 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 520ms (Views: 516.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:52:44 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:54:15 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 420ms (Views: 416.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:54:29 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:55:47 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 538ms (Views: 533.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:56:42 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 57ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:57:52 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 580ms (Views: 576.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:57:59 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 41ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 15:58:56 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 422ms (Views: 419.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:00:55 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 487ms (Views: 484.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:04:30 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 436ms (Views: 431.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:15:38 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:29:45 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 409ms (Views: 405.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:39:41 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:47:58 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 446ms (Views: 444.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:53:52 -0400
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 1871ms (Views: 1869.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-07 16:59:35 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 531ms (Views: 525.1ms | ActiveRecord: 0.0ms)
+
+

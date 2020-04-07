@@ -1,30 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NavBar = ({ currentUser, logout }) => {
+const NavBar = ({ currentUser, logout, openModal }) => {
     const display = currentUser ? (
         <div>
             <h3>Welcome {currentUser.username}!</h3>
             <button onClick={logout}>Logout</button>
         </div>
     ) : (
-        <div class="hd header row">
-            <div class="row">
-                <div class="col col-7-12">
-                    <h1 class="logo">
+        <div className="hd header row">
+            <div className="row">
+                <div className="col col-7-12">
+                    <h1 className="logo">
                         logo here
                     </h1>
-                    <h2 class="hd-subtitle">
-                        Bridging the gap between artists and their fans. <a class="blue-gradient" href="#">Enter the Ravecave.</a>
+                    <h2 className="hd-subtitle">
+                        Bridging the gap between artists and their fans. <a className="blue-gradient" href="#">Enter the Ravecave.</a>
                     </h2>
                 </div>
-                <div class="col col-5-12">
-                    <ul class="hd-nav">
+                <div className="col col-5-12">
+                    <ul className="hd-nav">
                         <li>
-                            <Link className="signup-link" to="/signup">sign up</Link>
+                            <button onClick={() => openModal('signup')}>sign up</button>
                         </li>
-                        <li class="log-in-link">
-                            <Link className="signup-link" to="/login">log in</Link>
+                        <li>
+                            <button onClick={() => openModal('login')}>log in</button>
                         </li>
                     </ul>
                 </div>
@@ -32,7 +32,7 @@ const NavBar = ({ currentUser, logout }) => {
         </div>
         );
     return (
-        <div id="header-wrapper" class="header">
+        <div id="header-wrapper" className="header">
             {display}
         </div>
     )

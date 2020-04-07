@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -13,14 +14,14 @@ class LoginForm extends React.Component {
 
     handleInput(type) {
         return e => {
-            this.setState({ [type]: e.target.value });
+            this.setState({ [type]: e.currentTarget.value });
         };
     }
 
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user);
+        this.props.processForm(user).then(this.props.closeModal);
     }
 
     renderErrors() {
@@ -39,7 +40,8 @@ class LoginForm extends React.Component {
         return (
             <div>
                 <h2>Log In!</h2>
-                <form>
+                <form onSubmit={this.handleSubmit} className="login-form-box">
+                    <div onClick={this.props.closeModal} className="close-x">X</div>
                     <label>Username:
                         <input
                             type="text"
@@ -54,12 +56,12 @@ class LoginForm extends React.Component {
                             value={this.state.password}
                             onChange={this.handleInput('password')}
                         />
-                        <button onClick={this.handleSubmit}>Log In!</button>
                     </label>
+                    <input className="session-submit" type="submit" value={this.props.formType} />
                 </form>
             </div>
         );
     }
 }
 
-export default LoginForm;
+export default withRouter(LoginForm);

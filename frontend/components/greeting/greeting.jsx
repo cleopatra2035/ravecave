@@ -9,8 +9,8 @@ const Greeting = ({ currentUser, logout }) => {
         </div>
     ) : (
         <div>
-            <Link className="btn" to="/signup">Sign Up</Link>
-            <Link className="btn" to="/login">Log In</Link>
+            <button onClick={() => openModal('login')}>Login</button>
+            <button onClick={() => openModal('signup')}>Signup</button>
         </div>
     );
     return (
