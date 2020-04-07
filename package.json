@@ -1,5 +1,5 @@
 {
-  "name": "and",
+  "name": "ravecave",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.9.0",
@@ -17,7 +17,7 @@
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
-  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "description": "A no-nonsense music app for bridging the gap between artists and fans",
   "version": "1.0.0",
   "main": "index.js",
   "directories": {

@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    context: __dirname,
     entry: './frontend/ravecave.jsx',
     output: {
         path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
