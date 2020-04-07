@@ -13,3 +13,308 @@
  *= require_tree .
  *= require_self
  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+    display: block;
+	list-style-type: disc;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end css reset */
+
+body {
+    font: 13px/1.2307692308 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    border: none;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    color: #0687f5;
+    text-decoration: none;
+}
+
+a:focus {
+    outline:none;
+}
+
+.newline {
+    display: inline-block;
+}
+
+html,
+body,
+main {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  font: -apple-system-body;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em;
+  display: block;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+/* grid css */
+.row {
+    clear:both;
+    margin:0 auto;
+    width:100%;
+    height: 84px;
+}
+.col {
+    float: left;
+    min-height: 1px;
+    position: absolute;
+}
+.col-full {
+    width:100%;
+}
+/* clear floats */
+.row:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+
+/* 12 column */
+.col+.col-1-12,
+.col+.col-2-12,
+.col+.col-3-12,
+.col+.col-4-12,
+.col+.col-6-12,
+.col+.col-7-12,
+.col+.col-8-12,
+.col+.col-9-12,
+.col+.col-10-12,
+.col+.col-11-12 {
+    margin-left:1.8450184502%;
+}
+
+.col+.col-5-12 {
+    margin-left:1.8450184502%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* 12 column units */
+.col-1-12 {width:6.642066420664%;}
+.col-2-12 {width:15.129151291513%;}
+.col-3-12 {width:23.616236162362%;}
+.col-4-12 {width:32.10332103321%;}
+.col-5-12 {width:40.590405904059%;}
+.col-6-12 {width:49.077490774908%;}
+.col-7-12 {width:57.564575645756%;}
+.col-8-12 {width:66.051660516605%;}
+.col-9-12 {width:74.538745387454%;}
+.col-10-12 {width:83.025830258303%;}
+.col-11-12 {width:91.512915129151%;}
+
+/* no gutter */
+.col-2-12.no-gutter,
+.col-3-12.no-gutter,
+.col-4-12.no-gutter,
+.col-5-12.no-gutter,
+.col-6-12.no-gutter,
+.col-7-12.no-gutter,
+.col-8-12.no-gutter,
+.col-9-12.no-gutter,
+.col-10-12.no-gutter,
+.col-11-12.no-gutter {
+    margin-left:0;
+}
+/* no gutter widths */
+.col-2-12.no-gutter {width:16.974169741697%;}
+.col-3-12.no-gutter {width:25.461254612546%;}
+.col-4-12.no-gutter {width:33.948339483395%;}
+.col-5-12.no-gutter {width:42.435424354244%;}
+.col-6-12.no-gutter {width:50.922509225092%;}
+.col-7-12.no-gutter {width:59.409594095941%;}
+.col-8-12.no-gutter {width:67.89667896679%;}
+.col-9-12.no-gutter {width:76.383763837638%;}
+.col-10-12.no-gutter {width:84.870848708487%;}
+.col-11-12.no-gutter {width:93.357933579336%;}
+
+/* 12 column layout offsets */
+.offset-1-12 {margin-left:8.487084870849%;}
+.offset-2-12 {margin-left:16.974169741697%;}
+.offset-3-12 {margin-left:25.461254612546%;}
+.offset-4-12 {margin-left:33.948339483395%;}
+.offset-5-12 {margin-left:42.435424354244%;}
+.offset-6-12 {margin-left:50.922509225092%;}
+.offset-7-12 {margin-left:59.409594095941%;}
+.offset-8-12 {margin-left:67.89667896679%;}
+.offset-9-12 {margin-left:76.383763837638%;}
+.offset-10-12 {margin-left:84.870848708487%;}
+.offset-11-12 {margin-left:93.357933579336%;}
+
+/* 12 column offset sibling widths */
+.col+.offset-1-12 {margin-left:10.332103321033%;}
+.col+.offset-2-12 {margin-left:18.819188191882%;}
+.col+.offset-3-12 {margin-left:27.306273062731%;}
+.col+.offset-4-12 {margin-left:35.793357933579%;}
+.col+.offset-5-12 {margin-left:44.280442804428%;}
+.col+.offset-6-12 {margin-left:52.767527675277%;}
+.col+.offset-7-12 {margin-left:61.254612546125%;}
+.col+.offset-8-12 {margin-left:69.741697416974%;}
+.col+.offset-9-12 {margin-left:78.228782287823%;}
+.col+.offset-10-12 {margin-left:86.715867158672%;}
+
+.hd {
+    background-color: #fbfdfe;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.15);
+    height: 105px;
+    margin-top: 0;
+    display: table;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    transition: margin 0.25s ease-out;
+}
+
+.hd .row {
+    max-width: 994px;
+}
+.hd > .row {
+    position: relative;
+}
+
+.hd-logo {
+    background:transparent url('../../img/homepage_2015/bc-logo@2x.png') no-repeat;
+    background-size: 100%;
+    margin-top: 24px;
+    height: 25px;
+    width: 156px;
+}
+.hd-logo > span {
+    display: none;
+}
+
+.logo {
+    margin-top: 23px;
+    margin-bottom: 5px;
+    width: 137px;
+    height: 32px;
+}
+
+.hd.header .hd-subtitle {
+    color: #161113;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 9px 0 0;
+    opacity: 1;
+    transition: opacity .2s ease;
+}
+
+.hd.header .hd-subtitle .blue-gradient {
+    color: #408ea3;
+    background: -webkit-linear-gradient(left, #6046FE, #1DA0C3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.hd-nav {
+    margin: 11px 0 0;
+    font-size: 1.2307692308em;
+    white-space: nowrap;
+    text-align: right;
+    color: #777;
+    padding: 0;
+}
+
+.hd-nav > li {
+    border-right: none;
+    padding: 0 0 0 25px;
+    line-height: 20px;
+}
+
+.hd-nav li {
+    display: inline-block;
+}
+
+.signup-link {
+    color: #161113;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+.login-link {
+    color: #161113;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+#header-wrapper.header {
+    height: 105px;
+}
