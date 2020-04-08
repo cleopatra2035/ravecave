@@ -49,7 +49,7 @@ class SignupForm extends React.Component {
                     <span className="modal-header-title">
                         Sign up for a Bandcamp account
                     </span>
-                    <a href="#" class="modal-header-close" role="button">
+                    <a href="#" className="modal-header-close" role="button">
                         <span onClick={this.props.closeModal} className="ui-icon icon-close"></span>
                     </a>
                 </div>
@@ -92,7 +92,8 @@ class SignupForm extends React.Component {
                                     </div>
                                     
                                     <div class="buttons">
-                                        <button className="submit" onClick={this.handleSubmit}>Sign up</button>
+                                        {/* <button className="submit" onClick={this.handleSubmit}>Sign up</button> */}
+                                        <button onClick={this.handleSubmit}>Sign Up!</button>
                                     </div>
 
                                     <div className="signup-item">

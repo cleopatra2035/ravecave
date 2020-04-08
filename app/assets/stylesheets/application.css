@@ -245,13 +245,22 @@ h2 {
     position: relative;
 }
 
-.hd-logo {
+/* .hd-logo {
     background:transparent url('../../img/homepage_2015/bc-logo@2x.png') no-repeat;
     background-size: 100%;
     margin-top: 24px;
     height: 25px;
     width: 156px;
-}
+} */
+
+/* .hd-logo {
+    background: url('http://shyeyez.com/ravecave/assets/images/ravecave_logo.png') 0 0 no-repeat;
+    background-size: 100%;
+    height: 17px;
+    width: 141px;
+    margin: 15px 0 15px 0;
+} */
+
 .hd-logo > span {
     display: none;
 }
@@ -264,10 +273,12 @@ h2 {
     display: flex;
 }
 
-.logo-img {
-    content:url('http://shyeyez.com/ravecave/assets/images/rhomboid.png');
-    width: 28.69px;
-    height: 16.86px;
+.logo img {
+    float: left;
+    width: 135px;
+    height: 16px;
+    background: none;
+    margin-top: 4px;
 }
 
 .logo-text {
@@ -309,6 +320,20 @@ h2 {
 
 .hd-nav li {
     display: inline-block;
+}
+
+.nav-button {
+    background: none;
+    color: #161113;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 20px;
+    border: none;
+}
+
+.nav-button:hover {
+    text-decoration: underline;
 }
 
 .signup-link {
@@ -356,7 +381,19 @@ h2 {
     display: inline-block; 
     margin-top: 10%;
     width: 500px;
-    height: 500px;
+    height: 487px;
+    background-color: #fff;
+    z-index: 1002;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    opacity: 100%;
+}
+
+.modal-inside-login {
+    display: inline-block; 
+    margin-top: 10%;
+    width: 500px;
+    height: 345px;
     background-color: #fff;
     z-index: 1002;
     -webkit-border-radius: 5px;
@@ -428,11 +465,6 @@ h2 {
 
 .ui-icon {
     background: url('http://shyeyez.com/ravecave/assets/images/icon_sprite.png');
-}
-
-@media (max-width: 1024px) and (min-width: 891px) {
-    .hd .row {
-        max-width: 97%;
 }
 
 .form {
@@ -535,10 +567,9 @@ form input[type=password]:focus {
     margin: 0 auto;
 }
 
-.signup-form button.submit {
-    border-radius: 5px;
-    width: 100%;
-}
+/* .signup-form button.submit {
+
+} */
 
 .signup-form button {
     background: rgb(0,161,198);
@@ -552,20 +583,13 @@ form input[type=password]:focus {
     vertical-align: top;
     border-radius: 4px;
     height: 36px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 12px 0 12px 0;
 }
 
-.nav-button {
-    background: none;
-    color: #161113;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    line-height: 20px;
-    font-size: 14px;
-    border: none;
+@media (max-width: 1024px) and (min-width: 891px) {
+    .hd .row {
+        max-width: 97%;
+    }
 }
-
-.nav-button:hover {
-    text-decoration: underline;
-}
-

@@ -39,26 +39,49 @@ class LoginForm extends React.Component {
     render() {
         return (
             <div>
-                <h2>Log In!</h2>
-                <form onSubmit={this.handleSubmit} className="login-form-box">
-                    <div onClick={this.props.closeModal} className="close-x">X</div>
-                    <label>Username:
-                        <input
-                            type="text"
-                            value={this.state.username}
-                            onChange={this.handleInput('username')}
-                        />
-                    </label>
+                <div className="modal-header-bar">
+                    <span className="modal-header-title">
+                        Log in
+                    </span>
+                    <a href="#" className="modal-header-close" role="button">
+                        <span onClick={this.props.closeModal} className="ui-icon icon-close"></span>
+                    </a>
+                </div>
+                <div className="modal-content">
+                    <div>
+                        <form>
+                            <div className="signup-inner">
+                                <div className="signup-form">
+                                    <div className="signup-item">
+                                        {/* <label className="signup-label">Username</label> */}
+                                        <div className="signup-input">
+                                            <input
+                                                type="text"
+                                                value={this.state.username}
+                                                onChange={this.handleInput('username')}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="signup-item">
+                                        {/* <label className="signup-label">Password</label> */}
+                                        <div className="signup-input">
+                                            <input
+                                                type="password"
+                                                value={this.state.password}
+                                                onChange={this.handleInput('password')}
+                                            />
+                                        </div>
+                                    </div>
 
-                    <label>Password:
-                        <input
-                            type="password"
-                            value={this.state.password}
-                            onChange={this.handleInput('password')}
-                        />
-                    </label>
-                    <input className="session-submit" type="submit" value={this.props.formType} />
-                </form>
+                                    <div class="buttons">
+                                        <button onClick={this.handleSubmit}>Log in</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         );
     }
