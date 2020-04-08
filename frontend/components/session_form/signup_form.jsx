@@ -45,33 +45,52 @@ class SignupForm extends React.Component {
                         Sign up for a Bandcamp account
                     </span>
                     <a href="#" class="modal-header-close" role="button">
-                        <img class="icon-close" src={window.logo} />
+                        <span className="icon-close">close</span>
                     </a>
                 </div>
-                <form>
-                    <label>Username:
-                        <input
-                            type="text"
-                            value={this.state.username}
-                            onChange={this.handleInput('username')}
-                        />
-                    </label>
-                    <label>Email:
-                        <input
-                            type="text"
-                            value={this.state.email}
-                            onChange={this.handleInput('email')}
-                        />
-                    </label>
-                    <label>Password:
-                        <input
-                            type="password"
-                            value={this.state.password}
-                            onChange={this.handleInput('password')}
-                        />
-                        <button onClick={this.handleSubmit}>Sign Up!</button>
-                    </label>
-                </form>
+                <div className="modal-content">
+                    <div>
+                        <form>
+                            <div className="signup-inner">
+                                <div className="signup-form">
+                                    <div className="signup-item">
+                                        <label className="signup-label">Username:</label>
+                                        <div className="signup-input">
+                                            <input
+                                                type="text"
+                                                value={this.state.username}
+                                                onChange={this.handleInput('username')}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="signup-item">
+                                        <label className="signup-label">Email:</label>
+                                        <div className="signup-input">
+                                            <input
+                                                type="text"
+                                                value={this.state.email}
+                                                onChange={this.handleInput('email')}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="signup-item">
+                                        <label className="signup-label">Password:</label>
+                                        <div className="signup-input">
+                                            <input
+                                                type="password"
+                                                value={this.state.password}
+                                                onChange={this.handleInput('password')}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="buttons">
+                                        <button className="submit" onClick={this.handleSubmit}>Sign Up!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         );
     }

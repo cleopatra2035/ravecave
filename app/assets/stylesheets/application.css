@@ -345,8 +345,9 @@ h2 {
     margin-top: 10%;
     width: 500px;
     height: 500px;
-    background-color: papayawhip;
+    background-color: #fff;
     z-index: 1002;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
     opacity: 100%;
 }
@@ -369,6 +370,8 @@ h2 {
     position: relative;
     display: inline-block;
     width: 460px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .modal-header-title {
@@ -404,10 +407,91 @@ h2 {
     padding: 0;
     width: 12px;
     display: block;
-    background: url(../images/icon_sprite.png);
+    background: url('../images/icon_sprite.png');
 }
 
 @media (max-width: 1024px) and (min-width: 891px) {
     .hd .row {
         max-width: 97%;
+}
+
+.form {
+    display: block;
+    margin-top: 0em;
+}
+
+.modal-content {
+    padding: 25px 20px 30px;
+    color: #333;
+}
+
+.signup-inner {
+    margin-top: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.signup-form {
+    width: 340px;
+    margin: 0 auto;
+}
+
+.signup-item {
+    padding: 0 0 10px 0;
+    width: 340px;
+    margin: 0 auto;
+}
+
+.signup-label {
+    margin-bottom: 2px;
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.signup-input {
+    display: inline-block;
+    width: 100%;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=password] {
+    height: 35px;
+    padding-left: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+}
+
+.signup-form .buttons {
+    padding-top: 2px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.signup-form button.submit {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.signup-form button {
+    background: rgb(0,161,198);
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 1em;
+    text-align: center;
+    border: none;
+    vertical-align: top;
+    border-radius: 4px;
+    height: 36px;
 }
