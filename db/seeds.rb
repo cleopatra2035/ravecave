@@ -138,5 +138,3 @@ t5 = Track.create!(
     artist_id: art2.id,
     album_id: album5.id
 )
-
-
