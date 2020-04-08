@@ -40,7 +40,14 @@ class SignupForm extends React.Component {
     render() {
         return (
             <div>
-                <h2>Sign Up!</h2>
+                <div className="modal-header-bar">
+                    <span className="modal-header-title">
+                        Sign up for a Bandcamp account
+                    </span>
+                    <a href="#" class="modal-header-close" role="button">
+                        <img class="icon-close" src={window.logo} />
+                    </a>
+                </div>
                 <form>
                     <label>Username:
                         <input

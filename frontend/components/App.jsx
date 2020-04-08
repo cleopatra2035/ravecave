@@ -10,7 +10,7 @@ import Home from './home/home';
 // import SearchContainer from './search/search_container';
 
 const App = () => (
-    <div>
+    <div className="wrapper">
         <Modal />
         <header>
             <Route path="/" component={NavBarContainer} />

@@ -20,11 +20,11 @@ const Modal = ({ modal, closeModal }) => {
             return null;
     }
     return (
-        <div className="modal-background" onClick={closeModal}>
-            <div className="modal-child" onClick={e => e.stopPropagation()}>
-                {component}
+            <div className="modal-outside" onClick={closeModal}>
+                <div className="modal-inside" onClick={e => e.stopPropagation()}>
+                    {component}
+                </div>
             </div>
-        </div>
     );
 }
 
