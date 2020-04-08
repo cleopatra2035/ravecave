@@ -12,7 +12,8 @@ const NavBar = ({ currentUser, logout, openModal }) => {
             <div className="row">
                 <div className="col col-7-12">
                     <h1 className="logo">
-                        logo here
+                        <div className="logo-img"></div>
+                        <div className="logo-text">logo here</div>
                     </h1>
                     <h2 className="hd-subtitle">
                         Bridging the gap between artists and their fans. <a className="blue-gradient" href="#">Enter the Ravecave.</a>
@@ -21,10 +22,10 @@ const NavBar = ({ currentUser, logout, openModal }) => {
                 <div className="col col-5-12">
                     <ul className="hd-nav">
                         <li>
-                            <button onClick={() => openModal('signup')}>sign up</button>
+                            <div className="nav-button" onClick={() => openModal('signup')}>sign up</div>
                         </li>
                         <li>
-                            <button onClick={() => openModal('login')}>log in</button>
+                            <div className="nav-button" onClick={() => openModal('login')}>log in</div>
                         </li>
                     </ul>
                 </div>

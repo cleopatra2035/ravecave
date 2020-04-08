@@ -259,8 +259,20 @@ h2 {
 .logo {
     margin-top: 23px;
     margin-bottom: 5px;
-    width: 137px;
+    width: auto;
     height: 32px;
+    display: flex;
+}
+
+.logo-img {
+    content:url('http://shyeyez.com/ravecave/assets/images/rhomboid.png');
+    width: 28.69px;
+    height: 16.86px;
+}
+
+.logo-text {
+    display: inline-block;
+    font-size: 22px;
 }
 
 .hd.header .hd-subtitle {
@@ -399,7 +411,7 @@ h2 {
     position: absolute;
 }
 
-.icon-close {
+.icon-close.icon-close {
     background-size: 50px 512px;
     background-position: -27px -40px;
     height: 12px;
@@ -407,7 +419,15 @@ h2 {
     padding: 0;
     width: 12px;
     display: block;
-    background: url('../images/icon_sprite.png');
+}
+
+.icon-close.icon-close:hover {
+    background-position: -27px -52px;
+    opacity: 0.9;
+}
+
+.ui-icon {
+    background: url('http://shyeyez.com/ravecave/assets/images/icon_sprite.png');
 }
 
 @media (max-width: 1024px) and (min-width: 891px) {
@@ -442,6 +462,23 @@ h2 {
     margin: 0 auto;
 }
 
+.signup-form .login-instead {
+    width: 100%;
+    margin: 39px 0 0 0;
+    font-size: 12px;
+    text-align: center;
+    color: #818285;
+}
+
+.signup-form .login-instead a {
+    color: rgb(0,161,198);
+    cursor: pointer;
+}
+
+.signup-form .login-instead a:hover {
+    text-decoration: none;
+}
+
 .signup-label {
     margin-bottom: 2px;
     font-size: 16px;
@@ -456,9 +493,12 @@ h2 {
     width: 100%;
 }
 
+/* forms */
+
 form input[type=text],
 form input[type=email],
 form input[type=password] {
+    -webkit-appearance: none;
     height: 35px;
     padding-left: 10px;
     background: #fff;
@@ -469,6 +509,24 @@ form input[type=password] {
     box-sizing: border-box;
     margin: 0;
     font-size: 16px;
+}
+
+form textarea:focus,
+form input[type=text]:focus,
+form input[type=email]:focus,
+form input[type=password]:focus {
+     -moz-transition-duration: 0.3s;
+    -moz-transition-property: border-color, box-shadow;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-property: border-color, box-shadow;
+    transition-duration: 0.4s;
+    transition-property: border-color, box-shadow;
+    border-color: #50a1e6;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 5px #b4d7f9;
+    outline: none;
+    -webkit-appearance: none;
 }
 
 .signup-form .buttons {
@@ -495,3 +553,19 @@ form input[type=password] {
     border-radius: 4px;
     height: 36px;
 }
+
+.nav-button {
+    background: none;
+    color: #161113;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 14px;
+    border: none;
+}
+
+.nav-button:hover {
+    text-decoration: underline;
+}
+

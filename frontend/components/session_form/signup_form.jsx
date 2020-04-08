@@ -11,6 +11,7 @@ class SignupForm extends React.Component {
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleModal = this.handleModal.bind(this);
     }
 
     handleInput(type) {
@@ -22,7 +23,11 @@ class SignupForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user);
+        this.props.processForm(user).then(this.props.closeModal);
+    }
+
+    handleModal() {
+        this.props.linkToLogin();
     }
 
     renderErrors() {
@@ -45,7 +50,7 @@ class SignupForm extends React.Component {
                         Sign up for a Bandcamp account
                     </span>
                     <a href="#" class="modal-header-close" role="button">
-                        <span className="icon-close">close</span>
+                        <span onClick={this.props.closeModal} className="ui-icon icon-close"></span>
                     </a>
                 </div>
                 <div className="modal-content">
@@ -54,17 +59,7 @@ class SignupForm extends React.Component {
                             <div className="signup-inner">
                                 <div className="signup-form">
                                     <div className="signup-item">
-                                        <label className="signup-label">Username:</label>
-                                        <div className="signup-input">
-                                            <input
-                                                type="text"
-                                                value={this.state.username}
-                                                onChange={this.handleInput('username')}
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="signup-item">
-                                        <label className="signup-label">Email:</label>
+                                        <label className="signup-label">Email address</label>
                                         <div className="signup-input">
                                             <input
                                                 type="text"
@@ -73,8 +68,9 @@ class SignupForm extends React.Component {
                                             />
                                         </div>
                                     </div>
+
                                     <div className="signup-item">
-                                        <label className="signup-label">Password:</label>
+                                        <label className="signup-label">Password</label>
                                         <div className="signup-input">
                                             <input
                                                 type="password"
@@ -83,8 +79,26 @@ class SignupForm extends React.Component {
                                             />
                                         </div>
                                     </div>
+
+                                    <div className="signup-item">
+                                        <label className="signup-label">Username</label>
+                                        <div className="signup-input">
+                                            <input
+                                                type="text"
+                                                value={this.state.username}
+                                                onChange={this.handleInput('username')}
+                                            />
+                                        </div>
+                                    </div>
+                                    
                                     <div class="buttons">
-                                        <button className="submit" onClick={this.handleSubmit}>Sign Up!</button>
+                                        <button className="submit" onClick={this.handleSubmit}>Sign up</button>
+                                    </div>
+
+                                    <div className="signup-item">
+                                        <div className="login-instead">
+                                            Already have an account? <a href="#" onClick={this.handleModal}>Log in</a>.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
