@@ -381,7 +381,8 @@ h2 {
     display: inline-block; 
     margin-top: 10%;
     width: 500px;
-    height: 487px;
+    /* height: 487px; */
+    height: auto;
     background-color: #fff;
     z-index: 1002;
     -webkit-border-radius: 5px;
