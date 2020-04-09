@@ -1,7 +1,18 @@
 import React from 'react';
+import NavBarContainer from '../nav_bar/nav_bar_container';
+import Carousel from '../carousel/carousel';
+import Footer from '../footer/footer';
+import Middle from '../middle/middle';
 
-export default () => (
-    <div>
-        <h1>Welcome to the Ravecave.</h1>
-    </div>
-)
+const Home = () => {
+    return (
+        <div>
+            <NavBarContainer />
+            <Carousel />
+            <Middle />
+            <Footer />
+        </div>
+    )
+}
+
+export default Home;
