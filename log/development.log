@@ -7709,3 +7709,659 @@ Completed 200 OK in 86ms (Views: 81.7ms | ActiveRecord: 1.1ms)
   ↳ db/seeds.rb:135
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:135
+Started GET "/" for ::1 at 2020-04-08 21:12:08 -0400
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 1272ms (Views: 1266.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:12:13 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:14:14 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 110ms (Views: 102.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:14:16 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 35ms (Views: 29.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:14:55 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 1058ms (Views: 1053.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:15:17 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 39ms (Views: 33.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:24:44 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 481ms (Views: 477.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:27:11 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 410ms (Views: 405.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:28:34 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 407ms (Views: 402.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:37:34 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 468ms (Views: 465.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:40:32 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 56ms (Views: 47.5ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:41:56 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:42:05 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 470ms (Views: 465.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:43:47 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 581ms (Views: 576.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 21:43:48 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (4.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (5.6ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/index.json.jbuilder (93.8ms)
+Completed 200 OK in 122ms (Views: 78.7ms | ActiveRecord: 24.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:44:47 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 458ms (Views: 452.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 21:44:48 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (0.4ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.8ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/index.json.jbuilder (39.6ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:44:52 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 28.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 21:44:53 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (3.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (0.5ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/index.json.jbuilder (14.4ms)
+Completed 200 OK in 26ms (Views: 20.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:47:04 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 476ms (Views: 472.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 21:47:05 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (1.0ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/index.json.jbuilder (10.3ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:47:25 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "U4Un7vAEPjRk6w5MFc8ktFS+2GfxzVHnAmpaNpIIzWDjndZ/owxxJvJXVnzY9ohe4k05+yw5wj6qMQlWYgRM+w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 622ms (Views: 618.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 21:47:26 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (0.3ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/index.json.jbuilder (6.4ms)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session" for ::1 at 2020-04-08 21:47:42 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cleopatra2035", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cleopatra2035"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cleopatra2035"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "cleopatra2035@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (2.3ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "rAwiWn4zXeqxmB3G96YZwc/zRPAO+FZFcMP0L3oerurVDzNvPznYJbqtQX0hmCzPCn8bhfXGIv7qIzJ7XPpSPw=="], ["updated_at", "2020-04-09 01:47:42.290569"], ["id", 9]]
+  ↳ app/models/user.rb:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (1.8ms)
+Completed 200 OK in 276ms (Views: 8.0ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:49:05 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "rAwiWn4zXeqxmB3G96YZwc/zRPAO+FZFcMP0L3oerurVDzNvPznYJbqtQX0hmCzPCn8bhfXGIv7qIzJ7XPpSPw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered root/root.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 71ms (Views: 54.6ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 21:49:05 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (67.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (3.2ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/index.json.jbuilder (127.3ms)
+Completed 200 OK in 153ms (Views: 46.9ms | ActiveRecord: 91.8ms)
+
+
+Started POST "/api/session" for ::1 at 2020-04-08 21:49:20 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cleopatra2035", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cleopatra2035"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cleopatra2035"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "cleopatra2035@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "3V9rib4zqcsBnSx4Ohhp4G6OxizUzB51Q+DuKwS/Q163I8zSV2DC5YPK3/SiiXRWM5SH76lIETOc+3FFGgo4dw=="], ["updated_at", "2020-04-09 01:49:20.798213"], ["id", 9]]
+  ↳ app/models/user.rb:23
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (1.7ms)
+Completed 200 OK in 265ms (Views: 8.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:49:56 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "3V9rib4zqcsBnSx4Ohhp4G6OxizUzB51Q+DuKwS/Q163I8zSV2DC5YPK3/SiiXRWM5SH76lIETOc+3FFGgo4dw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered root/root.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 75ms (Views: 64.6ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 21:49:57 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (10.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (0.5ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/index.json.jbuilder (237.9ms)
+Completed 200 OK in 263ms (Views: 61.6ms | ActiveRecord: 190.2ms)
+
+
+Started POST "/api/session" for ::1 at 2020-04-08 21:50:05 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cleopatra2035", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cleopatra2035"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cleopatra2035"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "cleopatra2035@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "OwmUMLXL6KgDnPz8oA9xgAlmkLF7l2Pw1nAd5T/HnvIV7+rx9Spa3oUq9vhBuR1rD48k36Gaa3F1Kui6vaPGfQ=="], ["updated_at", "2020-04-09 01:50:05.990515"], ["id", 9]]
+  ↳ app/models/user.rb:23
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+Completed 500 Internal Server Error in 257ms (ActiveRecord: 3.8ms)
+
+
+
+NoMethodError - undefined method `empty?' for nil:NilClass:
+  app/controllers/api/sessions_controller.rb:10:in `create'
+
+Started POST "/api/session" for ::1 at 2020-04-08 21:50:07 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cleopatra2035", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cleopatra2035"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cleopatra2035"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "cleopatra2035@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "FCT961+trhCV6CsxJqZGdLEgc/l3NUeGrlqQ/E2MEI7fvpYG4aBDWdc/gmdpwEUBzupajwN3OUvvN2+BkJcrJg=="], ["updated_at", "2020-04-09 01:50:07.869287"], ["id", 9]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+Completed 500 Internal Server Error in 267ms (ActiveRecord: 4.6ms)
+
+
+
+NoMethodError - undefined method `empty?' for nil:NilClass:
+  app/controllers/api/sessions_controller.rb:10:in `create'
+
+Started GET "/" for ::1 at 2020-04-08 21:52:52 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "3V9rib4zqcsBnSx4Ohhp4G6OxizUzB51Q+DuKwS/Q163I8zSV2DC5YPK3/SiiXRWM5SH76lIETOc+3FFGgo4dw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered root/root.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 44ms (Views: 38.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 21:52:52 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (214.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (0.5ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.4ms)
+  Rendered api/artists/index.json.jbuilder (384.5ms)
+Completed 200 OK in 403ms (Views: 29.5ms | ActiveRecord: 364.5ms)
+
+
+Started POST "/api/session" for ::1 at 2020-04-08 21:53:00 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cleopatra2035", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cleopatra2035"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cleopatra2035"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "cleopatra2035@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "vOS3DZSv2YBLEyOwPtPckRiaSIDFmlYe7+eOvpBePzB9JBQi4NdQd7jWpESv3sTHrWH/prSbLH7jyad047yakw=="], ["updated_at", "2020-04-09 01:53:01.160631"], ["id", 9]]
+  ↳ app/models/user.rb:23
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/users/show.json.jbuilder (2.0ms)
+Completed 200 OK in 267ms (Views: 7.7ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 21:54:13 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "vOS3DZSv2YBLEyOwPtPckRiaSIDFmlYe7+eOvpBePzB9JBQi4NdQd7jWpESv3sTHrWH/prSbLH7jyad047yakw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered root/root.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 44ms (Views: 36.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 21:54:13 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (1.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (0.5ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/index.json.jbuilder (11.2ms)
+Completed 200 OK in 21ms (Views: 16.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 22:03:21 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "vOS3DZSv2YBLEyOwPtPckRiaSIDFmlYe7+eOvpBePzB9JBQi4NdQd7jWpESv3sTHrWH/prSbLH7jyad047yakw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (2.1ms)
+  Rendered root/root.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 621ms (Views: 611.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 22:03:22 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (1.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (0.4ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.2ms)
+  Rendered api/artists/index.json.jbuilder (11.1ms)
+Completed 200 OK in 27ms (Views: 20.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 22:04:47 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "vOS3DZSv2YBLEyOwPtPckRiaSIDFmlYe7+eOvpBePzB9JBQi4NdQd7jWpESv3sTHrWH/prSbLH7jyad047yakw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (2.3ms)
+  Rendered root/root.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 903ms (Views: 896.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 22:04:49 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (5.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (0.7ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/index.json.jbuilder (17.6ms)
+Completed 200 OK in 31ms (Views: 20.4ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 22:16:42 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "vOS3DZSv2YBLEyOwPtPckRiaSIDFmlYe7+eOvpBePzB9JBQi4NdQd7jWpESv3sTHrWH/prSbLH7jyad047yakw=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered root/root.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 773ms (Views: 761.0ms | ActiveRecord: 7.9ms)
+
+
+Started POST "/api/session" for ::1 at 2020-04-08 22:16:55 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cleopatra2035", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cleopatra2035"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cleopatra2035"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "cleopatra2035@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (1.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "pL+RF6sICoQ5IG8mvZBZRfQ4XfcuUEqLHdWUBPJnMxOUmgz7ABDiIQ0sLHkyNCRtuuKNY+fI+LnljjU0kHm8BA=="], ["updated_at", "2020-04-09 02:16:56.170000"], ["id", 9]]
+  ↳ app/models/user.rb:23
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/users/show.json.jbuilder (2.2ms)
+Completed 200 OK in 284ms (Views: 8.3ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 22:21:19 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pL+RF6sICoQ5IG8mvZBZRfQ4XfcuUEqLHdWUBPJnMxOUmgz7ABDiIQ0sLHkyNCRtuuKNY+fI+LnljjU0kHm8BA=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered root/root.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 88ms (Views: 81.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 22:27:18 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pL+RF6sICoQ5IG8mvZBZRfQ4XfcuUEqLHdWUBPJnMxOUmgz7ABDiIQ0sLHkyNCRtuuKNY+fI+LnljjU0kHm8BA=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered root/root.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 461ms (Views: 457.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 22:27:18 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (0.4ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/index.json.jbuilder (7.5ms)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 22:39:59 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pL+RF6sICoQ5IG8mvZBZRfQ4XfcuUEqLHdWUBPJnMxOUmgz7ABDiIQ0sLHkyNCRtuuKNY+fI+LnljjU0kHm8BA=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (2.5ms)
+  Rendered root/root.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 105ms (Views: 98.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 22:40:01 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (0.7ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.3ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/index.json.jbuilder (12.4ms)
+Completed 200 OK in 27ms (Views: 19.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 22:40:11 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pL+RF6sICoQ5IG8mvZBZRfQ4XfcuUEqLHdWUBPJnMxOUmgz7ABDiIQ0sLHkyNCRtuuKNY+fI+LnljjU0kHm8BA=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered root/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 52ms (Views: 47.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/artists" for ::1 at 2020-04-08 22:40:11 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (6.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:2
+  Rendered api/artists/_artist.json.jbuilder (1.2ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/_artist.json.jbuilder (0.1ms)
+  Rendered api/artists/index.json.jbuilder (16.9ms)
+Completed 200 OK in 28ms (Views: 19.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 23:07:05 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pL+RF6sICoQ5IG8mvZBZRfQ4XfcuUEqLHdWUBPJnMxOUmgz7ABDiIQ0sLHkyNCRtuuKNY+fI+LnljjU0kHm8BA=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (1.2ms)
+  Rendered root/root.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 468ms (Views: 462.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 23:08:31 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pL+RF6sICoQ5IG8mvZBZRfQ4XfcuUEqLHdWUBPJnMxOUmgz7ABDiIQ0sLHkyNCRtuuKNY+fI+LnljjU0kHm8BA=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered root/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 477ms (Views: 470.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 23:08:42 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pL+RF6sICoQ5IG8mvZBZRfQ4XfcuUEqLHdWUBPJnMxOUmgz7ABDiIQ0sLHkyNCRtuuKNY+fI+LnljjU0kHm8BA=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered root/root.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 23:09:01 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pL+RF6sICoQ5IG8mvZBZRfQ4XfcuUEqLHdWUBPJnMxOUmgz7ABDiIQ0sLHkyNCRtuuKNY+fI+LnljjU0kHm8BA=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered root/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 489ms (Views: 485.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/session" for ::1 at 2020-04-08 23:09:46 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"cleopatra2035", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cleopatra2035"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "cleopatra2035"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "cleopatra2035@gmail.com"], ["id", 9], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "bFSVcrWdRPPHH0srsRb9wu9ybFDJtlOZykVAK+RKyj4ndtzH/8J9MdgmmfWmmXNYAT/5UE1BmiUKqhGj697JGQ=="], ["updated_at", "2020-04-09 03:09:46.501064"], ["id", 9]]
+  ↳ app/models/user.rb:23
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered api/users/show.json.jbuilder (7.5ms)
+Completed 200 OK in 271ms (Views: 16.6ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for ::1 at 2020-04-08 23:16:47 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "bFSVcrWdRPPHH0srsRb9wu9ybFDJtlOZykVAK+RKyj4ndtzH/8J9MdgmmfWmmXNYAT/5UE1BmiUKqhGj697JGQ=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered root/root.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 124ms (Views: 119.5ms | ActiveRecord: 1.1ms)
+
+
