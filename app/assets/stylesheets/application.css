@@ -87,6 +87,7 @@ body,
 main {
   height: 100%;
   margin: 0;
+  background-color: #477987;
 }
 
 html {
@@ -126,6 +127,12 @@ p {
     width: 100%;
     height: 100%;
 }
+
+.inner {
+    width: 100%;
+    height: 100%;
+}
+
 .row {
     clear:both;
     margin:0 auto;
@@ -508,13 +515,26 @@ p {
 }
 
  /* footer */
+ .footer {
+    height: 105px;
+ }
+
+ /* #footer-wrapper {
+     padding: 0;
+     background: transparent;
+     position: relative;
+     width: 100%;
+     z-index: 110;
+     font-size: 100%;
+ } */
+
 .ft {
     background-color: #477987;
     box-shadow: 0 0 1px 0 rgba(0,0,0,0.15);
     height: 105px;
     margin-top: 0;
     display: table;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     z-index: 5;
@@ -1010,9 +1030,40 @@ form input[type=password]:focus {
     margin: 12px 0 12px 0;
 }
 
+/* middle */
+#middle-factoid {
+    background-color: #ffffff;
+}
+
+.dots {
+    background-size: 250%;
+    background-position: 100%, 100%;
+    margin: 41px 0 0;
+    height: 20px;
+    background: url(http://shyeyez.com/ravecave/assets/images/dots.png) no-repeat;
+}
+
+.fans-facts {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 36px 0 32px;
+    position: relative;
+    text-align: center;
+}
+
+.nowrap {
+    display: inline-block;
+}
+
+strong {
+    font-weight: bold;
+}
+
  /* responsive */
 @media (max-width: 1024px) and (min-width: 891px) {
     .hd .row {
         max-width: 97%;
     }
 }
+

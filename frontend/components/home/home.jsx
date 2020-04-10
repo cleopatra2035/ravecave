@@ -6,7 +6,7 @@ import Middle from '../middle/middle';
 
 const Home = () => {
     return (
-        <div>
+        <div className="wrapper">
             <NavBarContainer />
             <Carousel />
             <Middle />
