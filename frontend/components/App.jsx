@@ -19,9 +19,13 @@ const App = () => (
     <div>
         <Modal />
         <div>
+        <Switch>
             <Route exact path="/" component={Home} />
             <AuthRoute path="/login" component={LogInFormContainer} />
             <AuthRoute path="/signup" component={SignUpFormContainer} />
+            <Route exact path="/artists/:artistId" component={ArtistShowContainer} />
+            <Route exact path="/artists" component={ArtistIndexContainer} />
+        </Switch>
         </div>
     </div>
 );

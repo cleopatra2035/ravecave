@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import ArtistIndexItem from './artist_index_item';
 
 class ArtistIndex extends React.Component {
@@ -7,18 +8,22 @@ class ArtistIndex extends React.Component {
     }
 
     render() {
-        <div>
-            <ul>
-                {
-                    artists.map(artist => (
-                        <ArtistIndexItem
-                            artist={artist}
-                            key={artist.id}
-                        />
-                    ))
-                }
-            </ul>
-        </div>
+        const { artists } = this.props;
+
+        return (
+            <div>
+                <ul>
+                    {
+                        artists.map(artist => (
+                            <ArtistIndexItem
+                                artist={artist}
+                                key={artist.id}
+                            />
+                        ))
+                    }
+                </ul>
+            </div>
+        )
     }
 };
 

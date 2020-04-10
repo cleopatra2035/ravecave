@@ -12,7 +12,7 @@ class ArtistShow extends React.Component {
         return (
             <div>
                 <h1>{artist.name}</h1>
-                <Link to="/" />
+                <Link to="/">test</Link>
             </div>
         );
     }

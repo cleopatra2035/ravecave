@@ -2,7 +2,7 @@ class Api::ArtistsController < ApplicationController
 
     def index
         @artists = Artist.all
-        # render :index
+        render :index
     end
 
     def show
