@@ -387,6 +387,124 @@ p {
     text-decoration: underline;
 }
 
+ /* logged in user menu */
+#menubar-wrapper .header-rework {
+    z-index: 200;
+    background-color: #ffffff;
+    border: none !important;
+    border-bottom: dotted #afafaf 1px;
+    height: 53px;
+    min-width: calc(100vw - 17px);
+}
+
+#menubar-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 975px;
+    height: 43px;
+    border-top: solid 5px #848484;
+    background-color: #ececec;
+    background-position:0 42px;
+    background-repeat: repeat-x;
+    border-bottom: dotted #afafaf 1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    z-index: 1;
+}
+
+#menubar-wrapper.header-rework #menubar-bar {
+    top: 0;
+}
+
+#menubar-wrapper.header-rework .menubar-outer.fixed {
+    position: fixed;
+}
+
+#menubar-wrapper.header-rework .menubar-outer {
+    height: 53px;
+    box-shadow: 0px 1px #EEE;
+    background-color: #ffffff;
+    transition: top .25s ease-out;
+}
+
+#menubar-bar {
+    width: 100%;
+}
+
+#menubar.menubar-2018 {
+    max-width: 1360px;
+}
+
+.menubar-2018 {
+    position: static;
+    text-align: right;
+    box-shadow: 0px 1px #EEE;
+    transition: all .2s ease-in;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 53px;
+    padding: 0 16px;
+    background-color: #ffffff;
+    overflow: visible;;
+}
+
+.menubar-2018 #site-nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+#site-nav {
+    left: 0;
+}
+
+.menubar-2018 ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.logoLogged > span {
+    display: none;
+}
+
+.logoLogged {
+    padding-right: 19px;
+    height: 17px;
+    width: auto;
+    margin: 2px 0px 2px 0px;
+}
+
+.logoLogged img {
+    float: left;
+    width: 110px;
+    height: 13px;
+    background: none;
+}
+
+.menubar-2018 > ul > li {
+    float: left;
+}
+
+.nav-button-logout {
+    background: none;
+    color: #161113;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 20px;
+    border: none;
+    font-size: 1.2307692308em;
+    white-space: nowrap;
+    text-align: right;
+    padding: 0;
+}
+
  /* footer */
 .ft {
     background-color: #477987;
