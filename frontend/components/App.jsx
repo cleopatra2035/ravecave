@@ -14,6 +14,7 @@ const App = () => (
 
         
     <div className="wrapper">
+        <Modal />
         <div className="inner">
             <Route exact path="/" component={Home} />
             <AuthRoute path="/login" component={LogInFormContainer} />
