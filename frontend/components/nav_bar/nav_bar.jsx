@@ -26,7 +26,7 @@ const NavBar = ({ currentUser, logout, openModal }) => {
                     <div className="row">
                         <div className="col col-7-12">
                             <div className="logo">
-                                <img src="http://shyeyez.com/ravecave/assets/images/ravecave_logo_smallest.png" alt="logo" />
+                                <img src="http://shyeyez.com/ravecave/assets/images/ravecave-logotype-color-optimized.svg" alt="logo" />
                             </div>
                             <h2 className="hd-subtitle">
                                 Bridging the gap between artists and their fans. <a className="blue-gradient" href="#">Enter the Ravecave.</a>

@@ -26,9 +26,16 @@ class LoginForm extends React.Component {
         this.props.processForm(user).then(this.props.closeModal);
     }
 
-    handleDemo() {
-        this.props.loginDemo();
+    // handleDemo() {
+    //     this.props.loginDemo();
+    // }
+
+    handleDemo(e) {
+        e.preventDefault();
+        const demo_user = { username: 'demo', password: 'starwars' };
+        this.props.processForm(demo_user).then(this.props.closeModal);
     }
+
     handleModal() {
         this.props.linkToSignup();
     }

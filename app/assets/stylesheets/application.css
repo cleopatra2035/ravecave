@@ -306,7 +306,7 @@ p {
 
 .logo img {
     float: left;
-    width: 135px;
+    width: 133px;
     height: 16px;
     background: none;
     margin-top: 4px;
@@ -467,6 +467,8 @@ p {
     margin: 0;
     padding: 0;
     white-space: nowrap;
+    align-items: center;
+    display: flex;
 }
 
 .logoLogged > span {

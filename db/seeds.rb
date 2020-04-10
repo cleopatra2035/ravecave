@@ -53,6 +53,12 @@ u7 = User.create!(
     password: 'starwars'
 )
 
+u8 = User.create!(
+    username: 'demo',
+    email: 'demo@demo.com',
+    password: 'starwars'
+)
+
 # ////// ARTISTS
 
 art1 = Artist.create!(
