@@ -8,7 +8,7 @@ const NavBar = ({ currentUser, logout, openModal }) => {
                 <div id="menubar" className="menubar-2018">
                     <ul id="site-nav" className="menubar-section horizontal">
                         <li className="logoLogged">
-                            <img src="http://shyeyez.com/ravecave/assets/images/ravecave_logo_smallest.png" alt="logo" />
+                            <img src="http://shyeyez.com/ravecave/assets/images/ravecave-logotype-color-optimized.svg" alt="logo" />
                         </li>
                     </ul>
                     <ul id="user-nav" className="menubar-section horizontal">

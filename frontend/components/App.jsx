@@ -8,6 +8,7 @@ import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
 import ArtistShowContainer from './artists/artist_show_container';
 import ArtistIndexContainer from './artists/artist_index_container';
+import AlbumShowContainer from './albums/album_show_container';
 import Home from './home/home';
 import Footer from './footer/footer';
 // import SearchContainer from './search/search_container';
@@ -25,6 +26,7 @@ const App = () => (
             <AuthRoute path="/signup" component={SignUpFormContainer} />
             <Route exact path="/artists/:artistId" component={ArtistShowContainer} />
             <Route exact path="/artists" component={ArtistIndexContainer} />
+            <Route path='/albums/:albumId' component={AlbumShowContainer} />
         </Switch>
         </div>
     </div>

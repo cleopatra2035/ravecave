@@ -63,49 +63,49 @@ u8 = User.create!(
 
 art1 = Artist.create!(
     name: 'Grateful Dead',
-    user_id: u4.id
+    user_id: User.find_by(username: 'gratefuldead').id
 )
 
 art2 = Artist.create!(
     name: 'Martyn',
-    user_id: u5.id
+    user_id: User.find_by(username: 'martyn3024').id
 )
 
 art3 = Artist.create!(
     name: 'Burial',
-    user_id: u6.id
+    user_id: User.find_by(username: 'therealburial').id
 )
 
 art4 = Artist.create!(
     name: 'Shy Eyez',
-    user_id: u7.id
+    user_id: User.find_by(username: 'shyeyez').id
 )
 
 # ////// ALBUMS
 
 album1 = Album.create!(
     name: 'Cornell 5/8/77',
-    artist_id: art1.id
+    artist_id: Artist.find_by(name: 'Grateful Dead').id
 )
 
 album2 = Album.create!(
     name: 'Great Lengths',
-    artist_id: art2.id
+    artist_id: Artist.find_by(name: 'Martyn').id
 )
 
 album3 = Album.create!(
     name: 'Untrue',
-    artist_id: art3.id
+    artist_id: Artist.find_by(name: 'Burial').id
 )
 
 album4 = Album.create!(
     name: 'Greatest Hits: Bangers Only',
-    artist_id: art4.id
+    artist_id: Artist.find_by(name: 'Shy Eyez').id
 )
 
 album5 = Album.create!(
     name: 'One Eye EP (3024​-​FYE5)',
-    artist_id: art2.id
+    artist_id: Artist.find_by(name: 'Martyn').id
 )
 
 # ////// TRACKS
@@ -113,34 +113,34 @@ album5 = Album.create!(
 t1 = Track.create!(
     name: 'New Minglewood Blues',
     ord: 1,
-    artist_id: art1.id,
-    album_id: album1.id
+    artist_id: Artist.find_by(name: 'Grateful Dead').id,
+    album_id: Album.find_by(name: 'Cornell 5/8/77').id
 )
 
 t2 = Track.create!(
     name: 'Vancouver',
     ord: 6,
-    artist_id: art2.id,
-    album_id: album2.id
+    artist_id: Artist.find_by(name: 'Martyn').id,
+    album_id: Album.find_by(name: 'Great Lengths').id
 )
 
 t3 = Track.create!(
     name: 'In McDonalds',
     ord: 7,
     artist_id: art3.id,
-    album_id: album3.id
+    album_id: Album.find_by(name: 'Untrue').id
 )
 
 t4 = Track.create!(
     name: 'One Eye',
     ord: 1,
-    artist_id: art2.id,
-    album_id: album5.id
+    artist_id: Artist.find_by(name: 'Martyn').id,
+    album_id: Album.find_by(name: 'One Eye EP (3024​-​FYE5)').id
 )
 
 t5 = Track.create!(
     name: 'Nerve Centers',
     ord: 2,
-    artist_id: art2.id,
-    album_id: album5.id
+    artist_id: Artist.find_by(name: 'Martyn').id,
+    album_id: Album.find_by(name: 'One Eye EP (3024​-​FYE5)').id
 )
