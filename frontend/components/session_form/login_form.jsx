@@ -11,10 +11,6 @@ class LoginForm extends React.Component {
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleModal = this.handleModal.bind(this);
-<<<<<<< HEAD
-=======
-        this.handleDemo = this.handleDemo.bind(this);
->>>>>>> artist-profile
     }
 
     handleInput(type) {
@@ -29,12 +25,6 @@ class LoginForm extends React.Component {
         this.props.processForm(user).then(this.props.closeModal);
     }
 
-<<<<<<< HEAD
-=======
-    handleDemo() {
-        this.props.loginDemo();
-    }
->>>>>>> artist-profile
     handleModal() {
         this.props.linkToSignup();
     }
@@ -100,16 +90,10 @@ class LoginForm extends React.Component {
                                     
                                     <div className="signup-item">
                                         <div className="login-instead">
-<<<<<<< HEAD
                                             Don't have an account? Sign up as <a href="#" onClick={this.handleModal}>a fan</a>.
                                         </div>
                                     </div>
 
-=======
-                                            Don’t have an account? Sign up as <a href="#" onClick={this.handleModal}>a fan</a>.
-                                        </div>
-                                    </div>
->>>>>>> artist-profile
                                 </div>
                             </div>
                         </form>

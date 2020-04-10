@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import ArtistIndex from './artist_index';
 import { fetchArtists } from '../../actions/artist_actions';
-import { selectAllArtist } from '../../reducers/selectors';
+// import { selectAllArtist } from '../../reducers/selectors';
 
 const mapStateToProps = state => ({
     artists: selectAllArtist(state),

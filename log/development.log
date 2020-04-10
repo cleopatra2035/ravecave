@@ -9418,3 +9418,28 @@ Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.0ms)
 >>>>>>> artist-profile
 
 
+Started GET "/" for ::1 at 2020-04-10 00:20:35 -0400
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1909ms (Views: 1906.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 00:26:15 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 473ms (Views: 467.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 09:19:41 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 1697ms (Views: 1684.7ms | ActiveRecord: 0.0ms)
+
+
