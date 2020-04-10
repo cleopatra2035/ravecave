@@ -8,11 +8,11 @@ const Greeting = ({ currentUser, logout }) => {
             <button onClick={logout}>Logout</button>
         </div>
     ) : (
-        <div>
-            <button onClick={() => openModal('login')}>Login</button>
-            <button onClick={() => openModal('signup')}>Signup</button>
-        </div>
-    );
+            <div>
+                <button onClick={() => openModal('login')}>Login</button>
+                <button onClick={() => openModal('signup')}>Signup</button>
+            </div>
+        );
     return (
         <header className="nav-bar">
             <h1>Ravecave</h1>

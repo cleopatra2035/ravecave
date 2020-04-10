@@ -11,6 +11,7 @@ class LoginForm extends React.Component {
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleModal = this.handleModal.bind(this);
+        this.handleDemo = this.handleDemo.bind(this);
     }
 
     handleInput(type) {
@@ -25,6 +26,9 @@ class LoginForm extends React.Component {
         this.props.processForm(user).then(this.props.closeModal);
     }
 
+    handleDemo() {
+        this.props.loginDemo();
+    }
     handleModal() {
         this.props.linkToSignup();
     }
@@ -57,7 +61,6 @@ class LoginForm extends React.Component {
                         <form>
                             <div className="signup-inner">
                                 <div className="signup-form">
-
                                     <div className="signup-item">
                                         {/* <label className="signup-label">Username</label> */}
                                         <div className="signup-input">
@@ -68,7 +71,6 @@ class LoginForm extends React.Component {
                                             />
                                         </div>
                                     </div>
-
                                     <div className="signup-item">
                                         {/* <label className="signup-label">Password</label> */}
                                         <div className="signup-input">
@@ -87,13 +89,12 @@ class LoginForm extends React.Component {
                                     <div className="buttons">
                                         <button onClick={this.handleDemo}>Try demo</button>
                                     </div>
-                                    
+
                                     <div className="signup-item">
                                         <div className="login-instead">
-                                            Don't have an account? Sign up as <a href="#" onClick={this.handleModal}>a fan</a>.
+                                            Don’t have an account? Sign up as <a href="#" onClick={this.handleModal}>a fan</a>.
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </form>

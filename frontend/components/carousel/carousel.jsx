@@ -49,9 +49,9 @@ class Carousel extends React.Component {
                                         <h3 className="carousel-small-item-title">Soothing Ambiance, Factory Jazz, Tape-Loop Sorcery, and More</h3>
                                         <h4 className="carousel-small-item-subtitle">List</h4>
                                     </div>
-                                </a> 
+                                </a>
                             </li>
-    
+
                             <li className="carousel-small-item3">
                                 <div className="carousel-item-overlay"></div>
                                 <div className="carousel-item-hover-overlay"></div>

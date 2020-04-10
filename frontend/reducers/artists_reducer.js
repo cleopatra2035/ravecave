@@ -5,9 +5,9 @@ import {
 
 const artistsReducer = (state = {}, action) => {
     Object.freeze(state);
-    switch(action.type) {
+    switch (action.type) {
         case RECEIVE_ARTISTS:
-            return Object.assign({}, state, action.artists);
+            return action.artists;
         case RECEIVE_ARTIST:
             const newArtist = { [action.artist.id]: action.artist };
             return Object.assign({}, state, newArtist);

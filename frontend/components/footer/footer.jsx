@@ -13,10 +13,10 @@ class Footer extends React.Component {
                             </ul>
                         </div>
                         <div className="col col-3-12">
-                        
+
                         </div>
                         <div className="col col-3-12 offset-3-12">
-                            
+
                         </div>
                     </div>
                 </div>

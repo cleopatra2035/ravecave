@@ -34,13 +34,13 @@ class Splash extends React.Component {
                     </div>
                 </div>
 
-                
+
             </div>
         );
 
         return (
             <div id="splash-wrapper" className="splash">
-                { main }
+                {main}
             </div>
         )
     }

@@ -90,7 +90,7 @@ class SignupForm extends React.Component {
                                             />
                                         </div>
                                     </div>
-                                    
+
                                     <div className="buttons">
                                         {/* <button className="submit" onClick={this.handleSubmit}>Sign up</button> */}
                                         <button onClick={this.handleSubmit}>Sign up</button>
@@ -101,7 +101,6 @@ class SignupForm extends React.Component {
                                             Already have an account? <a href="#" onClick={this.handleModal}>Log in</a>.
                                         </div>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </form>
