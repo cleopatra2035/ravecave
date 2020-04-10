@@ -388,16 +388,7 @@ p {
 }
 
  /* logged in user menu */
-#menubar-wrapper .header-rework {
-    z-index: 200;
-    background-color: #ffffff;
-    border: none !important;
-    border-bottom: dotted #afafaf 1px;
-    height: 53px;
-    min-width: calc(100vw - 17px);
-}
-
-#menubar-wrapper {
+ #menubar-wrapper {
     position: relative;
     top: 0;
     left: 0;
@@ -412,6 +403,15 @@ p {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     z-index: 1;
+}
+
+#menubar-wrapper.header-rework {
+    z-index: 200;
+    background-color: #ffffff;
+    border: none !important;
+    border-bottom: dotted #afafaf 1px;
+    height: 53px;
+    min-width: calc(100vw - 17px);
 }
 
 #menubar-wrapper.header-rework #menubar-bar {
