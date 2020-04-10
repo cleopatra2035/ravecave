@@ -15,9 +15,10 @@ import Footer from './footer/footer';
 const App = () => (
 
 
-    <div className="wrapper">
+    // <div className="wrapper">
+    <div>
         <Modal />
-        <div className="inner">
+        <div>
             <Route exact path="/" component={Home} />
             <AuthRoute path="/login" component={LogInFormContainer} />
             <AuthRoute path="/signup" component={SignUpFormContainer} />
