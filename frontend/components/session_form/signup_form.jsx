@@ -34,7 +34,7 @@ class SignupForm extends React.Component {
         return (
             <ul>
                 {this.props.errors.map((error, i) => (
-                    <li key={`error-%{i}`}>
+                    <li key={`error-${i}`}>
                         {error}
                     </li>
                 ))}
@@ -89,6 +89,10 @@ class SignupForm extends React.Component {
                                                 onChange={this.handleInput('username')}
                                             />
                                         </div>
+                                    </div>
+
+                                    <div className="errors">
+                                        {this.renderErrors()}
                                     </div>
 
                                     <div className="buttons">
