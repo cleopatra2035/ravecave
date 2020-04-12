@@ -1,19 +1,19 @@
 import {
-    RECEIVE_ARTISTS,
+    RECEIVE_ALL_ARTISTS,
     RECEIVE_ARTIST
 } from '../actions/artist_actions';
 
-const artistsReducer = (state = {}, action) => {
-    Object.freeze(state);
-    switch (action.type) {
-        case RECEIVE_ARTISTS:
-            return Object.assign({}, state, action.artists);
+const ArtistsReducer = (oldState = {}, action) => {
+    Object.freeze(oldState);
+
+    switch(action.type) {
+        case RECEIVE_ALL_ARTISTS:
+            return Object.assign({}, oldState, action.artists)
         case RECEIVE_ARTIST:
-            const newArtist = { [action.artist.id]: action.artist };
-            return Object.assign({}, state, newArtist);
+            return Object.assign({}, oldState, { [action.artist.id]: action.artist })
         default:
-            return state;
+            return oldState;
     }
 };
 
-export default artistsReducer;
+export default ArtistsReducer;

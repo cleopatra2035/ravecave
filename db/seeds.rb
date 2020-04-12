@@ -86,27 +86,32 @@ art4 = Artist.create!(
 
 album1 = Album.create!(
     name: 'Cornell 5/8/77',
-    artist_id: Artist.find_by(name: 'Grateful Dead').id
+    artist_id: Artist.find_by(name: 'Grateful Dead').id,
+    featured: false
 )
 
 album2 = Album.create!(
     name: 'Great Lengths',
-    artist_id: Artist.find_by(name: 'Martyn').id
+    artist_id: Artist.find_by(name: 'Martyn').id,
+    featured: false
 )
 
 album3 = Album.create!(
     name: 'Untrue',
-    artist_id: Artist.find_by(name: 'Burial').id
+    artist_id: Artist.find_by(name: 'Burial').id,
+    featured: false
 )
 
 album4 = Album.create!(
     name: 'Greatest Hits: Bangers Only',
-    artist_id: Artist.find_by(name: 'Shy Eyez').id
+    artist_id: Artist.find_by(name: 'Shy Eyez').id,
+    featured: false
 )
 
 album5 = Album.create!(
     name: 'One Eye EP (3024​-​FYE5)',
-    artist_id: Artist.find_by(name: 'Martyn').id
+    artist_id: Artist.find_by(name: 'Martyn').id,
+    featured: true
 )
 
 # ////// TRACKS

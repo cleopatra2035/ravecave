@@ -4,15 +4,21 @@ import Carousel from '../carousel/carousel';
 import Footer from '../footer/footer';
 import Middle from '../middle/middle';
 
-const Home = () => {
-    return (
-        <div className="wrapper">
-            <NavBarContainer />
-            <Carousel />
-            <Middle />
-            <Footer />
-        </div>
-    )
+class Home extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div className="wrapper">
+                <NavBarContainer />
+                <Carousel />
+                <Middle />
+                <Footer />
+            </div>
+        );
+    }
 }
 
 export default Home;

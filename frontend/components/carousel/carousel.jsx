@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 class Carousel extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
     render() {
         return (
             <div id="carousel-wrapper" className="carousel-wrapper">
@@ -20,7 +24,7 @@ class Carousel extends React.Component {
                                             From the fringes of the indie rock, punk, and metal scenes, a group of artists bent on inventive deconstruction is starting to coalesce.</p>
                                         <div className="read-more-button">
                                             <div className="read-more">
-                                                read more
+                                                <Link to="/albums">read more</Link>
                                             </div>
                                         </div>
                                     </div>

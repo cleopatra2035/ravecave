@@ -1,11 +1,10 @@
-import * as APIUtil from '../util/album_api_util';
+import * as AlbumApiUtil from '../util/album_api_util';
 
-export const RECEIVE_ALBUMS = 'RECEIVE_ALBUMS';
+export const RECEIVE_ALL_ALBUMS = 'RECEIVE_ALL_ALBUMS';
 export const RECEIVE_ALBUM = 'RECEIVE_ALBUM';
-export const RECEIVE_TOP_ALBUMS = 'RECEIVE_TOP_ALBUMS';
 
-const receiveAlbums = albums => ({
-    type: RECEIVE_ALBUMS,
+const receiveAllAlbums = albums => ({
+    type: RECEIVE_ALL_ALBUMS,
     albums
 });
 
@@ -14,22 +13,12 @@ const receiveAlbum = album => ({
     album
 });
 
-const receiveTopAlbums = albums => ({
-    type: RECEIVE_TOP_ALBUMS,
-    albums
-});
-
 export const fetchAlbums = () => dispatch => (
-    APIUtil.fetchAlbums()
-        .then(albums => dispatch(receiveAlbums(albums)))
+    AlbumApiUtil.fetchAlbums()
+    .then(albums => dispatch(receiveAllAlbums(albums)))
 );
 
 export const fetchAlbum = albumId => dispatch => (
-    APIUtil.fetchAlbum(albumId)
-        .then(album => dispatch(receiveAlbum(album)))
-);
-
-export const fetchTopAlbums = () => dispatch => (
-    APIUtil.fetchTopAlbums()
-        .then(albums => dispatch(receiveTopAlbums(albums)))
+    AlbumApiUtil.fetchAlbum(albumId)
+    .then(album => dispatch(receiveAlbum(album)))
 );
