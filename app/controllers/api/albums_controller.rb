@@ -13,6 +13,12 @@ class Api::AlbumsController < ApplicationController
     private
 
     def artist_params
-        params.require(:album).permit(:name, :artist_id, :featured)
+        params.require(:album).permit(
+            :name,
+            :artist_id,
+            :featured,
+            :genre,
+            :release_date,
+            :description)
     end
 end

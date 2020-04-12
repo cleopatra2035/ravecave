@@ -2,15 +2,18 @@
 #
 # Table name: albums
 #
-#  id         :bigint           not null, primary key
-#  name       :string           not null
-#  artist_id  :integer          not null
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  featured   :boolean          default(FALSE)
+#  id           :bigint           not null, primary key
+#  name         :string           not null
+#  artist_id    :integer          not null
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  featured     :boolean          default(FALSE)
+#  genre        :string           not null
+#  release_date :datetime
+#  description  :string
 #
 class Album < ApplicationRecord
-    validates :name, presence: true
+    validates :name, :genre, presence: true
 
     belongs_to :artist,
         primary_key: :id,

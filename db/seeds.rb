@@ -9,6 +9,7 @@
 User.delete_all
 Artist.delete_all
 Album.delete_all
+Track.delete_all
 
 # ////// USERS
 
@@ -87,31 +88,46 @@ art4 = Artist.create!(
 album1 = Album.create!(
     name: 'Cornell 5/8/77',
     artist_id: Artist.find_by(name: 'Grateful Dead').id,
-    featured: false
+    featured: false,
+    genre: 'rock',
+    description: 'The quintessence of the Grateful Dead is the only way to describe this essential album. The band said it was freezing inside the university auditorium the night of the recording, but that had no effect on how fired up they got across the 3-hour show. A must listen for any new or old Deadhead!',
+    release_date: Date.new(2017,05,05)
 )
 
 album2 = Album.create!(
     name: 'Great Lengths',
     artist_id: Artist.find_by(name: 'Martyn').id,
-    featured: false
+    featured: false,
+    genre: 'electronic',
+    description: 'Dutch producer and 3024-founder Martyn makes dubstep his own in his debut album.',
+    release_date: Date.new(2017,11,8)
 )
 
 album3 = Album.create!(
     name: 'Untrue',
     artist_id: Artist.find_by(name: 'Burial').id,
-    featured: false
+    featured: false,
+    genre: 'electronic',
+    description: 'The elusive producer manipulates vocal samples with raw sounds of dubstep, UK garage, ambient and hardcore music.',
+    release_date: Date.new(2007,11,05)
 )
 
 album4 = Album.create!(
     name: 'Greatest Hits: Bangers Only',
     artist_id: Artist.find_by(name: 'Shy Eyez').id,
-    featured: false
+    featured: false,
+    genre: 'electronic',
+    description: 'Get lost in the sounds of tracks played at my ongoing 3024 residency in New York City.',
+    release_date: Date.new(2020,04,01)
 )
 
 album5 = Album.create!(
     name: 'One Eye EP (3024​-​FYE5)',
     artist_id: Artist.find_by(name: 'Martyn').id,
-    featured: true
+    featured: true,
+    genre: 'electronic',
+    description: 'Martyn returns with two bass-heavy, melodic bangers.',
+    release_date: Date.new(2019,11,24)
 )
 
 # ////// TRACKS

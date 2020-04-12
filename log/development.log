@@ -13053,3 +13053,1558 @@ Processing by Api::SessionsController#destroy as JSON
 Completed 200 OK in 18ms (Views: 7.6ms | ActiveRecord: 3.6ms)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddGenreToAlbums (20200412191910)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (16.3ms)[0m  [1m[35mALTER TABLE "albums" ADD "genre" character varying NOT NULL[0m
+  ↳ db/migrate/20200412191910_add_genre_to_albums.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddGenreToAlbums (20200412191910)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.9ms)[0m  [1m[35mALTER TABLE "albums" ADD "genre" character varying NOT NULL[0m
+  ↳ db/migrate/20200412191910_add_genre_to_albums.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddGenreToAlbums (20200412191910)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.3ms)[0m  [1m[35mALTER TABLE "albums" ADD "genre" character varying[0m
+  ↳ db/migrate/20200412191910_add_genre_to_albums.rb:3
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE  INDEX  "index_albums_on_genre" ON "albums"  ("genre")[0m
+  ↳ db/migrate/20200412191910_add_genre_to_albums.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200412191910"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/bin/annotate:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeColumnNullToAlbums (20200412193012)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[35mALTER TABLE "albums" ALTER COLUMN "genre" SET NOT NULL[0m
+  ↳ db/migrate/20200412193012_change_column_null_to_albums.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeColumnNullToAlbums (20200412193012)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.1ms)[0m  [1m[35mALTER TABLE "albums" ALTER COLUMN "genre" SET NOT NULL[0m
+  ↳ db/migrate/20200412193012_change_column_null_to_albums.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeColumnNullToAlbums (20200412193012)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (10.6ms)[0m  [1m[35mALTER TABLE "albums" DROP COLUMN "genre"[0m
+  ↳ db/migrate/20200412193012_change_column_null_to_albums.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200412193012"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddColumnGenreToAlbums (20200412194635)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[35mALTER TABLE "albums" ADD "genre" character varying[0m
+  ↳ db/migrate/20200412194635_add_column_genre_to_albums.rb:3
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_albums_on_genre" ON "albums"  ("genre")[0m
+  ↳ db/migrate/20200412194635_add_column_genre_to_albums.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200412194635"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddConstraintsToAlbums (20200412194901)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddConstraintsToAlbums (20200412194901)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (8.8ms)[0m  [1m[33mUPDATE "albums" SET "genre"='music' WHERE "genre" IS NULL[0m
+  ↳ db/migrate/20200412194901_add_constraints_to_albums.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "albums" ALTER COLUMN "genre" SET NOT NULL[0m
+  ↳ db/migrate/20200412194901_add_constraints_to_albums.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200412194901"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (4.4ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mArtist Destroy (2.5ms)[0m  [1m[31mDELETE FROM "artists"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAlbum Destroy (3.3ms)[0m  [1m[31mDELETE FROM "albums"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cleopatra2035"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cleopatra2035@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "cleopatra2035"], ["email", "cleopatra2035@gmail.com"], ["password_digest", "$2a$12$kOW5fL3hgsy0sXOshfbJeuZ2g5s4weGqZncg7mRhNnf3b.cC3laV6"], ["session_token", "s1NDr37ppyCclK4fEf7OQH6sfdX3T3T8yojiiPwIgbLN7DpgE/eW8Jd3VlgQJ6Pfb10oUzKOflrZSnOqPMLe2A=="], ["created_at", "2020-04-12 19:54:09.554496"], ["updated_at", "2020-04-12 19:54:09.554496"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "greenvillain"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "geevee@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "greenvillain"], ["email", "geevee@gmail.com"], ["password_digest", "$2a$12$LWoZVj/jVCiJZbB5FPRRTe4xNOQV9x0XZ.51hype5EPhENLdvmAdG"], ["session_token", "joBEZo/EpOksKG+ogY19XaSxprbQU+k31iItbsRBSIuV61kkCojH4G2TpntCHEFErU9WIDgyYIY6eSM7OZqodg=="], ["created_at", "2020-04-12 19:54:09.797238"], ["updated_at", "2020-04-12 19:54:09.797238"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "quell"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "quellcristfalconer@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "quell"], ["email", "quellcristfalconer@gmail.com"], ["password_digest", "$2a$12$LQUHSzSjd7.1Y2DgGs3JA.sEJPlRNGT9Vl3M3aKvuNovYglbGqRDu"], ["session_token", "wEaup19F0IIscUte2WbZVgzGhHxwRHddaEOIqwoKmbWE/WOritSpcBECfFiJOG4Jz4qgRfuIHxksg1AJtgzrZw=="], ["created_at", "2020-04-12 19:54:10.035309"], ["updated_at", "2020-04-12 19:54:10.035309"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gratefuldead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thegratefuldead@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "gratefuldead"], ["email", "thegratefuldead@gmail.com"], ["password_digest", "$2a$12$sQfV14O6xwE7hpa..agY0e1GkNtnHdwB3yehxUN1Ll4FS7ZN82SXK"], ["session_token", "RS0GTG00+xd26COZspwjEkayXwV9QVeNcXPHR+YKuyJyqjksAvJBT3cPGEpEonitdrTuuGaqpjZrF+9W2HWuHQ=="], ["created_at", "2020-04-12 19:54:10.275063"], ["updated_at", "2020-04-12 19:54:10.275063"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "martyn3024"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thisismartyn@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "martyn3024"], ["email", "thisismartyn@gmail.com"], ["password_digest", "$2a$12$n/yGUzGpx4U.iYAYGo0ZzOtWTYfzp2oq8oYddkA9zx74a4HlMj8sC"], ["session_token", "Iv6VCjurw8YqUPq1VH/vxdxH2QB90jab69hKZ7oKpmUlVvgWy+UpBBpUszAiBPO/4dpH3Fa6Wdft6kFdtF4zvg=="], ["created_at", "2020-04-12 19:54:10.529350"], ["updated_at", "2020-04-12 19:54:10.529350"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "therealburial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "burial@co.uk"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "therealburial"], ["email", "burial@co.uk"], ["password_digest", "$2a$12$8GmIFP/ccoHDaefYF/moBuEJsa6kx9a/.XRGjrAwlEILqz0hP/L3O"], ["session_token", "Obn/hGiYGHHAo1Ll1+UMC87FEMM+DOrPnSMLKDEtAUvAr2YGn4iKyLykxsB4M+ScS2f8f7IJY/Z+qeq2qFZ0ww=="], ["created_at", "2020-04-12 19:54:10.767546"], ["updated_at", "2020-04-12 19:54:10.767546"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "shyeyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shyeyez@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "shyeyez"], ["email", "shyeyez@gmail.com"], ["password_digest", "$2a$12$pPQOkTY9aL4aXmYnZFcgu.zZFxrZg8aV88qS3o3mUO1kciTcfSVr2"], ["session_token", "qvxQOjIlpIDjpREzLe3YA3Mi6oscOLAcNB3exDcL80htMQfoVDkmi7sm+UnL5srGtXjU8hdcFPplKEkRjxfeYg=="], ["created_at", "2020-04-12 19:54:11.005723"], ["updated_at", "2020-04-12 19:54:11.005723"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:57
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "demo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:57
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo@demo.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:57
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "demo"], ["email", "demo@demo.com"], ["password_digest", "$2a$12$2LBg8knbzl949dsFGf28/uclHUP3gikxBBtE5WY3giqF5eopnE9H."], ["session_token", "hOn8g2xFZ2TQL/unWxEU1+FbdN149qcgqrQzoSO+VKpQ9xxs+ji3u+YXdH/O8CDBUCSUoHi7vSOnWX2czfokyA=="], ["created_at", "2020-04-12 19:54:11.243504"], ["updated_at", "2020-04-12 19:54:11.243504"]]
+  ↳ db/seeds.rb:57
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:57
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gratefuldead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ db/seeds.rb:65
+  [1m[36mArtist Create (0.6ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Grateful Dead"], ["user_id", 43], ["created_at", "2020-04-12 19:54:11.284109"], ["updated_at", "2020-04-12 19:54:11.284109"]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "martyn3024"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ db/seeds.rb:70
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Martyn"], ["user_id", 44], ["created_at", "2020-04-12 19:54:11.289753"], ["updated_at", "2020-04-12 19:54:11.289753"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "therealburial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:77
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ db/seeds.rb:75
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Burial"], ["user_id", 45], ["created_at", "2020-04-12 19:54:11.294715"], ["updated_at", "2020-04-12 19:54:11.294715"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "shyeyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:82
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ db/seeds.rb:80
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Shy Eyez"], ["user_id", 46], ["created_at", "2020-04-12 19:54:11.299957"], ["updated_at", "2020-04-12 19:54:11.299957"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Grateful Dead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:89
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:87
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:87
+  [1m[36mAlbum Create (0.5ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Cornell 5/8/77"], ["artist_id", 17], ["created_at", "2020-04-12 19:54:11.323205"], ["updated_at", "2020-04-12 19:54:11.323205"], ["genre", "rock"]]
+  ↳ db/seeds.rb:87
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:87
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:96
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:94
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:94
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Great Lengths"], ["artist_id", 18], ["created_at", "2020-04-12 19:54:11.330153"], ["updated_at", "2020-04-12 19:54:11.330153"], ["genre", "electronic"]]
+  ↳ db/seeds.rb:94
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:94
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Burial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:103
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:101
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:101
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Untrue"], ["artist_id", 19], ["created_at", "2020-04-12 19:54:11.335562"], ["updated_at", "2020-04-12 19:54:11.335562"], ["genre", "electronic"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:101
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Shy Eyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:108
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:108
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Greatest Hits: Bangers Only"], ["artist_id", 20], ["created_at", "2020-04-12 19:54:11.340504"], ["updated_at", "2020-04-12 19:54:11.340504"], ["genre", "electronic"]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:108
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:115
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:115
+  [1m[36mAlbum Create (0.8ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "featured", "genre") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["artist_id", 18], ["created_at", "2020-04-12 19:54:11.345330"], ["updated_at", "2020-04-12 19:54:11.345330"], ["featured", true], ["genre", "electronic"]]
+  ↳ db/seeds.rb:115
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:115
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Grateful Dead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:127
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Cornell 5/8/77"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:128
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:124
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:124
+  [1m[36mTrack Exists (2.0ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 1], ["album_id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:124
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:124
+  [1m[36mTrack Create (0.6ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "New Minglewood Blues"], ["ord", 1], ["artist_id", 17], ["album_id", 21], ["created_at", "2020-04-12 19:54:11.393897"], ["updated_at", "2020-04-12 19:54:11.393897"]]
+  ↳ db/seeds.rb:124
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:124
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:134
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Great Lengths"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:135
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:131
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:131
+  [1m[36mTrack Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 6], ["album_id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:131
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:131
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Vancouver"], ["ord", 6], ["artist_id", 18], ["album_id", 22], ["created_at", "2020-04-12 19:54:11.400784"], ["updated_at", "2020-04-12 19:54:11.400784"]]
+  ↳ db/seeds.rb:131
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:131
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Untrue"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:142
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:138
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:138
+  [1m[36mTrack Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 7], ["album_id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:138
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:138
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "In McDonalds"], ["ord", 7], ["artist_id", 19], ["album_id", 23], ["created_at", "2020-04-12 19:54:11.406927"], ["updated_at", "2020-04-12 19:54:11.406927"]]
+  ↳ db/seeds.rb:138
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:138
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:148
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:149
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:145
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:145
+  [1m[36mTrack Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 1], ["album_id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:145
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:145
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "One Eye"], ["ord", 1], ["artist_id", 18], ["album_id", 25], ["created_at", "2020-04-12 19:54:11.413328"], ["updated_at", "2020-04-12 19:54:11.413328"]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:145
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:155
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:156
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:152
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:152
+  [1m[36mTrack Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 2], ["album_id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:152
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:152
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Nerve Centers"], ["ord", 2], ["artist_id", 18], ["album_id", 25], ["created_at", "2020-04-12 19:54:11.421063"], ["updated_at", "2020-04-12 19:54:11.421063"]]
+  ↳ db/seeds.rb:152
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:152
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddReleaseDateColumnToAlbums (20200412195601)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "albums" ADD "release_date" timestamp[0m
+  ↳ db/migrate/20200412195601_add_release_date_column_to_albums.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "albums" ADD "description" character varying[0m
+  ↳ db/migrate/20200412195601_add_release_date_column_to_albums.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200412195601"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/bin/annotate:23
+  [1m[36mAlbum Load (3.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to RemoveReleaseDateColumnFromAlbums (20200412201923)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.6ms)[0m  [1m[35mALTER TABLE "albums" DROP COLUMN "release_date"[0m
+  ↳ db/migrate/20200412201923_remove_release_date_column_from_albums.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200412201923"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddReleaseColumnToAlbums (20200412202100)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.9ms)[0m  [1m[35mALTER TABLE "albums" ADD "release_date" date[0m
+  ↳ db/migrate/20200412202100_add_release_column_to_albums.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200412202100"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2227044634330257630)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (6.3ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mArtist Destroy (3.8ms)[0m  [1m[31mDELETE FROM "artists"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAlbum Destroy (4.1ms)[0m  [1m[31mDELETE FROM "albums"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (2.3ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mArtist Destroy (0.7ms)[0m  [1m[31mDELETE FROM "artists"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAlbum Destroy (3.0ms)[0m  [1m[31mDELETE FROM "albums"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mTrack Destroy (5.7ms)[0m  [1m[31mDELETE FROM "tracks"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cleopatra2035"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cleopatra2035@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "cleopatra2035"], ["email", "cleopatra2035@gmail.com"], ["password_digest", "$2a$12$YigIil9.B9QTYP6k07inFeKPDCjGz7GsjTrASEfCxCqF.RsomlxSG"], ["session_token", "KwE9iJRVZSGI7xQjNd1I7klzuzZteHAFlbetJ2EU4t8wk5EVqPMiUy4NW9mMGFGIQyAU/nGU6K4G4ur6LK+Mug=="], ["created_at", "2020-04-12 20:26:08.088680"], ["updated_at", "2020-04-12 20:26:08.088680"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "greenvillain"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "geevee@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "greenvillain"], ["email", "geevee@gmail.com"], ["password_digest", "$2a$12$zDnEb0ZU0E748o3h81xXW.fyLgtDLgm4y5kgRNTebcTyMyv.ZlWBC"], ["session_token", "iqjWKM/GLEjJt+Wpegyheqq9v8CUuI+kBoIgFf575UjQD8uSyEVqnBWzAUqqwIBUHfABJkCBGQpXcr9ZSOWTeQ=="], ["created_at", "2020-04-12 20:26:08.325647"], ["updated_at", "2020-04-12 20:26:08.325647"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "quell"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "quellcristfalconer@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "quell"], ["email", "quellcristfalconer@gmail.com"], ["password_digest", "$2a$12$RVnVOynoCvCSAKAozEio3utmdXThwVBwdyQyAUXjvULa0oCaf4tKe"], ["session_token", "J8k82QV/loRblTAdlnneTCYtzisprOJo2UHH458P+1Ifr/CVRDfUj0MD1NhqrAsBjAn5gYnXHXuDj+tt/nf0sQ=="], ["created_at", "2020-04-12 20:26:08.565103"], ["updated_at", "2020-04-12 20:26:08.565103"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gratefuldead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thegratefuldead@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "gratefuldead"], ["email", "thegratefuldead@gmail.com"], ["password_digest", "$2a$12$/huCkBw98n0.K03FsxdZ2Ovuzy0VlS1xTg0XuNvwmGxd4/GbUcWoq"], ["session_token", "mdN8HMaTR75lFjhqXOmwmWz72hQSZohamxhd7qVSXbgqq3Y7owNw6CsuufD5v8GOY1GlXK2NGerHjwhyfe4g2Q=="], ["created_at", "2020-04-12 20:26:08.806979"], ["updated_at", "2020-04-12 20:26:08.806979"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "martyn3024"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thisismartyn@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "martyn3024"], ["email", "thisismartyn@gmail.com"], ["password_digest", "$2a$12$38ca5Q7oTBvLbc0HbJjE8eOoxmcUKbBJDByIpPrT5bKBeq9amxtT6"], ["session_token", "ZSfB3ehqkCVuP/b8ERqRE075fmOZ+iMTiXWaGOFbQPPA8vbgfjtCPfjtMalL6WPnBUJ/KsFD3kpgAdW+FFhbPw=="], ["created_at", "2020-04-12 20:26:09.049927"], ["updated_at", "2020-04-12 20:26:09.049927"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "therealburial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "burial@co.uk"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "therealburial"], ["email", "burial@co.uk"], ["password_digest", "$2a$12$SAt7jEb4gxFklY.W6hjtwO55CUWSoreM6izUlcO2e/3jnAr0XzN0S"], ["session_token", "UyL8pRAc9RvK3IUmc9ZsAvDZsBgJRAEyS0yb99Z+ARpSDN3Uedkp37CYTD+KHSWbn6qYl8I8wd2o4N2an2gZAw=="], ["created_at", "2020-04-12 20:26:09.287744"], ["updated_at", "2020-04-12 20:26:09.287744"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "shyeyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shyeyez@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "shyeyez"], ["email", "shyeyez@gmail.com"], ["password_digest", "$2a$12$ioE4V2xeYlBGss28MvhpP.4obTl./nh8P5dglqN0w7KDn.6Hb8Cne"], ["session_token", "bYe2FaU+NVH0uZZSoAa1JW2qSKhTs5g+WjEbn1K/gHz7sKUETJEyWVIuUHvS22NEYDm4uOwi5KwqpqbXjZdniQ=="], ["created_at", "2020-04-12 20:26:09.524251"], ["updated_at", "2020-04-12 20:26:09.524251"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "demo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo@demo.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "demo"], ["email", "demo@demo.com"], ["password_digest", "$2a$12$oPT9n6q7sTohr1NG68IT4OwKUpWthrgWxG2ts6lpi4vcMOrt199FC"], ["session_token", "D+WrEKHfaOrnk1c8KXop3LzZnDF+L4Dar+APQwQFeRqmMbpRogDOCSGWpPNRa8zPPEoLRtoDUMaJWXQ238iSuA=="], ["created_at", "2020-04-12 20:26:09.768048"], ["updated_at", "2020-04-12 20:26:09.768048"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gratefuldead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ db/seeds.rb:66
+  [1m[36mArtist Create (0.5ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Grateful Dead"], ["user_id", 51], ["created_at", "2020-04-12 20:26:09.796889"], ["updated_at", "2020-04-12 20:26:09.796889"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "martyn3024"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ db/seeds.rb:71
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Martyn"], ["user_id", 52], ["created_at", "2020-04-12 20:26:09.802373"], ["updated_at", "2020-04-12 20:26:09.802373"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "therealburial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ db/seeds.rb:76
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Burial"], ["user_id", 53], ["created_at", "2020-04-12 20:26:09.806839"], ["updated_at", "2020-04-12 20:26:09.806839"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "shyeyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:83
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:81
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ db/seeds.rb:81
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Shy Eyez"], ["user_id", 54], ["created_at", "2020-04-12 20:26:09.811733"], ["updated_at", "2020-04-12 20:26:09.811733"]]
+  ↳ db/seeds.rb:81
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:81
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Grateful Dead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:88
+  [1m[36mAlbum Create (6.2ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Cornell 5/8/77"], ["artist_id", 21], ["created_at", "2020-04-12 20:26:09.836334"], ["updated_at", "2020-04-12 20:26:09.836334"], ["genre", "rock"], ["description", "Cornell 5/8/77 is a live album by the American rock band the Grateful Dead. It was recorded on May 8, 1977, at Barton Hall, Cornell University, in Ithaca, New York. It was released as a three-disc CD album and as a five-disc vinyl album on May 5, 2017."], ["release_date", "2017-05-05"]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:97
+  [1m[36mAlbum Create (0.5ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Great Lengths"], ["artist_id", 22], ["created_at", "2020-04-12 20:26:09.852246"], ["updated_at", "2020-04-12 20:26:09.852246"], ["genre", "electronic"]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Burial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:104
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:104
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Untrue"], ["artist_id", 23], ["created_at", "2020-04-12 20:26:09.857544"], ["updated_at", "2020-04-12 20:26:09.857544"], ["genre", "electronic"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:104
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Shy Eyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:113
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ db/seeds.rb:111
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Greatest Hits: Bangers Only"], ["artist_id", 24], ["created_at", "2020-04-12 20:26:09.862266"], ["updated_at", "2020-04-12 20:26:09.862266"], ["genre", "electronic"]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:120
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:118
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:118
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "featured", "genre") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["artist_id", 22], ["created_at", "2020-04-12 20:26:09.867537"], ["updated_at", "2020-04-12 20:26:09.867537"], ["featured", true], ["genre", "electronic"]]
+  ↳ db/seeds.rb:118
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:118
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Grateful Dead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:130
+  [1m[36mAlbum Load (1.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Cornell 5/8/77"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:131
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:127
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:127
+  [1m[36mTrack Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 1], ["album_id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:127
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:127
+  [1m[36mTrack Create (0.7ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "New Minglewood Blues"], ["ord", 1], ["artist_id", 21], ["album_id", 26], ["created_at", "2020-04-12 20:26:09.901480"], ["updated_at", "2020-04-12 20:26:09.901480"]]
+  ↳ db/seeds.rb:127
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:127
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:137
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Great Lengths"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:138
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:134
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:134
+  [1m[36mTrack Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 6], ["album_id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:134
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:134
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Vancouver"], ["ord", 6], ["artist_id", 22], ["album_id", 27], ["created_at", "2020-04-12 20:26:09.918057"], ["updated_at", "2020-04-12 20:26:09.918057"]]
+  ↳ db/seeds.rb:134
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:134
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Untrue"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:145
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:141
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ db/seeds.rb:141
+  [1m[36mTrack Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 7], ["album_id", 28], ["LIMIT", 1]]
+  ↳ db/seeds.rb:141
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:141
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "In McDonalds"], ["ord", 7], ["artist_id", 23], ["album_id", 28], ["created_at", "2020-04-12 20:26:09.925638"], ["updated_at", "2020-04-12 20:26:09.925638"]]
+  ↳ db/seeds.rb:141
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:141
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:151
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:152
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:148
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:148
+  [1m[36mTrack Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 1], ["album_id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:148
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:148
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "One Eye"], ["ord", 1], ["artist_id", 22], ["album_id", 30], ["created_at", "2020-04-12 20:26:09.932186"], ["updated_at", "2020-04-12 20:26:09.932186"]]
+  ↳ db/seeds.rb:148
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:148
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:158
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:159
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:155
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:155
+  [1m[36mTrack Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 2], ["album_id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:155
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:155
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Nerve Centers"], ["ord", 2], ["artist_id", 22], ["album_id", 30], ["created_at", "2020-04-12 20:26:09.939161"], ["updated_at", "2020-04-12 20:26:09.939161"]]
+  ↳ db/seeds.rb:155
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:155
+  [1m[36mAlbum Load (1.1ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mAlbum Load (2.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" ORDER BY "albums"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAlbum Load (0.9ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" ORDER BY "albums"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAlbum Load (1.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" ORDER BY "albums"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAlbum Load (1.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" ORDER BY "albums"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAlbum Load (1.0ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" ORDER BY "albums"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (3.0ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mArtist Destroy (1.2ms)[0m  [1m[31mDELETE FROM "artists"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAlbum Destroy (1.2ms)[0m  [1m[31mDELETE FROM "albums"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mTrack Destroy (1.0ms)[0m  [1m[31mDELETE FROM "tracks"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (2.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cleopatra2035"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cleopatra2035@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "cleopatra2035"], ["email", "cleopatra2035@gmail.com"], ["password_digest", "$2a$12$GmtelO1Zai36HhFi/10Cg.617btyzqLz1aSuAVE3OLVIThtxLtomq"], ["session_token", "RkitrQ1SZnzknYLD2DmxzLGRY/LS9ZdntA4rxBqXa0jbd4LhWae4f1/CR2NiCKujpdlktfggmdAd2Ne9RZFAxw=="], ["created_at", "2020-04-12 20:41:21.181270"], ["updated_at", "2020-04-12 20:41:21.181270"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "greenvillain"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "geevee@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "greenvillain"], ["email", "geevee@gmail.com"], ["password_digest", "$2a$12$8kVAm7VauLNz3RkZhefVV.wJzs4I3mPgegkmJ3X3VRypMixGIxC92"], ["session_token", "173mUeNtuCqw9YodPzgIHsc3sW0rKbOvvShNRTN7wT4qevw0d5FauqPmw4biv8ovdjtsLKN36WW3eb6SJsd9rQ=="], ["created_at", "2020-04-12 20:41:21.419032"], ["updated_at", "2020-04-12 20:41:21.419032"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "quell"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "quellcristfalconer@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "quell"], ["email", "quellcristfalconer@gmail.com"], ["password_digest", "$2a$12$qsWhcVykr76f.yzOD/b7fer6YKHgVy6r11FlXSM7VS.7KDqDKcG4K"], ["session_token", "xDBX0pyiv0UbuVovdNIxJskb6X/vwAjA5AoHamtXsF2PP7gm+5cQIxjBbjDX/chQUaPWjCHgzeVrAyz1gzyOYw=="], ["created_at", "2020-04-12 20:41:21.656521"], ["updated_at", "2020-04-12 20:41:21.656521"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gratefuldead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thegratefuldead@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "gratefuldead"], ["email", "thegratefuldead@gmail.com"], ["password_digest", "$2a$12$tVUoK8GyPABL50JzG8M2zOhSxUm/7wP5gGmxj3/PNlzlsgp1mxMSu"], ["session_token", "PiiQNf+JuulPvRpdgvaU+2rOq28v16mFWsGDghC3RW1z/UOBRMu4mgNNQ3jRLdm5KQUj2ZofFXWN7g+uQjq4EA=="], ["created_at", "2020-04-12 20:41:21.895442"], ["updated_at", "2020-04-12 20:41:21.895442"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "martyn3024"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thisismartyn@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "martyn3024"], ["email", "thisismartyn@gmail.com"], ["password_digest", "$2a$12$oGBzLPgYGIQ7V.I6L1kaIOriBOhPRWnrJB.UVD.v/aUtHLlsz/tli"], ["session_token", "EnmBS25PrZIA24zyqWcY1r63njdrINb2ZCQnu3JC9+LlkWX1KzhonU/UrzYS5Y3OlQjzhFToVmolMGzpW/g6fA=="], ["created_at", "2020-04-12 20:41:22.135085"], ["updated_at", "2020-04-12 20:41:22.135085"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "therealburial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "burial@co.uk"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "therealburial"], ["email", "burial@co.uk"], ["password_digest", "$2a$12$cHnfL.uo3jAoiie7ZwT1R.1FQF4/Y1U3w.Xf.dIjlON8YgThoD2Fq"], ["session_token", "MxDsPkPQb2bvpaeEAsurmIlIOkIuwWCCm7A0BgiJ1hOjS/i2DUvX5wSpESPAq0V4HQ1yR94bcKlGxTh1i8O86g=="], ["created_at", "2020-04-12 20:41:22.369874"], ["updated_at", "2020-04-12 20:41:22.369874"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "shyeyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shyeyez@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "shyeyez"], ["email", "shyeyez@gmail.com"], ["password_digest", "$2a$12$AmBcsF4oiSABhpUBmJ.ARu4eWCQWWwoKrGuKm8TjLNmvIwI3Pemea"], ["session_token", "RbHGZaKx+I5WB/QOu9KKEatJ7CaBnDwBfCAFRCOu7p3QpNDyim8KKm7NtXZdBF0w3pqlkiaR4V4kZwCMlRKNCQ=="], ["created_at", "2020-04-12 20:41:22.606726"], ["updated_at", "2020-04-12 20:41:22.606726"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "demo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo@demo.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "demo"], ["email", "demo@demo.com"], ["password_digest", "$2a$12$Puiaohd/B0a3c2xu26YLcejLHtrnGZ9g4hhilzTcxNvlQi9HJn4Fu"], ["session_token", "r/vRBHxPH2OuYlEdbf9BRQyKRY4WfG7uT4kzO6DeIctzN/QCtz48xo/pJyqmq70rHyeBORX9h/xMCGUKant3bw=="], ["created_at", "2020-04-12 20:41:22.842205"], ["updated_at", "2020-04-12 20:41:22.842205"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gratefuldead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ db/seeds.rb:66
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Grateful Dead"], ["user_id", 59], ["created_at", "2020-04-12 20:41:22.865371"], ["updated_at", "2020-04-12 20:41:22.865371"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "martyn3024"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ db/seeds.rb:71
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Martyn"], ["user_id", 60], ["created_at", "2020-04-12 20:41:22.871522"], ["updated_at", "2020-04-12 20:41:22.871522"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "therealburial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ db/seeds.rb:76
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Burial"], ["user_id", 61], ["created_at", "2020-04-12 20:41:22.876654"], ["updated_at", "2020-04-12 20:41:22.876654"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "shyeyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:83
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:81
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ db/seeds.rb:81
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Shy Eyez"], ["user_id", 62], ["created_at", "2020-04-12 20:41:22.881708"], ["updated_at", "2020-04-12 20:41:22.881708"]]
+  ↳ db/seeds.rb:81
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:81
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Grateful Dead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:88
+  [1m[36mAlbum Create (0.6ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Cornell 5/8/77"], ["artist_id", 25], ["created_at", "2020-04-12 20:41:22.906492"], ["updated_at", "2020-04-12 20:41:22.906492"], ["genre", "rock"], ["description", "Cornell 5/8/77 is a live album by the American rock band the Grateful Dead. It was recorded on May 8, 1977, at Barton Hall, Cornell University, in Ithaca, New York. It was released as a three-disc CD album and as a five-disc vinyl album on May 5, 2017."], ["release_date", "2017-05-05"]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:97
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Great Lengths"], ["artist_id", 26], ["created_at", "2020-04-12 20:41:22.913154"], ["updated_at", "2020-04-12 20:41:22.913154"], ["genre", "electronic"], ["description", "Dutch producer and 3024-founder Martyn makes dubstep his own in his debut album."], ["release_date", "2017-11-08"]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Burial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:106
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:106
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Untrue"], ["artist_id", 27], ["created_at", "2020-04-12 20:41:22.918074"], ["updated_at", "2020-04-12 20:41:22.918074"], ["genre", "electronic"], ["description", "The elusive producer manipulates vocal samples with raw sounds of dubstep, UK garage, ambient and hardcore music."], ["release_date", "2007-11-05"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:106
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Shy Eyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:115
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ db/seeds.rb:115
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Greatest Hits: Bangers Only"], ["artist_id", 28], ["created_at", "2020-04-12 20:41:22.923059"], ["updated_at", "2020-04-12 20:41:22.923059"], ["genre", "electronic"], ["description", "Get lost in the sounds of tracks played at Shy Eyezs ongoing 3024 residency in New York City."], ["release_date", "2020-04-01"]]
+  ↳ db/seeds.rb:115
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:115
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:126
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:124
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:124
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "featured", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["artist_id", 26], ["created_at", "2020-04-12 20:41:22.928035"], ["updated_at", "2020-04-12 20:41:22.928035"], ["featured", true], ["genre", "electronic"], ["description", "Martyn returns with two bass-heavy, melodic bangers."], ["release_date", "2019-11-24"]]
+  ↳ db/seeds.rb:124
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:124
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Grateful Dead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:138
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Cornell 5/8/77"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:139
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ db/seeds.rb:135
+  [1m[36mTrack Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 1], ["album_id", 31], ["LIMIT", 1]]
+  ↳ db/seeds.rb:135
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:135
+  [1m[36mTrack Create (0.6ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "New Minglewood Blues"], ["ord", 1], ["artist_id", 25], ["album_id", 31], ["created_at", "2020-04-12 20:41:22.965735"], ["updated_at", "2020-04-12 20:41:22.965735"]]
+  ↳ db/seeds.rb:135
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:145
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Great Lengths"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:142
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ db/seeds.rb:142
+  [1m[36mTrack Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 6], ["album_id", 32], ["LIMIT", 1]]
+  ↳ db/seeds.rb:142
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:142
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Vancouver"], ["ord", 6], ["artist_id", 26], ["album_id", 32], ["created_at", "2020-04-12 20:41:22.973550"], ["updated_at", "2020-04-12 20:41:22.973550"]]
+  ↳ db/seeds.rb:142
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:142
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Untrue"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:153
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:149
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ db/seeds.rb:149
+  [1m[36mTrack Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 7], ["album_id", 33], ["LIMIT", 1]]
+  ↳ db/seeds.rb:149
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:149
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "In McDonalds"], ["ord", 7], ["artist_id", 27], ["album_id", 33], ["created_at", "2020-04-12 20:41:22.979941"], ["updated_at", "2020-04-12 20:41:22.979941"]]
+  ↳ db/seeds.rb:149
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:149
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:159
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:160
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:156
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ db/seeds.rb:156
+  [1m[36mTrack Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 1], ["album_id", 35], ["LIMIT", 1]]
+  ↳ db/seeds.rb:156
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:156
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "One Eye"], ["ord", 1], ["artist_id", 26], ["album_id", 35], ["created_at", "2020-04-12 20:41:22.986251"], ["updated_at", "2020-04-12 20:41:22.986251"]]
+  ↳ db/seeds.rb:156
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:156
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:166
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:167
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:163
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ db/seeds.rb:163
+  [1m[36mTrack Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 2], ["album_id", 35], ["LIMIT", 1]]
+  ↳ db/seeds.rb:163
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:163
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Nerve Centers"], ["ord", 2], ["artist_id", 26], ["album_id", 35], ["created_at", "2020-04-12 20:41:22.992653"], ["updated_at", "2020-04-12 20:41:22.992653"]]
+  ↳ db/seeds.rb:163
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:163
+  [1m[36mAlbum Load (1.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (3.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mArtist Destroy (1.0ms)[0m  [1m[31mDELETE FROM "artists"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAlbum Destroy (1.2ms)[0m  [1m[31mDELETE FROM "albums"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mTrack Destroy (1.2ms)[0m  [1m[31mDELETE FROM "tracks"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cleopatra2035"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cleopatra2035@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "cleopatra2035"], ["email", "cleopatra2035@gmail.com"], ["password_digest", "$2a$12$ckqeMZR3yUGzvFHEWlKTsucxlaI40XuJARfoaP3.POd3xydxaIF32"], ["session_token", "7qrK5FvbDDErXZjIZdJ2WSKeXlPTNI2s0MTXlRH44HJl+HdZXdN6Xr3Y/5ljLV3+VNDUhPfgCSQ02yEfyIl1HA=="], ["created_at", "2020-04-12 20:43:24.569656"], ["updated_at", "2020-04-12 20:43:24.569656"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "greenvillain"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "geevee@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "greenvillain"], ["email", "geevee@gmail.com"], ["password_digest", "$2a$12$HgzSV2CIY2VpqP0KFBeALe2HawqsPy0JUqEVd6yUVz3m1J2MdPrIe"], ["session_token", "hq5DgL9ScTf1h9JwDh1TPxxDUYPVDiLCMbZpjyrYIE7mFiTM13TiO3rcmQFI6fXf32qeUkgotaAXrU3gsacoPQ=="], ["created_at", "2020-04-12 20:43:24.808522"], ["updated_at", "2020-04-12 20:43:24.808522"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "quell"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "quellcristfalconer@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "quell"], ["email", "quellcristfalconer@gmail.com"], ["password_digest", "$2a$12$oMebLN7.Z0svFrXlaITQGOS09/T6yS7e1.aFxf59M62Qq9Uck1Wle"], ["session_token", "+2ABPxulDxSmyg4qnTBiYvYCPKGlL8IAnNNjNX7YSFtdDAhQ7XRJi7hKHlp+7XnRC+LkU++ZswVRdSDHx7/H1A=="], ["created_at", "2020-04-12 20:43:25.046347"], ["updated_at", "2020-04-12 20:43:25.046347"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gratefuldead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thegratefuldead@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "gratefuldead"], ["email", "thegratefuldead@gmail.com"], ["password_digest", "$2a$12$pIFV/y.2fhLzg5WhFMR6cOc4Ot77CKlF5mqkomKx/ovVK2geOdPA2"], ["session_token", "fpdmQW8UsUZaprZucP6TyMs55osvVTuXRBYLuQwMa2SFZ7o83fClvR0ohoATbkwru4PWQVm/Jt7eaXwgy3AmGw=="], ["created_at", "2020-04-12 20:43:25.287191"], ["updated_at", "2020-04-12 20:43:25.287191"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "martyn3024"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thisismartyn@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "martyn3024"], ["email", "thisismartyn@gmail.com"], ["password_digest", "$2a$12$qRi5f.32hIAh1SThoHvjLeLQuw9bF3810ykuZJrvFI1wStUvm40Xu"], ["session_token", "krS4xis3vprY7D7uyHj2gUVzNBpuc13qX3AI+8XRpFl427/a0hR+JfbEJH5GTr7+PzGytIg6HweCDnnixbG5mQ=="], ["created_at", "2020-04-12 20:43:25.537618"], ["updated_at", "2020-04-12 20:43:25.537618"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "therealburial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "burial@co.uk"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "therealburial"], ["email", "burial@co.uk"], ["password_digest", "$2a$12$ibPoAk5qnPjCc.dfIlOqZuUTZljNOk4Ywwdc7RpONtM564gswGMf2"], ["session_token", "fEN2Gc6/p5n8+1ynppzm8JCTbvonqLmgESxmkMkMcVUSDdgILdoLwnecyYYcQsS01jcLdXy+5ARQjuwCoh5p4w=="], ["created_at", "2020-04-12 20:43:25.786922"], ["updated_at", "2020-04-12 20:43:25.786922"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "shyeyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shyeyez@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "shyeyez"], ["email", "shyeyez@gmail.com"], ["password_digest", "$2a$12$B.N8xVmpa/FBYCj4DGkN/Ogj3lMCORjT4lQq9YpvVVp9NRuZ1QpM."], ["session_token", "AuKLXgeCaR5JP9YLCFshPJpylMVN8qitIuZ7IN1ldiHyYs92jPID7oeOkLgDcWmYz5cCoruNqgdFv53gQZYJFw=="], ["created_at", "2020-04-12 20:43:26.034103"], ["updated_at", "2020-04-12 20:43:26.034103"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "demo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo@demo.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "demo"], ["email", "demo@demo.com"], ["password_digest", "$2a$12$JvP.rZNpARRFQYKSdWKe0eiqWX8OU5LiKyITTaQJeJd79hdb9nBjG"], ["session_token", "52sZfXpXUfxLS3I3DewIsIpHMf5mBmqauRbpv09ciISieZ4KeTFV9qOkxA0QFRwJOei3EiMb243Paw/pwtYMzg=="], ["created_at", "2020-04-12 20:43:26.480882"], ["updated_at", "2020-04-12 20:43:26.480882"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gratefuldead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ db/seeds.rb:66
+  [1m[36mArtist Create (0.5ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Grateful Dead"], ["user_id", 67], ["created_at", "2020-04-12 20:43:26.511947"], ["updated_at", "2020-04-12 20:43:26.511947"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "martyn3024"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ db/seeds.rb:71
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Martyn"], ["user_id", 68], ["created_at", "2020-04-12 20:43:26.519258"], ["updated_at", "2020-04-12 20:43:26.519258"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "therealburial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ db/seeds.rb:76
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Burial"], ["user_id", 69], ["created_at", "2020-04-12 20:43:26.525377"], ["updated_at", "2020-04-12 20:43:26.525377"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "shyeyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:83
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:81
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ db/seeds.rb:81
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Shy Eyez"], ["user_id", 70], ["created_at", "2020-04-12 20:43:26.530537"], ["updated_at", "2020-04-12 20:43:26.530537"]]
+  ↳ db/seeds.rb:81
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:81
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Grateful Dead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ db/seeds.rb:88
+  [1m[36mAlbum Create (0.5ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Cornell 5/8/77"], ["artist_id", 29], ["created_at", "2020-04-12 20:43:26.561265"], ["updated_at", "2020-04-12 20:43:26.561265"], ["genre", "rock"], ["description", "Cornell 5/8/77 is a live album by the American rock band the Grateful Dead. It was recorded on May 8, 1977, at Barton Hall, Cornell University, in Ithaca, New York. It was released as a three-disc CD album and as a five-disc vinyl album on May 5, 2017."], ["release_date", "2017-05-05"]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:97
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Great Lengths"], ["artist_id", 30], ["created_at", "2020-04-12 20:43:26.567015"], ["updated_at", "2020-04-12 20:43:26.567015"], ["genre", "electronic"], ["description", "Dutch producer and 3024-founder Martyn makes dubstep his own in his debut album."], ["release_date", "2017-11-08"]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Burial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:106
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ db/seeds.rb:106
+  [1m[36mAlbum Create (0.5ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Untrue"], ["artist_id", 31], ["created_at", "2020-04-12 20:43:26.572605"], ["updated_at", "2020-04-12 20:43:26.572605"], ["genre", "electronic"], ["description", "The elusive producer manipulates vocal samples with raw sounds of dubstep, UK garage, ambient and hardcore music."], ["release_date", "2007-11-05"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:106
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Shy Eyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:115
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ db/seeds.rb:115
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Greatest Hits: Bangers Only"], ["artist_id", 32], ["created_at", "2020-04-12 20:43:26.578312"], ["updated_at", "2020-04-12 20:43:26.578312"], ["genre", "electronic"], ["description", "Get lost in the sounds of tracks played at my ongoing 3024 residency in New York City."], ["release_date", "2020-04-01"]]
+  ↳ db/seeds.rb:115
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:115
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:126
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:124
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:124
+  [1m[36mAlbum Create (0.5ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "featured", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["artist_id", 30], ["created_at", "2020-04-12 20:43:26.583515"], ["updated_at", "2020-04-12 20:43:26.583515"], ["featured", true], ["genre", "electronic"], ["description", "Martyn returns with two bass-heavy, melodic bangers."], ["release_date", "2019-11-24"]]
+  ↳ db/seeds.rb:124
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:124
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Grateful Dead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:138
+  [1m[36mAlbum Load (0.8ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Cornell 5/8/77"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:139
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ db/seeds.rb:135
+  [1m[36mTrack Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 1], ["album_id", 36], ["LIMIT", 1]]
+  ↳ db/seeds.rb:135
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ db/seeds.rb:135
+  [1m[36mTrack Create (0.7ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "New Minglewood Blues"], ["ord", 1], ["artist_id", 29], ["album_id", 36], ["created_at", "2020-04-12 20:43:26.618263"], ["updated_at", "2020-04-12 20:43:26.618263"]]
+  ↳ db/seeds.rb:135
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:145
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Great Lengths"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:142
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ db/seeds.rb:142
+  [1m[36mTrack Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 6], ["album_id", 37], ["LIMIT", 1]]
+  ↳ db/seeds.rb:142
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:142
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Vancouver"], ["ord", 6], ["artist_id", 30], ["album_id", 37], ["created_at", "2020-04-12 20:43:26.626503"], ["updated_at", "2020-04-12 20:43:26.626503"]]
+  ↳ db/seeds.rb:142
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:142
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Untrue"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:153
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:149
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ db/seeds.rb:149
+  [1m[36mTrack Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 7], ["album_id", 38], ["LIMIT", 1]]
+  ↳ db/seeds.rb:149
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ db/seeds.rb:149
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "In McDonalds"], ["ord", 7], ["artist_id", 31], ["album_id", 38], ["created_at", "2020-04-12 20:43:26.632251"], ["updated_at", "2020-04-12 20:43:26.632251"]]
+  ↳ db/seeds.rb:149
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:149
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:159
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:160
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:156
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ db/seeds.rb:156
+  [1m[36mTrack Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 1], ["album_id", 40], ["LIMIT", 1]]
+  ↳ db/seeds.rb:156
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:156
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "One Eye"], ["ord", 1], ["artist_id", 30], ["album_id", 40], ["created_at", "2020-04-12 20:43:26.639253"], ["updated_at", "2020-04-12 20:43:26.639253"]]
+  ↳ db/seeds.rb:156
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:156
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:166
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:167
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:163
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ db/seeds.rb:163
+  [1m[36mTrack Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 2], ["album_id", 40], ["LIMIT", 1]]
+  ↳ db/seeds.rb:163
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:163
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Nerve Centers"], ["ord", 2], ["artist_id", 30], ["album_id", 40], ["created_at", "2020-04-12 20:43:26.646005"], ["updated_at", "2020-04-12 20:43:26.646005"]]
+  ↳ db/seeds.rb:163
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:163
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (2.8ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mArtist Destroy (1.1ms)[0m  [1m[31mDELETE FROM "artists"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAlbum Destroy (1.2ms)[0m  [1m[31mDELETE FROM "albums"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mTrack Destroy (1.1ms)[0m  [1m[31mDELETE FROM "tracks"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "cleopatra2035"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cleopatra2035@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "cleopatra2035"], ["email", "cleopatra2035@gmail.com"], ["password_digest", "$2a$12$WC3Oc8aFUEW67Nq3xTPQp.e9pPviTLypDfQmpq/Vpw0RVt0CP19ie"], ["session_token", "XRTB56pesrJhhfHUmf6WS2l6dTX6wfwGP5n3P+Y81FITYu+rXYT/goYu0YTJRRB2K/5D7IyaYhJpS6UAqI+XZg=="], ["created_at", "2020-04-12 20:48:02.184369"], ["updated_at", "2020-04-12 20:48:02.184369"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "greenvillain"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "geevee@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "greenvillain"], ["email", "geevee@gmail.com"], ["password_digest", "$2a$12$3OnT4e8SPD5PBwNKvCVZAuIIjYMsGH6dkrliG/AmveQRpH94.dRt2"], ["session_token", "JWnCKMU5Nq5X2IYX7XS4gxgjgEZSrvycLsK1hJTXphHAR0Ij7i4sSSlckEUZFtGs3ECq8LFusi6NqAkOswZpuA=="], ["created_at", "2020-04-12 20:48:02.438500"], ["updated_at", "2020-04-12 20:48:02.438500"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "quell"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "quellcristfalconer@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "quell"], ["email", "quellcristfalconer@gmail.com"], ["password_digest", "$2a$12$LBwVK5ubIZReHcGNIYScOOZKfu05p1S3QRuMj5Wtu23WNLHTjZjye"], ["session_token", "b/GbodVBBCcQkc/gMLtPuorpMK6wWHN+n8nA1FFy0WhErOypSSs5+rxdTwFhALgimwq/YHWhC9pfC+id+k+iZQ=="], ["created_at", "2020-04-12 20:48:02.675570"], ["updated_at", "2020-04-12 20:48:02.675570"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gratefuldead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thegratefuldead@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "gratefuldead"], ["email", "thegratefuldead@gmail.com"], ["password_digest", "$2a$12$j85Xu5hMJtLuhNrpJuOebeW6eU6I1GjIKfz//larVM8sWNOasVbqa"], ["session_token", "go+3goQeb5T0Q3RFsyzpAUv20mqslKtlXk0ZcE1vGkVLZPgZT6/Vxl8GG59TtElGxwLS3DJ69Kgab14Vty+Hzw=="], ["created_at", "2020-04-12 20:48:02.911977"], ["updated_at", "2020-04-12 20:48:02.911977"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "martyn3024"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "thisismartyn@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "martyn3024"], ["email", "thisismartyn@gmail.com"], ["password_digest", "$2a$12$4ZhpObx8cqI6h.4HCmGyAOewFxj0mlbmqiHemFWrc21TffDJwvTaO"], ["session_token", "sEHZCPFbmuLIyxzgimZJkdOno3YFRqdWutptL0GE+N+CmBPT3DTl8uGExPbcZ/AAetw05fg3g/Q92us5kxaoRw=="], ["created_at", "2020-04-12 20:48:03.148065"], ["updated_at", "2020-04-12 20:48:03.148065"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "therealburial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "burial@co.uk"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "therealburial"], ["email", "burial@co.uk"], ["password_digest", "$2a$12$oWwaf5atoEF9QfybIjMtZuQ0xIpYHeklYxjwY8PP.qLsdyG1hoHom"], ["session_token", "kpd3jTPElM5P45rM4ElNgXhB/hh2Rexo6XUBj8RMOLcplcwDBRzcwDxRvPWYfzssuSt5idj/qY1PTyCfXqvxrQ=="], ["created_at", "2020-04-12 20:48:03.385449"], ["updated_at", "2020-04-12 20:48:03.385449"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "shyeyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shyeyez@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "shyeyez"], ["email", "shyeyez@gmail.com"], ["password_digest", "$2a$12$kY0Um.EQGCxh7Pr3n.XFnerqPFmnBkN5gbVpXXWv0E9m9je/MTMXK"], ["session_token", "qsQUaP9OSaM+Zu5Jft0LCsYIdmCo7jHldZfxb97kEH9LtS1kqWxvCBXjb7fRMoL3EjrQ2WcoM9yPNx1KN9NC6w=="], ["created_at", "2020-04-12 20:48:03.622637"], ["updated_at", "2020-04-12 20:48:03.622637"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "demo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo@demo.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "demo"], ["email", "demo@demo.com"], ["password_digest", "$2a$12$VSXqszPufdlqp7wX1Ltp1uQHmfpSnK9fGsRB/BxTcZxnNND1MdUr2"], ["session_token", "VTd4Hl7cbILL2cEMUWtG4QrVXftCtF2G7SV5AvgxHjNOEVJwGrj/KX7NXOpSXautORDogKvY4fEEcR4Au3ZJdQ=="], ["created_at", "2020-04-12 20:48:03.869186"], ["updated_at", "2020-04-12 20:48:03.869186"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "gratefuldead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ db/seeds.rb:66
+  [1m[36mArtist Create (0.5ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Grateful Dead"], ["user_id", 75], ["created_at", "2020-04-12 20:48:03.891359"], ["updated_at", "2020-04-12 20:48:03.891359"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "martyn3024"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ db/seeds.rb:71
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Martyn"], ["user_id", 76], ["created_at", "2020-04-12 20:48:03.897544"], ["updated_at", "2020-04-12 20:48:03.897544"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "therealburial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ db/seeds.rb:76
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Burial"], ["user_id", 77], ["created_at", "2020-04-12 20:48:03.902379"], ["updated_at", "2020-04-12 20:48:03.902379"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "shyeyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:83
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:81
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ db/seeds.rb:81
+  [1m[36mArtist Create (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Shy Eyez"], ["user_id", 78], ["created_at", "2020-04-12 20:48:03.907300"], ["updated_at", "2020-04-12 20:48:03.907300"]]
+  ↳ db/seeds.rb:81
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:81
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Grateful Dead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ db/seeds.rb:88
+  [1m[36mAlbum Create (0.6ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Cornell 5/8/77"], ["artist_id", 33], ["created_at", "2020-04-12 20:48:03.933495"], ["updated_at", "2020-04-12 20:48:03.933495"], ["genre", "rock"], ["description", "The quintessence of the Grateful Dead is the only way to describe this essential album. The band said it was freezing inside the university auditorium the night of the recording, but that had no effect on how fired up they got across the 3-hour show. A must listen for any new or old Deadhead!"], ["release_date", "2017-05-05"]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:97
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Great Lengths"], ["artist_id", 34], ["created_at", "2020-04-12 20:48:03.939869"], ["updated_at", "2020-04-12 20:48:03.939869"], ["genre", "electronic"], ["description", "Dutch producer and 3024-founder Martyn makes dubstep his own in his debut album."], ["release_date", "2017-11-08"]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Burial"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:106
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ db/seeds.rb:106
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Untrue"], ["artist_id", 35], ["created_at", "2020-04-12 20:48:03.944584"], ["updated_at", "2020-04-12 20:48:03.944584"], ["genre", "electronic"], ["description", "The elusive producer manipulates vocal samples with raw sounds of dubstep, UK garage, ambient and hardcore music."], ["release_date", "2007-11-05"]]
+  ↳ db/seeds.rb:106
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:106
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Shy Eyez"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:117
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:115
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ db/seeds.rb:115
+  [1m[36mAlbum Create (0.5ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Greatest Hits: Bangers Only"], ["artist_id", 36], ["created_at", "2020-04-12 20:48:03.949724"], ["updated_at", "2020-04-12 20:48:03.949724"], ["genre", "electronic"], ["description", "Get lost in the sounds of tracks played at my ongoing 3024 residency in New York City."], ["release_date", "2020-04-01"]]
+  ↳ db/seeds.rb:115
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:115
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:126
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:124
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:124
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("name", "artist_id", "created_at", "updated_at", "featured", "genre", "description", "release_date") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["artist_id", 34], ["created_at", "2020-04-12 20:48:03.955516"], ["updated_at", "2020-04-12 20:48:03.955516"], ["featured", true], ["genre", "electronic"], ["description", "Martyn returns with two bass-heavy, melodic bangers."], ["release_date", "2019-11-24"]]
+  ↳ db/seeds.rb:124
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:124
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Grateful Dead"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:138
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Cornell 5/8/77"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:139
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ db/seeds.rb:135
+  [1m[36mTrack Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 1], ["album_id", 41], ["LIMIT", 1]]
+  ↳ db/seeds.rb:135
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ db/seeds.rb:135
+  [1m[36mTrack Create (0.6ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "New Minglewood Blues"], ["ord", 1], ["artist_id", 33], ["album_id", 41], ["created_at", "2020-04-12 20:48:03.985912"], ["updated_at", "2020-04-12 20:48:03.985912"]]
+  ↳ db/seeds.rb:135
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:145
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Great Lengths"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:142
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ db/seeds.rb:142
+  [1m[36mTrack Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 6], ["album_id", 42], ["LIMIT", 1]]
+  ↳ db/seeds.rb:142
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:142
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Vancouver"], ["ord", 6], ["artist_id", 34], ["album_id", 42], ["created_at", "2020-04-12 20:48:04.002397"], ["updated_at", "2020-04-12 20:48:04.002397"]]
+  ↳ db/seeds.rb:142
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:142
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "Untrue"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:153
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:149
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ db/seeds.rb:149
+  [1m[36mTrack Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 7], ["album_id", 43], ["LIMIT", 1]]
+  ↳ db/seeds.rb:149
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ db/seeds.rb:149
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "In McDonalds"], ["ord", 7], ["artist_id", 35], ["album_id", 43], ["created_at", "2020-04-12 20:48:04.008260"], ["updated_at", "2020-04-12 20:48:04.008260"]]
+  ↳ db/seeds.rb:149
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:149
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:159
+  [1m[36mAlbum Load (1.0ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:160
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:156
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ db/seeds.rb:156
+  [1m[36mTrack Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 1], ["album_id", 45], ["LIMIT", 1]]
+  ↳ db/seeds.rb:156
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:156
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "One Eye"], ["ord", 1], ["artist_id", 34], ["album_id", 45], ["created_at", "2020-04-12 20:48:04.017774"], ["updated_at", "2020-04-12 20:48:04.017774"]]
+  ↳ db/seeds.rb:156
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:156
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "Martyn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:166
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."name" = $1 LIMIT $2[0m  [["name", "One Eye EP (3024​-​FYE5)"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:167
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:163
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ db/seeds.rb:163
+  [1m[36mTrack Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tracks" WHERE "tracks"."ord" = $1 AND "tracks"."album_id" = $2 LIMIT $3[0m  [["ord", 2], ["album_id", 45], ["LIMIT", 1]]
+  ↳ db/seeds.rb:163
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:163
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("name", "ord", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Nerve Centers"], ["ord", 2], ["artist_id", 34], ["album_id", 45], ["created_at", "2020-04-12 20:48:04.024782"], ["updated_at", "2020-04-12 20:48:04.024782"]]
+  ↳ db/seeds.rb:163
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:163
+  [1m[36mAlbum Load (1.2ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
