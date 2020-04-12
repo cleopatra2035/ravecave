@@ -5,6 +5,7 @@ import Modal from './modal/modal';
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
 import AlbumIndexContainer from './albums/album_index_container';
+import AlbumShowContainer from './albums/album_show_container';
 import Home from './home/home';
 
 const App = () => (
@@ -17,6 +18,7 @@ const App = () => (
             <Route exact path='/' component={Home} />
             <AuthRoute path='/login' component={LogInFormContainer} />
             <AuthRoute path='/signup' component={SignUpFormContainer} />
+            <Route path='/albums/:albumId' component={AlbumShowContainer} />
             <Route path='/albums' component={AlbumIndexContainer} />
         </Switch>
     </div>
