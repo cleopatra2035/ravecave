@@ -9,3 +9,10 @@ export const fetchArtist = artistId => (
         url: `/api/artists/${artistId}/`
     })
 );
+
+export const fetchAlbum = album => (
+    $.ajax({
+        url: `api/albums`,
+        data: { album }
+    })
+);

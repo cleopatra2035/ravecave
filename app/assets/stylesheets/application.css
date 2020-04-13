@@ -1062,9 +1062,66 @@ strong {
 }
 
  /* responsive */
-@media (max-width: 1024px) and (min-width: 891px) {
-    .hd .row {
-        max-width: 97%;
+/* XLarge */
+
+@media screen and (max-width: 1680px) {
+    body, input, select, textarea {
+        font-size: 14pt;
     }
 }
 
+/* Large */
+
+@media screen and (max-width: 1140px) {
+    body, input, select, textarea {
+		font-size: 13pt;
+    }
+
+    h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
+		display: none;
+    }
+}
+
+/* Medium */
+
+@media screen and (max-width: 980px) {
+
+}
+
+/* Small */
+
+@media screen and (max-width: 736px) {
+    body, input, select, textarea {
+		font-size: 12pt;
+    }
+    
+    h1 {
+		font-size: 1.75em;
+    }
+    
+    h2 {
+		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.1em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+}
+
+/* XSmall */
+
+@media screen and (max-width: 480px) {
+
+}
+
+/* XXSmall */
+
+@media screen and (max-width: 320px) {
+    html, body {
+		min-width: 320px;
+	}
+}
