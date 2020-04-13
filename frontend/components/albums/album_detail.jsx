@@ -26,7 +26,11 @@ class AlbumDetail extends React.Component {
 
         return (
             <div>
-                <AlbumInfoItemContainer album={album} key={album.id} />
+                {/* <AlbumInfoItemContainer album={album} key={album.id} /> */}
+                <ul>
+                    <li>Name: {album.name}</li>
+                    <li>Description: {album.description}</li>
+                </ul>
             </div>
         )
     }

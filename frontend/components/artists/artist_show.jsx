@@ -41,11 +41,9 @@ const ArtistShow = ({ artist, artistId, fetchArtist, albums }) => {
     };
 
     return (
-        <div>
-            <div>
-                <Link to="/artists">Back to Artists Index</Link>
-                <ArtistDetail artist={artist} artistId={artistId} albums={albums} fetchArtist={fetchArtist}/>
-            </div>
+        <div className="black-wrapper">
+            {/* <Link to="/artists">Back to Artists Index</Link> */}
+            <ArtistDetail artist={artist} artistId={artistId} albums={albums} fetchArtist={fetchArtist}/>
         </div>
     )
 }
