@@ -65,22 +65,30 @@ u8 = User.create!(
 
 art1 = Artist.create!(
     name: 'Grateful Dead',
-    user_id: User.find_by(username: 'gratefuldead').id
+    user_id: User.find_by(username: 'gratefuldead').id,
+    location: 'Palo Alto, California',
+    url: 'dead.net'
 )
 
 art2 = Artist.create!(
     name: 'Martyn',
-    user_id: User.find_by(username: 'martyn3024').id
+    user_id: User.find_by(username: 'martyn3024').id,
+    location: 'Eindhoven, The Netherlands',
+    url: '3024world.com'
 )
 
 art3 = Artist.create!(
     name: 'Burial',
-    user_id: User.find_by(username: 'therealburial').id
+    user_id: User.find_by(username: 'therealburial').id,
+    location: 'South London, United Kingdom',
+    url: 'hyperdub.net'
 )
 
 art4 = Artist.create!(
     name: 'Shy Eyez',
-    user_id: User.find_by(username: 'shyeyez').id
+    user_id: User.find_by(username: 'shyeyez').id,
+    location: 'Brooklyn, New York',
+    url: 'shyeyez.com'
 )
 
 # ////// ALBUMS

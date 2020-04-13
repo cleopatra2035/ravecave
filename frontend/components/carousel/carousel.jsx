@@ -24,7 +24,7 @@ class Carousel extends React.Component {
                                             From the fringes of the indie rock, punk, and metal scenes, a group of artists bent on inventive deconstruction is starting to coalesce.</p>
                                         <div className="read-more-button">
                                             <div className="read-more">
-                                                <Link to="/albums">read more</Link>
+                                                <Link to="/artists">read more</Link>
                                             </div>
                                         </div>
                                     </div>
