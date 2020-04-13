@@ -30,7 +30,7 @@ export const fetchArtist = artistId => dispatch => (
         .then(payload => dispatch(receiveArtist(payload)))
 );
 
-// export const fetchAlbum = albumId => dispatch => (
-//     ArtistApiUtil.fetchAlbum(albumId)
-//         .then(album => dispatch(receiveAlbum(album)))
-// );
+export const fetchAlbum = albumId => dispatch => (
+    ArtistApiUtil.fetchAlbum(albumId)
+        .then(album => dispatch(receiveAlbum(album)))
+);

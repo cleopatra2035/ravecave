@@ -3,6 +3,7 @@ import {
     RECEIVE_ARTIST,
     RECEIVE_ALBUM
 } from '../actions/artist_actions';
+import { RECEIVE_ARTIST_ALBUM } from '../actions/album_actions';
 
 const artistsReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
@@ -18,6 +19,10 @@ const artistsReducer = (oldState = {}, action) => {
             const newState = Object.assign({}, oldState);
             newState[album.artist_id].albumIds.push(album.id);
             return newState;
+        case RECEIVE_ARTIST_ALBUM:
+            debugger;
+            const newAlbum = { [action.album.id]: action.album };
+            return Object.assign({}, oldState, newAlbum);
         default:
             return oldState;
     }

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import AlbumIndex from './album_index';
-import { fetchAlbums } from '../../actions/album_actions';
+import { fetchAlbums } from '../../actions/artist_actions';
 
 const mapStateToProps = state => ({
     albums: Object.values(state.entities.albums)

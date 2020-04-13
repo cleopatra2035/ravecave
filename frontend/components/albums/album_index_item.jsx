@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const AlbumIndexItem = props => (
     <li>
-        <Link to={`/albums/${props.album.id}`}>{props.album.name}</Link>
+        {props.album.name}
     </li>
 );
 
