@@ -3,21 +3,10 @@
  *= require_self
  */
 
- /* css reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -26,8 +15,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
@@ -36,16 +24,14 @@ body {
 }
 
 ol, ul {
-    display: block;
-	list-style-type: disc;
+	list-style: none;
 }
 
 blockquote, q {
 	quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
@@ -54,9 +40,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* end css reset */
 
- /* main */
+body {
+	-webkit-text-size-adjust: none;
+}
+    
+/* End Reset */
+
+ /* Main */
+
 body {
     font: 13px/1.2307692308 'Helvetica Neue',Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -611,6 +603,9 @@ p {
     height: 105px;
     background-color: #477987;
     /* padding: 0 16px; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
  }
 
  /* #footer-wrapper {
@@ -1225,36 +1220,29 @@ div#inner-artist-wrapper {
     padding: 0;
     margin: 0 0 1em;
 }
- /* responsive */
+
 /* XLarge */
-/* 
+
 @media screen and (max-width: 1680px) {
-    body, input, select, textarea {
-        font-size: 14pt;
-    }
-} */
+
+}
 
 /* Large */
-/* 
-@media screen and (max-width: 1140px) {
-    body, input, select, textarea {
-		font-size: 13pt;
-    }
 
-    h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
-		display: none;
-    }
-} */
+@media screen and (max-width: 1140px) {
+
+}
 
 /* Medium */
 
-/* @media screen and (max-width: 980px) {
+@media screen and (max-width: 980px) {
 
-} */
+}
 
 /* Small */
 
 @media screen and (max-width: 736px) {
+
     .carousel-outer {
         padding-top: 0;
         position: relative;
@@ -1264,25 +1252,27 @@ div#inner-artist-wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 100%;
+        width: 100% !important;
         box-shadow: 0px 1px #EEE;
         box-sizing: border-box;
         padding: 0 14px;
         background-color: #ffffff;
         min-height: 59px;
     }
+
 }
 
 /* XSmall */
 
 @media screen and (max-width: 480px) {
+
     .col.col-7-12 {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
         min-height: 59px;
-        width: 60%;
+        width: 60% !important
     }
 
     .col.col-5-12 {
@@ -1427,8 +1417,14 @@ div#inner-artist-wrapper {
         display: block;
     }
 
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    
     .ft {
-        display: blockl;
+        display: block;
         float: none;
         margin: 0 !important;
         width: 100%;
@@ -1454,12 +1450,11 @@ div#inner-artist-wrapper {
         width: 100%;
         padding: 15px 0 12px;
     }
+
 }
 
 /* XXSmall */
 
-/* @media screen and (max-width: 320px) {
-    html, body {
-		min-width: 320px;
-	}
-} */
+@media screen and (max-width: 320px) {
+
+}
