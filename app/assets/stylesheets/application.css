@@ -126,11 +126,12 @@ p {
 }
 
 .row {
-    clear:both;
-    margin:0 auto;
-    width:100%;
+    clear: both;
+    margin: 0 auto;
+    width: auto;
     height: 84px;
 }
+
 .col {
     float: left;
     min-height: 1px;
