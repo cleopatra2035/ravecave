@@ -434,18 +434,8 @@ p {
     transition: top .25s ease-out;
 }
 
-#menubar-slim {
-    height: 53px;
-    display: flex;
-}
-
 #menubar-bar {
     width: 100%;
-}
-
-#menubar-bar-slim {
-    width: 100%;
-    height: 53px;
 }
 
 #menubar.menubar-2018 {
@@ -466,10 +456,6 @@ p {
     overflow: visible;;
 }
 
-.menubar-2018-grey {
-    background-color: #212121;
-}
-
 .menubar-2018 #site-nav {
     padding: 0;
     margin: 0;
@@ -477,28 +463,11 @@ p {
     align-items: center;
 }
 
-.menubar-2018-grey #site-nav {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-}
-
-
 #site-nav {
     left: 0;
 }
 
 .menubar-2018 ul.horizontal {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    align-items: center;
-    display: flex;
-}
-
-.menubar-2018-grey ul.horizontal {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -541,62 +510,6 @@ p {
     white-space: nowrap;
     text-align: right;
     padding: 0;
-}
-
- /* header - slim */
-.header-slim {
-    height: 53px;
-}
-.hd-slim {
-    background-color: #fbfdfe;
-    box-shadow: 0 0 1px 0 rgba(0,0,0,0.15);
-    height: 53px;
-    margin-top: 0;
-    display: table;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 5;
-    transition: margin 0.25s ease-out;
-}
-
-.nav-button-slim {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 15px;
-    font-size: 14px;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.nav-button-slim:hover {
-    text-decoration: underline;
-}
-
-.nav-button-slim-logout {
-    background: none;
-    color: #161113;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    line-height: 20px;
-    border: none;
-    font-size: 1.2307692308em;
-    white-space: nowrap;
-    text-align: right;
-    padding: 0;
-}
-
-/* .row-slim {
-    height: 53px;;
-} */
-
-.hd-slim .row {
-    max-width: 994px;
-}
-.hd-slim > .row {
-    position: relative;
 }
 
  /* footer */
@@ -1185,7 +1098,11 @@ div#inner-artist-wrapper {
     flex-grow: 1;
     padding-bottom: 80px;
     margin-bottom: 40px;
+    width: 915px;
+    padding: 35px 30px 45px;
+    position: relative;
 }
+
 .albums-grid {
     width: 756px;
     float: left;
@@ -1220,6 +1137,85 @@ div#inner-artist-wrapper {
 #band-links {
     padding: 0;
     margin: 0 0 1em;
+}
+
+/* Artist Page */
+
+.menubar-2018.grey {
+    background-color: #212121;
+    box-shadow: none;
+}
+
+.menubar-item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-button-grey {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-button-grey:hover {
+    transition: background 0.1s ease-out;
+    -webkit-transition: background 0.1s ease-out;
+    -moz-transition: background 0.1s ease-out;
+    cursor: pointer;
+    background: rgba(255,255,255,0.1);
+}
+
+#customHeaderWrapper {
+    margin: -35px -30px 44px -30px;
+}
+
+#band-navbar {
+    background-color: #1A1A1A;
+    list-style: none;
+    padding: 0 15px;
+    margin: 0;
+    height: 38px;
+}
+
+#band-navbar > li {
+    display: inline-block;
+    margin: 0 4px 0 0;
+}
+
+#band-navbar > li a {
+    display: inline-block;
+    line-height: 36px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 15px 0;
+    border-top: 0px solid #000;
+}
+
+#band-navbar > li a.active {
+    border-top-width: 2px;
+    padding-top: 0;
+}
+
+#band-navbar > li a:hover {
+    text-decoration: none;
+    border-top-width: 2px;
+    padding-top: 0;
+}
+
+#band-navbar a:hover {
+        border-color: #0687F5;
+    }
+
+#band-navbar a.active {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
 }
 
 /* XLarge */

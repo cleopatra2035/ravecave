@@ -26,6 +26,12 @@ class ArtistDetail extends React.Component {
                 <div id="artist-page-wrapper">
                     <div id="inner-artist-wrapper">
                         <div id="pageBlack">
+                            <div id="customHeaderWrapper">
+                                <ol id="band-navbar">
+                                    <li><a href="#" class="selected">music</a></li>
+                                    <li><a href="#">merch</a></li>
+                                </ol>
+                            </div>
                             <div class="albums-grid">
                                 <h3>Albums</h3>
                                 {this.albumList(albums)}
