@@ -14,6 +14,12 @@ class AlbumDetail extends React.Component {
         this.props.fetchArtistAlbum(this.props.albumId);
     }
 
+    componentDidUpdate(prevProps) {
+        if (prevProps.match.params.albumId !== this.props.match.params.albumId) {
+            this.props.fetchArtistAlbum(this.props.match.params.albumId);
+        }
+    }
+
     albumInfo(album) {
         return <AlbumInfoItemContainer
                 album={album}

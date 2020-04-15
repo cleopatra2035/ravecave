@@ -6,15 +6,18 @@ const Album = ({ album }) => {
     const { id, name, description, artist_id } = album;
     return (
         <div>
-            <ul>
-                <li>
+            <ol className="editable-grid">
+                <li class="square">
                     <Link to={`/albums/${id}`}>
-                        ID: {id}
+                        <div class="art">
+                            <img src="https://f4.bcbits.com/img/a1695247235_2.jpg" alt=""></img>
+                        </div>
+                        <p className="title">
+                            {name}
+                        </p>
                     </Link>
                 </li>
-                <li>Name: {name}</li>
-                <li>{description}</li>
-            </ul>
+            </ol>
         </div>
     );
 };

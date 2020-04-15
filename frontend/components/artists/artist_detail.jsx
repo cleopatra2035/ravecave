@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import AlbumListItemContainer from './album_list_item_container';
 import SlimNavContainer from '../slim_nav/slim_nav_container';
+import Tabs from './tabs/tabs';
 
 class ArtistDetail extends React.Component {
     componentDidMount() {
@@ -19,6 +20,10 @@ class ArtistDetail extends React.Component {
 
     render () {
         const { artist, albums } = this.props;
+        const panes = [
+            { title: 'music', content: 'music here' },
+            { title: 'merch', content: 'merch here' },
+        ];
 
         return (
             <div>
@@ -26,16 +31,19 @@ class ArtistDetail extends React.Component {
                 <div id="artist-page-wrapper">
                     <div id="inner-artist-wrapper">
                         <div id="pageBlack">
-                            <div id="customHeaderWrapper">
-                                <ol id="band-navbar">
+                            {/* <div id="customHeaderWrapper"> */}
+                                {/* <div className='interactive'> */}
+                                    <Tabs panes={panes} artist={artist} albums={albums} />
+                                {/* </div> */}
+                                {/* <ol id="band-navbar">
                                     <li><a href="#" class="selected">music</a></li>
                                     <li><a href="#">merch</a></li>
-                                </ol>
-                            </div>
-                            <div class="albums-grid">
+                                </ol> */}
+                            {/* </div> */}
+                            {/* <div class="albums-grid">
                                 <h3>Albums</h3>
                                 {this.albumList(albums)}
-                            </div>
+                            </div> */}
                             <div class="artist-info-bar">
                                 <p id="artist-name-location">
                                     <span class="name">{artist.name}</span>

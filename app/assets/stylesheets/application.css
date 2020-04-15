@@ -64,6 +64,11 @@ img {
 a {
     color: #0687f5;
     text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 a:focus {
@@ -1176,32 +1181,27 @@ div#inner-artist-wrapper {
     margin: -35px -30px 44px -30px;
 }
 
-#band-navbar {
+/* #band-navbar {
     background-color: #1A1A1A;
     list-style: none;
     padding: 0 15px;
     margin: 0;
     height: 38px;
-}
+} */
 
-#band-navbar > li {
-    display: inline-block;
-    margin: 0 4px 0 0;
-}
-
-#band-navbar > li a {
+/* #band-navbar > li a {
     display: inline-block;
     line-height: 36px;
     font-weight: bold;
     font-size: 14px;
     padding: 2px 15px 0;
     border-top: 0px solid #000;
-}
+} */
 
-#band-navbar > li a.active {
+/* #band-navbar > li a.active {
     border-top-width: 2px;
     padding-top: 0;
-}
+} */
 
 #band-navbar > li a:hover {
     text-decoration: none;
@@ -1213,10 +1213,123 @@ div#inner-artist-wrapper {
         border-color: #0687F5;
     }
 
-#band-navbar a.active {
+/* #band-navbar a.active {
     color: #FFFFFF;
     border-color: #FFFFFF;
+} */
+
+/* Tabs */
+
+.tab-header{
+  width: 200px;
+  height: 30px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
 }
+
+#band-navbar {
+    background-color: #1A1A1A;
+    list-style: none;
+    padding: 0 15px;
+    margin: 0;
+    height: 38px;
+    color: #0687F5;
+}
+
+#band-navbar > li {
+    display: inline-block;
+    margin: 0 4px 0 0;
+    line-height: 36px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 15px 0;
+    border-top: 0px solid #000;
+}
+
+#band-navbar > li:first-child{
+
+}
+
+#band-navbar > li:last-child{
+
+}
+
+#band-navbar > li:hover{
+
+}
+
+.active{
+    border-top-width: 2px !important;
+    padding-top: 0 !important;
+    color: #FFFFFF;
+    border-color: #FFFFFF !important;
+}
+
+ol.editable-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 796px;
+}
+
+ol.editable-grid > li.square {
+    min-height: 168px;
+}
+
+ol.editable-grid > li {
+    display: inline-block;
+    position: relative;
+    margin: 0 26px 30px 0;
+    width: 168px;
+    vertical-align: top;
+}
+
+ol.editable-grid .square .art, ol.editable-grid .square .art img {
+    height: 168px;
+}
+
+ol.editable-grid .art {
+    width: 168px;
+    position: relative;
+    outline: 1px solid rgba(255,255,255,0.05);
+    outline-offset: -1px;
+}
+
+ol.editable-grid p.title {
+    width: 100%;
+    font-weight: bold;
+    font-size: 108%;
+    margin: 0.7em 0 0.3em 0;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+/* .tabs{
+  width: 240px;
+  height: 200px;
+} */
+/* 
+.tab-content{
+  font-weight: bold;
+  color: white;
+  height: 192px;
+  margin: 0 20px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  background-image: url(https://hd.unsplash.com/photo-1445112098124-3e76dd67983c);
+  background-size: cover;
+}
+
+.tab-content article{
+  text-align: center;
+} */
+
 
 /* XLarge */
 
