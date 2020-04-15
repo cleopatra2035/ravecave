@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import AlbumListItemContainer from '../album_list_item_container';
 
 class Headers extends React.Component {
@@ -26,6 +27,33 @@ class Headers extends React.Component {
     }
 }
 
+class AlbumsGrid extends React.Component {
+    render() {
+        const albumGrid = this.props.albums.map(album => {
+            const { id, name, description, artist_id } = album;
+
+            return (
+                <li key={id} className="square">
+                    <Link to={`/albums/${id}`}>
+                        <div class="art">
+                            <img src="https://f4.bcbits.com/img/a1695247235_2.jpg" alt=""></img>
+                        </div>
+                        <p className="title">
+                            {name}
+                        </p>
+                    </Link>
+                </li>
+            );
+        });
+
+        return (
+            <ol className="editable-grid">
+                {albumGrid}
+            </ol>
+        );
+    }
+}
+
 export default class Tabs extends React.Component {
     constructor(props) {
         super(props);
@@ -39,14 +67,14 @@ export default class Tabs extends React.Component {
         this.setState({ selectedPane: num });
     }
 
-    albumList(albums) {
-        return albums.map(album => (
-            <AlbumListItemContainer
-                album={album}
-                key={album.id}
-            />
-        ))
-    }
+    // albumList(albums) {
+    //     return albums.map(album => (
+    //         <AlbumListItemContainer
+    //             album={album}
+    //             key={album.id}
+    //         />
+    //     ))
+    // }
 
     render() {
         const pane = this.props.panes[this.state.selectedPane];
@@ -54,7 +82,7 @@ export default class Tabs extends React.Component {
 
         const grid = pane.title === 'music' ? (
             <div>
-                {this.albumList(albums)}
+                <AlbumsGrid albums={this.props.albums}/>
             </div>
         ) : (
             <div>
