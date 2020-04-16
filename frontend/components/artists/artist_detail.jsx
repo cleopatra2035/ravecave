@@ -45,6 +45,9 @@ class ArtistDetail extends React.Component {
                                 {this.albumList(albums)}
                             </div> */}
                             <div class="artist-info-bar">
+                                <div className="artists-profile-pic">
+                                    <img src={artist.profile_pic} />
+                                </div>
                                 <p id="artist-name-location">
                                     <span class="name">{artist.name}</span>
                                     <span class="location">{artist.location}</span>
@@ -54,12 +57,20 @@ class ArtistDetail extends React.Component {
                                         <a target="_blank" href={`https://www.${artist.url}`}>{artist.url}</a>
                                     </li>
                                 </ol>
-                                <ul>
-                                    <li>Website: </li>
+                            </div>
+                        </div>
+                        <div id="pageBlack-footer">
+                            <div id="pageBlack-footer-inner">
+                                <div id="footer-logo">
+                                    <img src="http://shyeyez.com/ravecave/assets/images/ravecave-logotype-gray.svg" alt="logo" />
+                                </div>
+                                <ul id="legal" className="horizontal-legal">
+                                    <li>
+                                        <a href="#">test</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

@@ -10,17 +10,17 @@ class AlbumIndex extends React.Component {
         const { albums } = this.props;
 
         return (
-            <div>
-                <ul>
-                    {
-                        albums.map(album => (
-                            <AlbumIndexItem
-                                album={album}
-                                key={album.id}
-                            />
-                        ))
-                    }
-                </ul>
+            <div id="notable" className="notable">
+                <div className="row">
+                    <div className="col col-8-16">
+                        <h3 className="section-title">
+                            New and Notable
+                        </h3>
+                    </div>
+                </div>
+                <div className="row featured-albums">
+                    <AlbumIndexItem albums={this.props.albums} />
+                </div>
             </div>
         );
     }

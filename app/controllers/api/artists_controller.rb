@@ -13,6 +13,6 @@ class Api::ArtistsController < ApplicationController
     private
 
     def artist_params
-        params.require(:artist).permit(:name, :user_id, :location, :url)
+        params.require(:artist).permit(:name, :user_id, :location, :url, photos: [])
     end
 end

@@ -3,6 +3,7 @@ import NavBarContainer from '../nav_bar/nav_bar_container';
 import Carousel from '../carousel/carousel';
 import Footer from '../footer/footer';
 import Middle from '../middle/middle';
+import AlbumIndexContainer from '../albums/album_index_container';
 
 class Home extends React.Component {
     constructor(props) {
@@ -15,6 +16,7 @@ class Home extends React.Component {
                 <NavBarContainer />
                 <Carousel />
                 <Middle />
+                <AlbumIndexContainer />
                 <Footer />
             </div>
         );

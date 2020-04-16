@@ -62,13 +62,13 @@ img {
 }
 
 a {
-    color: #0687f5;
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:focus {
@@ -106,6 +106,15 @@ h3 {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
@@ -239,6 +248,41 @@ p {
 .col+.offset-8-12 {margin-left:69.741697416974%;}
 .col+.offset-9-12 {margin-left:78.228782287823%;}
 .col+.offset-10-12 {margin-left:86.715867158672%;}
+
+/*------------------------------------------------------------*/
+/* 15 columns */
+.col-1-15 {width:5.063291139241%;}
+.col-2-15 {width:11.844484629295%;}
+.col-3-15 {width:18.625678119349%;}
+.col-4-15 {width:25.406871609403%;}
+.col-5-15 {width:32.188065099458%;}
+.col-6-15 {width:38.969258589512%;}
+.col-7-15 {width:45.750452079566%;}
+.col-8-15 {width:52.53164556962%;}
+.col-9-15 {width:59.312839059675%;}
+.col-10-15 {width:66.094032549729%;}
+.col-11-15 {width:72.875226039783%;}
+.col-12-15 {width:79.656419529837%;}
+.col-13-15 {width:86.437613019892%;}
+.col-14-15 {width:93.218806509946%;}
+
+/* gutters */
+.col+.col-1-15,
+.col+.col-2-15,
+.col+.col-3-15,
+.col+.col-4-15,
+.col+.col-5-15,
+.col+.col-6-15,
+.col+.col-7-15,
+.col+.col-8-15,
+.col+.col-9-15,
+.col+.col-10-15,
+.col+.col-11-15,
+.col+.col-12-15,
+.col+.col-13-15,
+.col+.col-14-15 {
+    margin-left:1.7179023508%;
+}
 
 /* 16 columns */
 .col-1-16 {width:5.063291139241%;}
@@ -522,7 +566,7 @@ p {
     height: 105px;
     background-color: #477987;
     /* padding: 0 16px; */
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
  }
@@ -726,7 +770,10 @@ p {
     text-decoration: none;
     position: relative;
     transition: padding 0.1s;
+    color: #ffffff;
 }
+
+
 
 .carousel-small-items {
     display: inline-block;
@@ -1041,7 +1088,8 @@ form input[type=password]:focus {
     margin: 12px 0 12px 0;
 }
 
-/* middle */
+/* Middle */
+
 #middle-factoid {
     background-color: #ffffff;
 }
@@ -1071,9 +1119,90 @@ strong {
     font-weight: bold;
 }
 
-/* artist page */
+/* Featured Albums */
+
+#notable {
+
+}
+
+.notable {
+    padding: 36px 0;
+    background-color: #eef2f3;
+}
+
+.notable .featured-albums {
+    min-height: 412px;
+    transition: 0.2s;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.notable .row {
+    max-width: 1106px;
+    height: 35px;
+}
+
+.notable .section-title {
+    color: #408ea3;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 18px;
+    text-transform: uppercase;
+}
+.featured-album-wrapper {
+    overflow: hidden;
+}
+
+.featured-album {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1px 0 #dfdfdf;
+    display: inline-block;
+    min-height: 433px;
+}
+
+.featured-album-art {
+    width: 100%;
+    height: auto;
+    margin-bottom: 9px;
+}
+
+.notable .item-title,
+.notable .item-description {
+    margin-top: 9px;
+    display: block;
+    line-height: 18px;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.item-title-title {
+    text-transform: uppercase;
+}
+.item-title > a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.notable .item-artist {
+    display: block;
+}
+
+.item-description {
+    font-family: Georgia, Times, serif;
+    margin-bottom: 9px;
+}
+
+.notable-result.result-current {
+    left: 0;
+    right: 0;
+}
+
+/* Artist Page */
 .black-wrapper {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     background: #000000;
     margin: 0;
@@ -1106,6 +1235,66 @@ div#inner-artist-wrapper {
     width: 915px;
     padding: 35px 30px 45px;
     position: relative;
+    font-size: 92.30769231%;
+    min-height: 88vh;
+}
+
+#pageBlack-footer {
+    background-color: #333333;
+    color: #939497;
+    width: 100%;
+    min-width: 975px;
+    left: 0px;
+    position: relative;
+    bottom: 0;
+    font-size: 100%;
+    z-index: 110;
+    min-height: 31px;
+}
+
+#pageBlack-footer-inner {
+    width: 975px;
+    margin: auto;
+}
+
+#pageBlack-footer-inner a {
+    color: #939497;
+    font-weight: 500;
+}
+
+#pageBlack-footer-inner a:hover {
+    text-decoration: underline;
+}
+
+#footer-logo {
+    float: left;
+    display: block;
+    margin: 10px 0 9px 0;
+}
+
+#footer-logo img {
+    width: 99px;
+    height: 12px;
+}
+
+#legal {
+    float: right;
+}
+
+#pageBlack-footer .horizontal-legal {
+    margin: 0 7px;
+}
+
+ul.horizontal-legal {
+    list-style-type: none;
+    padding: 0;
+    white-space: nowrap;
+}
+
+ul.horizontal-legal li {
+    display: inline-block;
+    padding: 7px 7px 7px 2px;
+    margin: 0;
 }
 
 .albums-grid {
@@ -1144,7 +1333,32 @@ div#inner-artist-wrapper {
     margin: 0 0 1em;
 }
 
+#band-links a {
+    color: #0687f5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#band-links a:hover {
+    color: #0687f5;
+    text-decoration: underline;
+}
+
 /* Artist Page */
+
+.artist-index a {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.artist-index a:hover {
+    text-decoration: none;
+}
+
+.artist-index a:focus {
+    outline:none;
+}
 
 .menubar-2018.grey {
     background-color: #212121;
@@ -1210,13 +1424,22 @@ div#inner-artist-wrapper {
 }
 
 #band-navbar a:hover {
-        border-color: #0687F5;
-    }
+    border-color: #0687F5;
+}
 
 /* #band-navbar a.active {
     color: #FFFFFF;
     border-color: #FFFFFF;
 } */
+
+.artists-profile-pic {
+    outline: none;
+    margin-bottom: 0.75em;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    min-height: 30px;
+}
 
 /* Tabs */
 
@@ -1245,6 +1468,7 @@ div#inner-artist-wrapper {
     font-size: 14px;
     padding: 2px 15px 0;
     border-top: 0px solid #000;
+    cursor: pointer;
 }
 
 #band-navbar > li:first-child{
@@ -1255,11 +1479,21 @@ div#inner-artist-wrapper {
 
 }
 
-#band-navbar > li:hover{
-
+.inactive:hover{
+    border-top-width: 2px !important;
+    padding-top: 0 !important;
+    color: #0687F5;
+    border-color: #0687F5 !important;
 }
 
 .active{
+    border-top-width: 2px !important;
+    padding-top: 0 !important;
+    color: #FFFFFF;
+    border-color: #FFFFFF !important;
+}
+
+.active:hover {
     border-top-width: 2px !important;
     padding-top: 0 !important;
     color: #FFFFFF;
@@ -1305,6 +1539,19 @@ ol.editable-grid p.title {
     overflow-x: hidden;
     text-overflow: ellipsis;
 }
+
+ol.editable-grid a {
+    color: #0687f5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ol.editable-grid a:hover {
+    color: #0687f5;
+    text-decoration: underline;
+}
+
+
 /* .tabs{
   width: 240px;
   height: 200px;
@@ -1490,8 +1737,19 @@ ol.editable-grid p.title {
     }
 
     .carousel-main-item-content .read-more-button a {
-        color: #ffffff;
+        color: #ffffff !important;
     }
+
+    .carousel-main-item-content .read-more a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carousel-main-item-content .read-more a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
 
     .carousel-small-item-title {
         font-size: 1rem;

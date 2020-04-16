@@ -8,7 +8,7 @@ const SlimNav = ({ currentUser, logout, openModal }) => {
                 <div id="menubar" className="menubar-2018">
                     <ul id="site-nav" className="menubar-section horizontal">
                         <li className="logoLogged">
-                            <img src="http://shyeyez.com/ravecave/assets/images/ravecave-logotype-color-optimized.svg" alt="logo" />
+                            <Link to="/"><img src="http://shyeyez.com/ravecave/assets/images/ravecave-logotype-color-optimized.svg" alt="logo" /></Link>
                         </li>
                     </ul>
                     <ul id="user-nav" className="menubar-section horizontal">
@@ -26,7 +26,7 @@ const SlimNav = ({ currentUser, logout, openModal }) => {
                 <div id="menubar" className="menubar-2018 grey">
                     <ul id="site-nav" className="menubar-section horizontal">
                         <li className="logoLogged">
-                            <img src="http://shyeyez.com/ravecave/assets/images/ravecave-logotype-white.svg" alt="logo" />
+                            <Link to="/"><img src="http://shyeyez.com/ravecave/assets/images/ravecave-logotype-white.svg" alt="logo" /></Link>
                         </li>
                     </ul>
                     <ul id="user-nav" className="menubar-section horizontal">

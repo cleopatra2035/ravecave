@@ -7,7 +7,7 @@ class Headers extends React.Component {
         const selected = this.props.selectedPane;
         const headers = this.props.panes.map((pane, index) => {
             const title = pane.title;
-            const klass = index === selected ? 'active' : '';
+            const klass = index === selected ? 'active' : 'inactive';
 
             return (
                 <li
@@ -30,13 +30,13 @@ class Headers extends React.Component {
 class AlbumsGrid extends React.Component {
     render() {
         const albumGrid = this.props.albums.map(album => {
-            const { id, name, description, artist_id } = album;
+            const { id, name, description, artist_id, artwork } = album;
 
             return (
                 <li key={id} className="square">
                     <Link to={`/albums/${id}`}>
                         <div class="art">
-                            <img src="https://f4.bcbits.com/img/a1695247235_2.jpg" alt=""></img>
+                            <img src={artwork} />
                         </div>
                         <p className="title">
                             {name}
