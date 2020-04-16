@@ -1819,6 +1819,32 @@ ol.editable-grid a:hover {
         padding: 15px 0 12px;
     }
 
+    .col-3-15 {
+        position: relative;
+        width: 90%;
+        display: block;
+        padding: 0;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+
+    .notable .featured-albums {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    /* .notable .col {
+        display: block;
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    .notable {
+        display: flex;
+        flex-wrap: wrap;
+    } */
 }
 
 /* XXSmall */
