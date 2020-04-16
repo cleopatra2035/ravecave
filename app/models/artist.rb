@@ -26,4 +26,6 @@ class Artist < ApplicationRecord
         foreign_key: :artist_id,
         class_name: :Track
 
+    has_one_attached :profile_pic
+    
 end

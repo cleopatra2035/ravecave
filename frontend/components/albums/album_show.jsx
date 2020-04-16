@@ -11,26 +11,23 @@ const AlbumShow = ({ album, albumId, fetchArtistAlbum }) => {
         <div>
             <div>
                 <Link to="/artists">Back to Artists Index</Link>
-                <AlbumDetail album={album} albumId={albumId} fetchArtistAlbum={fetchArtistAlbum}/>
+                <AlbumDetail album={album} albumId={albumId} fetchArtistAlbum={fetchArtistAlbum} />
             </div>
         </div>
     )
 }
-    
-    // componentDidMount() {
-    //     this.props.fetchArtistAlbum(this.props.match.params.albumId);
-    // }
+//     const albums = {
+//         [albumId]: album
+//     }
 
-    // render() {
-    //     const { album } = this.props;
-
-    //     return (
-    //         <div>
-    //             <h1>{album.name}</h1>
-    //             <p>{album.description}</p>
-    //         </div>
-    //     );
-    // }
+//     return (
+//         <div>
+//             <div>
+//                 <Link to="/artists">Back to Artists Index</Link>
+//                 <AlbumDetail album={album} albumId={albumId} fetchArtistAlbum={fetchArtistAlbum}/>
+//             </div>
+//         </div>
+//     )
 // }
 
 export default AlbumShow;

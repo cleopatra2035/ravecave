@@ -19,6 +19,7 @@ class Api::AlbumsController < ApplicationController
             :featured,
             :genre,
             :release_date,
-            :description)
+            :description,
+            photos: [])
     end
 end

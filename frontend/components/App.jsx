@@ -22,7 +22,7 @@ const App = () => (
             <AuthRoute path='/login' component={LogInFormContainer} />
             <AuthRoute path='/signup' component={SignUpFormContainer} />
             <Route path='/albums/:albumId' component={AlbumShowContainer} />
-            {/* <Route path='/albums' component={AlbumIndexContainer} /> */}
+            <Route path='/albums' component={AlbumIndexContainer} />
             {/* <Route path="/artists/:artistId/album/:albumId" component={AlbumDetailContainer} /> */}
             <Route path='/artists/:artistId' component={ArtistShowContainer} />
             <Route path='/artists' component={ArtistIndexContainer} />

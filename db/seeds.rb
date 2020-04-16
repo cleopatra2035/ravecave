@@ -174,3 +174,27 @@ t5 = Track.create!(
     artist_id: Artist.find_by(name: 'Martyn').id,
     album_id: Album.find_by(name: 'One Eye EP (3024​-​FYE5)').id
 )
+
+# ////// IMAGES
+
+art1_pp = open('https://ravecave-seeds.s3.amazonaws.com/artists/gratefuldead.jpg')
+art2_pp = open('https://ravecave-seeds.s3.amazonaws.com/artists/martyn.jpg')
+art3_pp = open('https://ravecave-seeds.s3.amazonaws.com/artists/burial.jpg')
+art4_pp = open('https://ravecave-seeds.s3.amazonaws.com/artists/shyeyez_credit_maxwellschiano.jpg')
+
+art1.profile_pic.attach(io: art1_pp, filename: 'art1_pp.jpg', content_type: 'image/jpeg')
+art2.profile_pic.attach(io: art2_pp, filename: 'art2_pp.jpg', content_type: 'image/jpeg')
+art3.profile_pic.attach(io: art3_pp, filename: 'art3_pp.jpg', content_type: 'image/jpeg')
+art4.profile_pic.attach(io: art4_pp, filename: 'art4_pp.jpg', content_type: 'image/jpeg')
+
+imagefile1 = open('https://ravecave-seeds.s3.amazonaws.com/albums/gratefuldead_cornell.jpg')
+imagefile2 = open('https://ravecave-seeds.s3.amazonaws.com/albums/martyn_greatlengths.jpg')
+imagefile3 = open('https://ravecave-seeds.s3.amazonaws.com/albums/burial_untrue.jpg')
+imagefile4 = open('https://ravecave-seeds.s3.amazonaws.com/albums/shyeyez_bangersonly.jpg')
+imagefile5 = open('https://ravecave-seeds.s3.amazonaws.com/albums/martyn_oneeye.jpg')
+
+album1.artwork.attach(io: imagefile1, filename: 'imagefile1.jpg', content_type: 'image/jpeg')
+album2.artwork.attach(io: imagefile2, filename: 'imagefile2.jpg', content_type: 'image/jpeg')
+album3.artwork.attach(io: imagefile3, filename: 'imagefile3.jpg', content_type: 'image/jpeg')
+album4.artwork.attach(io: imagefile4, filename: 'imagefile4.jpg', content_type: 'image/jpeg')
+album5.artwork.attach(io: imagefile5, filename: 'imagefile5.jpg', content_type: 'image/jpeg')
