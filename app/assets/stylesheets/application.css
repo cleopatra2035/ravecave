@@ -1808,7 +1808,7 @@ ol.editable-grid a:hover {
         flex-wrap: wrap;
         justify-content: space-between;
         min-height: 59px;
-        width: 60% !important
+        width: 62% !important;
     }
 
     .col.col-5-12 {
@@ -2000,11 +2000,9 @@ ol.editable-grid a:hover {
 
     .col-3-15 {
         position: relative;
-        width: 90%;
+        width: 100%;
         display: block;
         padding: 0;
-        margin-left: 5% !important;
-        margin-right: 5% !important;
     }
 
     .notable .featured-albums {
@@ -2013,17 +2011,25 @@ ol.editable-grid a:hover {
         height: auto;
     }
 
-    /* .notable .col {
-        display: block;
-        float: none;
-        margin: 0;
-        width: 100%;
+    .notable .row {
+        width: 90%;
+        padding: 0;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+    /* gutters */
+    .col+.col-3-15 {
+        margin-left:0;
     }
 
-    .notable {
-        display: flex;
-        flex-wrap: wrap;
-    } */
+    .cover-art-artwork {
+        width: 100% !important;
+    }
+
+    .featured-album {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 /* XXSmall */

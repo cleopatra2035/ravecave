@@ -1,5 +1,7 @@
 import React from 'react';
-import AlbumInfoItemContainer from './album_info_item_container';
+import { Link } from 'react-router';
+import SlimNavContainer from '../slim_nav/slim_nav_container';
+import Tabs from './tabs/tabs';
 
 class AlbumDetail extends React.Component {
     constructor(props) {
@@ -7,11 +9,11 @@ class AlbumDetail extends React.Component {
         this.state = {
             name: ''
         };
-
-        // this.albumInfo = this.albumInfo.bind(this);
     }
+
     componentDidMount() {
         this.props.fetchArtistAlbum(this.props.albumId);
+        this.props.fetchArtists();
     }
 
     componentDidUpdate(prevProps) {
@@ -20,22 +22,29 @@ class AlbumDetail extends React.Component {
         }
     }
 
-    albumInfo(album) {
-        return <AlbumInfoItemContainer
-                album={album}
-                key={album.id}
-            />
-    }
+    // artistForAlbum(album) {
+    //     const artists = this.props.fetchArtists();
+    //     const artist = artists[album.artist_id];
+    //     return artist;
+    // }
+
+
+    // albumInfo(album) {
+    //     return <AlbumInfoItemContainer
+    //             album={album}
+    //             key={album.id}
+    //         />
+    // }
 
     render () {
         const { album } = this.props;
 
         return (
             <div>
-                {/* <AlbumInfoItemContainer album={album} key={album.id} /> */}
                 <ul>
                     <li>Name: {album.name}</li>
                     <li>Description: {album.description}</li>
+                    <li></li>
                 </ul>
             </div>
         )
@@ -43,3 +52,4 @@ class AlbumDetail extends React.Component {
 }
 
 export default AlbumDetail;
+
