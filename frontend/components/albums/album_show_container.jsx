@@ -17,8 +17,8 @@ const mapStateToProps = (state, { match }) => {
 const mapDispatchToProps = dispatch => {
     debugger;
     return {
-        fetchArtistAlbum: albumId => dispatch(fetchArtistAlbum(albumId)),
-        fetchArtists: () => dispatch(fetchArtists())
+        fetchArtistAlbum: albumId => dispatch(fetchArtistAlbum(albumId))
+        // fetchArtists: () => dispatch(fetchArtists())
     }
 };
 

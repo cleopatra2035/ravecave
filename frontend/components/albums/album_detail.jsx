@@ -13,7 +13,7 @@ class AlbumDetail extends React.Component {
 
     componentDidMount() {
         this.props.fetchArtistAlbum(this.props.albumId);
-        this.props.fetchArtists();
+        // this.props.fetchArtists();
     }
 
     componentDidUpdate(prevProps) {
@@ -22,34 +22,49 @@ class AlbumDetail extends React.Component {
         }
     }
 
-    // artistForAlbum(album) {
-    //     const artists = this.props.fetchArtists();
-    //     const artist = artists[album.artist_id];
-    //     return artist;
-    // }
-
-
-    // albumInfo(album) {
-    //     return <AlbumInfoItemContainer
-    //             album={album}
-    //             key={album.id}
-    //         />
-    // }
-
     render () {
         const { album } = this.props;
+        const panes = [
+            { title: 'music', content: 'music here' },
+            { title: 'merch', content: 'merch here' },
+        ];
 
         return (
             <div>
-                <ul>
-                    <li>Name: {album.name}</li>
-                    <li>Description: {album.description}</li>
-                    <li></li>
-                </ul>
+                <SlimNavContainer />
+                <div id="artist-page-wrapper">
+                    <div id="inner-artist-wrapper">
+                        <div id="pageBlack">
+                            <Tabs panes={panes} album={album} />
+                        </div>
+                        <div id="pageBlack-footer">
+                            <div id="pageBlack-footer-inner">
+                                <div id="footer-logo">
+                                    <img src="http://shyeyez.com/ravecave/assets/images/ravecave-logotype-gray.svg" alt="logo" />
+                                </div>
+                                <ul id="legal" className="horizontal-legal">
+                                    <li>
+                                        <a href="#">test</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
+
 }
 
 export default AlbumDetail;
 
+// return (
+//     <div>
+//         <ul>
+//             <li>Name: {album.name}</li>
+//             <li>Description: {album.description}</li>
+//             <li></li>
+//         </ul>
+//     </div>
+// )

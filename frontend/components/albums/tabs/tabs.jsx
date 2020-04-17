@@ -26,29 +26,14 @@ class Headers extends React.Component {
     }
 }
 
-class AlbumsGrid extends React.Component {
+class AlbumInfo extends React.Component {
     render() {
-        const albumGrid = this.props.albums.map(album => {
-            const { id, name, description, artist_id, artwork } = album;
-
-            return (
-                <li key={id} className="square">
-                    <Link to={`/albums/${id}`}>
-                        <div class="art">
-                            <img src={artwork} />
-                        </div>
-                        <p className="title">
-                            {name}
-                        </p>
-                    </Link>
-                </li>
-            );
-        });
-
+        const { id, name, description, artist_id, artwork } = album;
+        
         return (
-            <ol className="editable-grid">
-                {albumGrid}
-            </ol>
+            <div>
+                {name}
+            </div>
         );
     }
 }
@@ -68,11 +53,22 @@ export default class Tabs extends React.Component {
 
     render() {
         const pane = this.props.panes[this.state.selectedPane];
-        const { artist, albums } = this.props;
+        const { album } = this.props;
 
         const grid = pane.title === 'music' ? (
             <div>
-                <AlbumsGrid albums={this.props.albums} />
+                <div id="name-section">
+                    <h2 className="track-title">
+                        {album.name}
+                    </h2>
+                </div>
+                <div class="middle-column">
+                    <div id="album-art-show">
+                        <div class="album-art-pic">
+                            <img src={album.artwork} />
+                        </div>
+                    </div>
+                </div>
             </div>
         ) : (
                 <div>
