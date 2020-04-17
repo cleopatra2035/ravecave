@@ -8,11 +8,8 @@ const AlbumShow = ({ album, albumId, fetchArtistAlbum }) => {
     }
 
     return (
-        <div>
-            <div>
-                <Link to="/artists">Back to Artists Index</Link>
-                <AlbumDetail album={album} albumId={albumId} fetchArtistAlbum={fetchArtistAlbum} fetchArtists={fetchArtists} />
-            </div>
+        <div className="black-wrapper">
+            <AlbumDetail album={album} albumId={albumId} fetchArtistAlbum={fetchArtistAlbum} />
         </div>
     )
 };

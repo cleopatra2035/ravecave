@@ -1577,7 +1577,35 @@ ol.editable-grid a:hover {
   text-align: center;
 } */
 
+/* Album Show Page */
 
+#name-section {
+    float: left;
+}
+
+.track-title {
+    font:normal 28px/1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin:-4px 30px 8px 0;
+    word-wrap: break-word;
+    max-width:726px;
+}
+
+.middle-column {
+    float: right;
+    width: 350px;
+}
+
+#album-art-show {
+    outline: 1px solid rgba(255,255,255,0.1);
+    width: 350px;
+    height: 350px;
+	position:relative;
+    outline-offset: -1px;
+}
+
+.album-art-pic {
+
+}
 /* XLarge */
 
 @media screen and (max-width: 1680px) {
