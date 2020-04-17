@@ -7,9 +7,14 @@
 <p>Ravecave is a clone of <a href="https://bandcamp.com/" target="_blank">Bandcamp</a>, an industry-leading music application which allows people to discover and support artists directly. Users are able to preview and purchase high-quality digital music files, as well as buy physical merchandise from band t-shirts to limited-edition vinyl. Fans and artists share music collections in auto-populated user feeds.</p>
 <h2>Features</h2>
 <h3>A beautifully-responsive landing page</h3>
-<p>A splash page with a wonderful user experience on both desktop and mobile.</p>
+<p>A splash page with a wonderful user experience on both desktop ...</p>
 <p align="center">
     <img src="https://ravecave-seeds.s3.amazonaws.com/assets/splash_desktop.gif" alt="GIF desktop demo" style="max-width:100%;">
+</p>
+<p>... and mobile.</p>
+<p align="center">
+    <img src="https://ravecave-seeds.s3.amazonaws.com/assets/splash_mobile_optimized.gif" alt="GIF desktop demo"
+        style="max-width:100%;">
 </p>
 <h3>User authentication</h3>
 <p>Users can sign up, sign in, and log out. Users can sign in via demo user.</p>
