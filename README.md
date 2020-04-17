@@ -8,6 +8,9 @@
 <h2>Features</h2>
 <h3>A beautifully-responsive landing page</h3>
 <p>A splash page with a wonderful user experience on both desktop and mobile.</p>
+<p align="center">
+    <img src="https://ravecave-seeds.s3.amazonaws.com/assets/splash_desktop.gif" alt="GIF desktop demo" style="max-width:100%;">
+</p>
 <h3>User authentication</h3>
 <p>Users can sign up, sign in, and log out. Users can sign in via demo user.</p>
 <h3>Artist page</h3>
