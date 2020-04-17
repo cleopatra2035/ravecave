@@ -11,14 +11,14 @@ class AlbumIndexItem extends React.Component {
                     <div className="featured-album">
                         <div className="featured-album-art">
                         <Link to={`/albums/${id}`}>
-                            <img src={artwork}/>
+                            <img className="cover-art-artwork" src={artwork}/>
                         </Link>
                         </div>
                         <h4 className="item-title"><a href="#">
                             <span className="item-title-title">{name}</span>
-                            <span className="item-artist">
+                            {/* <span className="item-artist">
                                 by {artist_id}
-                            </span>
+                            </span> */}
                         </a></h4>
                         <p className="item-description">
                             {description}

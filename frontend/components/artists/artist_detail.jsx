@@ -31,19 +31,7 @@ class ArtistDetail extends React.Component {
                 <div id="artist-page-wrapper">
                     <div id="inner-artist-wrapper">
                         <div id="pageBlack">
-                            {/* <div id="customHeaderWrapper"> */}
-                                {/* <div className='interactive'> */}
-                                    <Tabs panes={panes} artist={artist} albums={albums} />
-                                {/* </div> */}
-                                {/* <ol id="band-navbar">
-                                    <li><a href="#" class="selected">music</a></li>
-                                    <li><a href="#">merch</a></li>
-                                </ol> */}
-                            {/* </div> */}
-                            {/* <div class="albums-grid">
-                                <h3>Albums</h3>
-                                {this.albumList(albums)}
-                            </div> */}
+                            <Tabs panes={panes} artist={artist} albums={albums} />
                             <div class="artist-info-bar">
                                 <div className="artists-profile-pic">
                                     <img src={artist.profile_pic} />
