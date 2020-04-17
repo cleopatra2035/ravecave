@@ -13,18 +13,21 @@
 </p>
 <p>... and mobile.</p>
 <p align="center">
-    <img src="https://ravecave-seeds.s3.amazonaws.com/assets/splash_mobile_optimized.gif" alt="GIF desktop demo"
+    <img src="https://ravecave-seeds.s3.amazonaws.com/assets/splash_mobile_optimized.gif" alt="GIF mobile demo"
         style="max-width:100%;">
 </p>
 <h3>User authentication</h3>
 <p>Users can sign up, sign in, and log out. Users can sign in via demo user.</p>
 <p align="center">
-    <img src="https://ravecave-seeds.s3.amazonaws.com/assets/user_auth_desktop.gif" alt="GIF desktop demo"
+    <img src="https://ravecave-seeds.s3.amazonaws.com/assets/user_auth_desktop.gif" alt="GIF user auth demo"
         style="max-width:100%;">
 </p>
 <h3>Artist page</h3>
 <p>Artist pages are populated by corresponding artist's music releases (under "music" tab) and merchandise (under "merch"
 tab).</p>
+<p align="center">
+    <img width="750" height="auto" src="https://ravecave-seeds.s3.amazonaws.com/assets/artist-page-desktop.png" alt="artist page demo">
+</p>
 <h2>Getting started</h2>
 <div class="highlight highlight-source-shell">
     <pre><a href="https://ravecaveapp.herokuapp.com/#/" target="_blank">Enter the Ravecave</a> and log in as demo user.</pre>
