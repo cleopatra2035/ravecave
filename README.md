@@ -4,7 +4,7 @@
     </a>
 </p>
 <h4 align="center">Bridging the gap between artists and their fans.</h4>
-<p>Ravecave is a clone of Bandcamp, an industry-leading music application which allows people to discover and support artists directly. Users are able to preview and purchase high-quality digital music files, as well as buy physical merchandise from band t-shirts to limited-edition vinyl. Fans and artists share music collections in auto-populated user feeds.</p>
+<p>Ravecave is a clone of <a href="https://bandcamp.com/" target="_blank">Bandcamp</a>, an industry-leading music application which allows people to discover and support artists directly. Users are able to preview and purchase high-quality digital music files, as well as buy physical merchandise from band t-shirts to limited-edition vinyl. Fans and artists share music collections in auto-populated user feeds.</p>
 <h2>Features</h2>
 <h3>A beautifully-responsive landing page</h3>
 <p>A splash page with a wonderful user experience on both desktop and mobile.</p>
@@ -15,7 +15,7 @@
 tab).</p>
 <h2>Getting started</h2>
 <div class="highlight highlight-source-shell">
-    <pre><a href="https://ravecaveapp.herokuapp.com/#/">Enter the Ravecave</a> and log in as demo user.</pre>
+    <pre><a href="https://ravecaveapp.herokuapp.com/#/" target="_blank">Enter the Ravecave</a> and log in as demo user.</pre>
 </div>
 <h2>Code snippets</h2>
 <h2>Future features</h2>
