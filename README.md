@@ -18,6 +18,10 @@
 </p>
 <h3>User authentication</h3>
 <p>Users can sign up, sign in, and log out. Users can sign in via demo user.</p>
+<p align="center">
+    <img src="https://ravecave-seeds.s3.amazonaws.com/assets/user_auth_desktop.gif" alt="GIF desktop demo"
+        style="max-width:100%;">
+</p>
 <h3>Artist page</h3>
 <p>Artist pages are populated by corresponding artist's music releases (under "music" tab) and merchandise (under "merch"
 tab).</p>
