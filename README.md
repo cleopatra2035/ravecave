@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://ravecaveapp.herokuapp.com/#/">
+    <a href="https://ravecaveapp.herokuapp.com/#/" target="_blank">
         <img width="450" height="auto" src="https://ravecave-seeds.s3.amazonaws.com/assets/ravecave-logotype-color-450.png" alt="Logo Ravecave">
     </a>
 </p>
@@ -26,3 +26,4 @@ tab).</p>
 <h3>Upload/download songs</h3>
 <p>Artists can upload releases by either adding individual songs or albums. Users can download songs from artist pages.</p>
 <h2>Feedback</h2>
+<p>I'd love to hear from you.</p>
