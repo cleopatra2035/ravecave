@@ -29,7 +29,7 @@ const NavBar = ({ currentUser, logout, openModal }) => {
                                 <img src="http://shyeyez.com/ravecave/assets/images/ravecave-logotype-color-optimized.svg" alt="logo" />
                             </div>
                             <h2 className="hd-subtitle">
-                                Bridging the gap between artists and their fans. <a className="blue-gradient" href="#">Enter the Ravecave.</a>
+                                Bridging the gap between artists and their fans. <span className="blue-gradient">Enter the Ravecave.</span>
                             </h2>
                         </div>
                         <div className="col col-5-12">
