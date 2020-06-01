@@ -14,9 +14,10 @@ const receiveAlbum = album => ({
     album
 });
 
-const receiveArtistAlbum = album => ({
+const receiveArtistAlbum = response => ({
     type: RECEIVE_ARTIST_ALBUM,
-    album
+    album: response.album,
+    artist: response.artist
 })
 
 export const fetchAlbums = () => dispatch => (
@@ -31,5 +32,5 @@ export const fetchAlbum = albumId => dispatch => (
 
 export const fetchArtistAlbum = albumId => dispatch => (
     AlbumApiUtil.fetchArtistAlbum(albumId)
-    .then(album => dispatch(receiveArtistAlbum(album)))
+    .then(response => dispatch(receiveArtistAlbum(response)))
 );

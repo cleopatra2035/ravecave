@@ -1606,6 +1606,15 @@ ol.editable-grid a:hover {
 .album-art-pic {
 
 }
+
+/* Errors */
+
+.errors {
+    color: #c43329;
+    font-weight: normal;
+    font-size: 16px;
+}
+
 /* XLarge */
 
 @media screen and (max-width: 1680px) {

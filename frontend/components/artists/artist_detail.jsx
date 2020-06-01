@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import AlbumListItemContainer from './album_list_item_container';
+// import AlbumListItemContainer from './album_list_item_container';
 import SlimNavContainer from '../slim_nav/slim_nav_container';
 import Tabs from './tabs/tabs';
 

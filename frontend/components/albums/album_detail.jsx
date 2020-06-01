@@ -17,8 +17,8 @@ class AlbumDetail extends React.Component {
     }
 
     componentDidUpdate(prevProps) {
-        if (prevProps.match.params.albumId !== this.props.match.params.albumId) {
-            this.props.fetchArtistAlbum(this.props.match.params.albumId);
+        if (prevProps.albumId !== this.props.albumId) {
+            this.props.fetchArtistAlbum(this.props.albumId);
         }
     }
 
@@ -28,6 +28,7 @@ class AlbumDetail extends React.Component {
             { title: 'music', content: 'music here' },
             { title: 'merch', content: 'merch here' },
         ];
+        const { artist } = this.props;
 
         return (
             <div>
@@ -35,7 +36,7 @@ class AlbumDetail extends React.Component {
                 <div id="artist-page-wrapper">
                     <div id="inner-artist-wrapper">
                         <div id="pageBlack">
-                            <Tabs panes={panes} album={album} />
+                            <Tabs panes={panes} album={album} artist={artist} />
                         </div>
                         <div id="pageBlack-footer">
                             <div id="pageBlack-footer-inner">
