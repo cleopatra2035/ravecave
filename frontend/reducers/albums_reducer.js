@@ -3,7 +3,8 @@ import {
     RECEIVE_ALBUM
 } from '../actions/artist_actions';
 import {
-    RECEIVE_ALL_ALBUMS
+    RECEIVE_ALL_ALBUMS,
+    RECEIVE_ARTIST_ALBUM
 } from '../actions/album_actions';
 
 const albumsReducer = (oldState = {}, action) => {
@@ -14,9 +15,10 @@ const albumsReducer = (oldState = {}, action) => {
             return Object.assign({}, oldState, action.albums)
         case RECEIVE_ARTIST:
             return Object.assign({}, oldState, action.albums)
+        case RECEIVE_ARTIST_ALBUM:
         case RECEIVE_ALBUM:
             const { album } = action;
-            return Object.assign({}, oldState, { [album.id]: album })
+            return Object.assign({}, oldState, { [album.id]: album });
         default:
             return oldState;
     }

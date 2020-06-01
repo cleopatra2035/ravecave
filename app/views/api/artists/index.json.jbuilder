@@ -9,6 +9,7 @@
 @artists.each do |artist|
   json.set! artist.id do
     json.partial! 'artist', artist: artist
-    json.albumIds []
+    # json.albumIds []
+    json.albumIds artist.album_ids
   end
 end

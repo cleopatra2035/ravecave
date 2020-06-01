@@ -4,7 +4,7 @@
 # NEW:
 json.artist do
     json.partial! "/api/artists/artist", artist: @artist
-    json.albumIds @artist.albums.pluck(:id)
+    json.albumIds @artist.album_ids
 end
 
 @artist.albums.includes(:artist).each do |album|
