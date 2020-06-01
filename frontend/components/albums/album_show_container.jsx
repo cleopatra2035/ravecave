@@ -5,12 +5,15 @@ import { selectAlbum } from '../../reducers/selectors';
 import { fetchArtists } from '../../actions/artist_actions';
 
 const mapStateToProps = (state, { match }) => {
+    debugger;
     const albumId = parseInt(match.params.albumId);
-    const album = selectAlbum(state.entities, albumId);
+    const album = selectAlbum(state.entities, albumId) || {};
+    const artist = state.entities.artists[album.artist_id] || {};
 
     return {
         albumId,
-        album
+        album,
+        artist
     }
 };
 

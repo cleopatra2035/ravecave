@@ -53,7 +53,7 @@ export default class Tabs extends React.Component {
 
     render() {
         const pane = this.props.panes[this.state.selectedPane];
-        const { album } = this.props;
+        const { album, artist } = this.props;
 
         const grid = pane.title === 'music' ? (
             <div>
@@ -61,8 +61,9 @@ export default class Tabs extends React.Component {
                     <h2 className="track-title">
                         {album.name}
                     </h2>
+                    <p>by&nbsp; <Link to={`/artists/${album.artist_id}`}>{artist.name}</Link></p>
                 </div>
-                <div class="middle-column">
+                <div className="middle-column">
                     <div id="album-art-show">
                         <div class="album-art-pic">
                             <img src={album.artwork} />

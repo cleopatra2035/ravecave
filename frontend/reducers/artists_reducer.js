@@ -11,6 +11,7 @@ const artistsReducer = (oldState = {}, action) => {
     switch(action.type) {
         case RECEIVE_ALL_ARTISTS:
             return Object.assign({}, oldState, action.artists)
+        case RECEIVE_ARTIST_ALBUM:
         case RECEIVE_ARTIST:
             return Object.assign({}, oldState, { [action.artist.id]: action.artist })
         case RECEIVE_ALBUM:
@@ -19,10 +20,9 @@ const artistsReducer = (oldState = {}, action) => {
             const newState = Object.assign({}, oldState);
             newState[album.artist_id].albumIds.push(album.id);
             return newState;
-        case RECEIVE_ARTIST_ALBUM:
-            debugger;
-            const newAlbum = { [action.album.id]: action.album };
-            return Object.assign({}, oldState, newAlbum);
+            // debugger;
+            // const newAlbum = { [action.album.id]: action.album };
+            // return Object.assign({}, oldState, newAlbum);
         default:
             return oldState;
     }

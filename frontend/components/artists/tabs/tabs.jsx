@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import AlbumListItemContainer from '../album_list_item_container';
 
 class Headers extends React.Component {
     render() {
