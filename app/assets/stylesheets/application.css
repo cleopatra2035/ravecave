@@ -1607,6 +1607,11 @@ ol.editable-grid a:hover {
 
 }
 
+.left-column {
+    width: 376px;
+    float: left;
+}
+
 /* Errors */
 
 .errors {

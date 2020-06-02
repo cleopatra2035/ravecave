@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ReactAudioPlayer from 'react-audio-player';
 
 class Headers extends React.Component {
     render() {
@@ -38,6 +39,30 @@ class AlbumInfo extends React.Component {
     }
 }
 
+class TracksGrid extends React.Component {
+    render() {
+        const tracksGrid = this.props.tracks.map(track => {
+            const { id, name, ord, artist_id, album_id } = track;
+
+            return (
+                <li key={id} className="line">
+                    <Link to={`/tracks/${id}`}>
+                        <p className="track-item">
+                            {name}
+                        </p>
+                    </Link>
+                </li>
+            );
+        });
+
+        return (
+            <ol className="tracks-grid">
+                {tracksGrid}
+            </ol>
+        );
+    }
+}
+
 export default class Tabs extends React.Component {
     constructor(props) {
         super(props);
@@ -53,7 +78,7 @@ export default class Tabs extends React.Component {
 
     render() {
         const pane = this.props.panes[this.state.selectedPane];
-        const { album, artist } = this.props;
+        const { album, artist, tracks } = this.props;
 
         const grid = pane.title === 'music' ? (
             <div>
@@ -63,6 +88,7 @@ export default class Tabs extends React.Component {
                     </h2>
                     <p>by&nbsp; <Link to={`/artists/${album.artist_id}`}>{artist.name}</Link></p>
                 </div>
+
                 <div className="middle-column">
                     <div id="album-art-show">
                         <div class="album-art-pic">
@@ -70,6 +96,19 @@ export default class Tabs extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                <div id="song-player" className="left-column">
+                    <ReactAudioPlayer
+                        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                        autoPlay
+                        controls
+                    />
+                </div>
+
+                <div>
+                    <TracksGrid tracks={this.props.tracks}/>
+                </div>
+
             </div>
         ) : (
                 <div>

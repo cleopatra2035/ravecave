@@ -13,12 +13,14 @@ class AlbumDetail extends React.Component {
 
     componentDidMount() {
         this.props.fetchArtistAlbum(this.props.albumId);
+        this.props.fetchSongs(this.props.albumId);
         // this.props.fetchArtists();
     }
 
     componentDidUpdate(prevProps) {
         if (prevProps.albumId !== this.props.albumId) {
             this.props.fetchArtistAlbum(this.props.albumId);
+            this.props.fetchSongs(this.props.albumId);
         }
     }
 
@@ -29,6 +31,7 @@ class AlbumDetail extends React.Component {
             { title: 'merch', content: 'merch here' },
         ];
         const { artist } = this.props;
+        const { tracks } = this.props;
 
         return (
             <div>
@@ -36,7 +39,7 @@ class AlbumDetail extends React.Component {
                 <div id="artist-page-wrapper">
                     <div id="inner-artist-wrapper">
                         <div id="pageBlack">
-                            <Tabs panes={panes} album={album} artist={artist} />
+                            <Tabs panes={panes} album={album} artist={artist} tracks={tracks}/>
                         </div>
                         <div id="pageBlack-footer">
                             <div id="pageBlack-footer-inner">
