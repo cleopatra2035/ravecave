@@ -10,13 +10,13 @@ const mapStateToProps = (state, { match }) => {
     const albumId = parseInt(match.params.albumId);
     const album = selectAlbum(state.entities, albumId) || {};
     const artist = state.entities.artists[album.artist_id] || {};
-    const tracks = selectTracks(state.entities, album) || {};
+    // const tracks = selectTracks(state.entities, albumId) || {};
 
     return {
         albumId,
         album,
         artist,
-        tracks
+        // tracks
     }
 };
 

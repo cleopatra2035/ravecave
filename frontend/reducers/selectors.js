@@ -6,7 +6,7 @@ export const selectAlbum = ({ albums }, albumId) => {
     return albums[albumId];
 };
 
-export const selectTracks = ({ tracks }, album) => {
+export const selectTracks = ({ albums, tracks }, album) => {
     return album.trackIds.map(trackId => tracks[trackId]);
 }
 

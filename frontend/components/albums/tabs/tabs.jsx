@@ -105,9 +105,9 @@ export default class Tabs extends React.Component {
                     />
                 </div>
 
-                <div>
+                {/* <div>
                     <TracksGrid tracks={this.props.tracks}/>
-                </div>
+                </div> */}
 
             </div>
         ) : (
