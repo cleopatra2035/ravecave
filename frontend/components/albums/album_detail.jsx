@@ -12,15 +12,13 @@ class AlbumDetail extends React.Component {
     }
 
     componentDidMount() {
-        this.props.fetchArtistAlbum(this.props.albumId);
-        // this.props.fetchSongs(this.props.albumId);
+        this.props.fetchArtistAlbum(this.props.albumId).then(() => this.props.fetchSongs(this.props.albumId));
         // this.props.fetchArtists();
     }
 
     componentDidUpdate(prevProps) {
         if (prevProps.albumId !== this.props.albumId) {
-            this.props.fetchArtistAlbum(this.props.albumId);
-            // this.props.fetchSongs(this.props.albumId);
+            this.props.fetchArtistAlbum(this.props.albumId).then(() => this.props.fetchSongs(this.props.albumId));
         }
     }
 

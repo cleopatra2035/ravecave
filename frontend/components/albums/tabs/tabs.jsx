@@ -41,6 +41,9 @@ class AlbumInfo extends React.Component {
 
 class TracksGrid extends React.Component {
     render() {
+        console.log(this.props.tracks);
+        if (this.props.tracks.length === 0) return null;
+
         const tracksGrid = this.props.tracks.map(track => {
             const { id, name, ord, artist_id, album_id } = track;
 
@@ -105,9 +108,9 @@ export default class Tabs extends React.Component {
                     />
                 </div>
 
-                {/* <div>
+                <div>
                     <TracksGrid tracks={this.props.tracks}/>
-                </div> */}
+                </div>
 
             </div>
         ) : (
