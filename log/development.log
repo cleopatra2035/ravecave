@@ -37408,3 +37408,1232 @@ Completed 200 OK in 50ms (Views: 35.4ms | ActiveRecord: 6.2ms)
 >>>>>>> music-pages
 
 
+Started GET "/" for ::1 at 2020-06-11 13:17:28 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 1581ms (Views: 1579.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/albums/" for ::1 at 2020-06-11 13:17:30 -0400
+Processing by Api::AlbumsController#index as JSON
+  Rendering api/albums/index.json.jbuilder
+  [1m[36mAlbum Load (48.7ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  ↳ app/views/api/albums/index.json.jbuilder:7
+  [1m[36mActiveStorage::Attachment Load (2.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (707.6ms)
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/index.json.jbuilder:10
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 67], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (3.3ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 67]]
+  ↳ app/views/api/albums/index.json.jbuilder:10
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 68], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (3.0ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 68]]
+  ↳ app/views/api/albums/index.json.jbuilder:10
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 69], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (2.8ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 69]]
+  ↳ app/views/api/albums/index.json.jbuilder:10
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 70], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (3.0ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 70]]
+  ↳ app/views/api/albums/index.json.jbuilder:10
+  Rendered api/albums/index.json.jbuilder (857.4ms)
+Completed 200 OK in 880ms (Views: 747.3ms | ActiveRecord: 120.2ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--27f144871852d0551d2d74282065577ab2d78630/imagefile4.jpg" for ::1 at 2020-06-11 13:17:31 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--60e7a3306d8b5f46d3d0d70e59ac2fd408b5be8a/imagefile2.jpg" for ::1 at 2020-06-11 13:17:31 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--07a108c8bd80a61388fd8c8bf3cf5c9c52aab451/imagefile3.jpg" for ::1 at 2020-06-11 13:17:31 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3009c6e0576bbf2b96f3d9ddb66425a43d703373/imagefile5.jpg" for ::1 at 2020-06-11 13:17:31 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97ec852686c851fa3ad3b49247294596dc497be9/imagefile1.jpg" for ::1 at 2020-06-11 13:17:31 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--60e7a3306d8b5f46d3d0d70e59ac2fd408b5be8a", "filename"=>"imagefile2"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--27f144871852d0551d2d74282065577ab2d78630", "filename"=>"imagefile4"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97ec852686c851fa3ad3b49247294596dc497be9", "filename"=>"imagefile1"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3009c6e0576bbf2b96f3d9ddb66425a43d703373", "filename"=>"imagefile5"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--07a108c8bd80a61388fd8c8bf3cf5c9c52aab451", "filename"=>"imagefile3"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (4.4ms) [0m[34mGenerated URL for file at key: FmK4jgJfj5BBvwKSRjERhX9A (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/FmK4jgJfj5BBvwKSRjERhX9A?response-content-disposition=inline%3B%20filename%3D%22imagefile4.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile4.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T171731Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f0419bddc0d6e4cc7415f6ab36a18262620b400dac8980e7c67bd095add124d4)[0m
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/FmK4jgJfj5BBvwKSRjERhX9A?response-content-disposition=inline%3B%20filename%3D%22imagefile4.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile4.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T171731Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f0419bddc0d6e4cc7415f6ab36a18262620b400dac8980e7c67bd095add124d4
+  [1m[36mActiveStorage::Blob Load (5.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Completed 302 Found in 10ms (ActiveRecord: 0.5ms)
+
+
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.2ms) [0m[34mGenerated URL for file at key: rBLmp7UCVkqsFXLf81KjJUA7 (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/rBLmp7UCVkqsFXLf81KjJUA7?response-content-disposition=inline%3B%20filename%3D%22imagefile1.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile1.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T171731Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=768a587984236050862d52777f1898f2466db8055e07c56d80fa07ce6207462d)[0m
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/rBLmp7UCVkqsFXLf81KjJUA7?response-content-disposition=inline%3B%20filename%3D%22imagefile1.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile1.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T171731Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=768a587984236050862d52777f1898f2466db8055e07c56d80fa07ce6207462d
+  [1m[36mActiveStorage::Blob Load (3.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (3.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Completed 302 Found in 13ms (ActiveRecord: 7.1ms)
+
+
+  [1m[36mActiveStorage::Blob Load (3.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.2ms) [0m[34mGenerated URL for file at key: JSs6vk6xKw7it92bZMefWymr (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/JSs6vk6xKw7it92bZMefWymr?response-content-disposition=inline%3B%20filename%3D%22imagefile2.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile2.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T171731Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2e216c5db0e7f677f512e7945b4de333b870bd8585531afbdfede5183d4012fa)[0m
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (0.9ms) [0m[34mGenerated URL for file at key: 2rn49cWNUU6d4gNH7uXW9jXK (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/2rn49cWNUU6d4gNH7uXW9jXK?response-content-disposition=inline%3B%20filename%3D%22imagefile3.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile3.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T171731Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=31e9cb7f50bfbbdc97a5a4abda0f50bc682337c2b3929055af54963589e9033d)[0m
+[36m  S3 Storage (0.9ms) [0m[34mGenerated URL for file at key: YJZ1QdyZLMpL4RnufCgAesCH (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/YJZ1QdyZLMpL4RnufCgAesCH?response-content-disposition=inline%3B%20filename%3D%22imagefile5.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile5.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T171731Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0258474b59bbd99a808a569d54d0419fd73ab6ae658dd60c80a0bed0cbd1f59c)[0m
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/YJZ1QdyZLMpL4RnufCgAesCH?response-content-disposition=inline%3B%20filename%3D%22imagefile5.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile5.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T171731Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0258474b59bbd99a808a569d54d0419fd73ab6ae658dd60c80a0bed0cbd1f59c
+Completed 302 Found in 20ms (ActiveRecord: 4.5ms)
+
+
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/JSs6vk6xKw7it92bZMefWymr?response-content-disposition=inline%3B%20filename%3D%22imagefile2.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile2.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T171731Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2e216c5db0e7f677f512e7945b4de333b870bd8585531afbdfede5183d4012fa
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/2rn49cWNUU6d4gNH7uXW9jXK?response-content-disposition=inline%3B%20filename%3D%22imagefile3.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile3.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T171731Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=31e9cb7f50bfbbdc97a5a4abda0f50bc682337c2b3929055af54963589e9033d
+Completed 302 Found in 21ms (ActiveRecord: 4.3ms)
+
+
+Completed 302 Found in 21ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/api/artists/" for ::1 at 2020-06-11 13:17:37 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (1.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:9
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (7.2ms)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/artists/index.json.jbuilder:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 54], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (3.5ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 54]]
+  ↳ app/views/api/artists/index.json.jbuilder:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 55], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (3.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 55]]
+  ↳ app/views/api/artists/index.json.jbuilder:13
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 56], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (4.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 56]]
+  ↳ app/views/api/artists/index.json.jbuilder:13
+  Rendered api/artists/index.json.jbuilder (51.4ms)
+Completed 200 OK in 64ms (Views: 41.5ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e4c97a3afb55800e058bef7f1bccac19b06d668e/art1_pp.jpg" for ::1 at 2020-06-11 13:17:38 -0400
+Started GET "/api/artists/53/" for ::1 at 2020-06-11 13:17:38 -0400
+Processing by Api::ArtistsController#show as JSON
+  Parameters: {"id"=>"53"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e4c97a3afb55800e058bef7f1bccac19b06d668e", "filename"=>"art1_pp"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.2ms) [0m[34mGenerated URL for file at key: zhCpdiq5GqyStycfz6gQBzWb (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/zhCpdiq5GqyStycfz6gQBzWb?response-content-disposition=inline%3B%20filename%3D%22art1_pp.jpg%22%3B%20filename%2A%3DUTF-8%27%27art1_pp.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T171738Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=fd54328fe11e62818c8b01560fe352aa4ed131d60cfd664562da4e82cb55d3f4)[0m
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/zhCpdiq5GqyStycfz6gQBzWb?response-content-disposition=inline%3B%20filename%3D%22art1_pp.jpg%22%3B%20filename%2A%3DUTF-8%27%27art1_pp.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T171738Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=fd54328fe11e62818c8b01560fe352aa4ed131d60cfd664562da4e82cb55d3f4
+  [1m[36mArtist Load (2.8ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/api/artists_controller.rb:9
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+  Rendering api/artists/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (5.6ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/artists/show.json.jbuilder:7
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/artists/show.json.jbuilder:10
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 53]]
+  ↳ app/views/api/artists/show.json.jbuilder:10
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (7.6ms)
+  Rendered api/artists/show.json.jbuilder (25.8ms)
+Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/api/albums/66/" for ::1 at 2020-06-11 13:17:39 -0400
+Processing by Api::AlbumsController#show as JSON
+  Parameters: {"id"=>"66"}
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (6.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (12.0ms)
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (3.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (4.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (0.5ms)
+  Rendered api/albums/show.json.jbuilder (46.5ms)
+Completed 200 OK in 60ms (Views: 39.9ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 13:37:51 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 511ms (Views: 509.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 13:40:05 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 514ms (Views: 510.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 13:42:26 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 553ms (Views: 550.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/artists/53/" for ::1 at 2020-06-11 13:42:27 -0400
+Processing by Api::ArtistsController#show as JSON
+  Parameters: {"id"=>"53"}
+  [1m[36mArtist Load (2.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/api/artists_controller.rb:9
+  Rendering api/artists/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (768.8ms)
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/artists/show.json.jbuilder:7
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/artists/show.json.jbuilder:10
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 53]]
+  ↳ app/views/api/artists/show.json.jbuilder:10
+  [1m[36mActiveStorage::Attachment Load (21.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (234.7ms)
+  Rendered api/artists/show.json.jbuilder (1020.1ms)
+Completed 200 OK in 1034ms (Views: 1001.9ms | ActiveRecord: 29.4ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e4c97a3afb55800e058bef7f1bccac19b06d668e/art1_pp.jpg" for ::1 at 2020-06-11 13:42:28 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97ec852686c851fa3ad3b49247294596dc497be9/imagefile1.jpg" for ::1 at 2020-06-11 13:42:28 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e4c97a3afb55800e058bef7f1bccac19b06d668e", "filename"=>"art1_pp"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  [1m[36mActiveStorage::Blob Load (4.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97ec852686c851fa3ad3b49247294596dc497be9", "filename"=>"imagefile1"}
+[36m  S3 Storage (2.5ms) [0m[34mGenerated URL for file at key: zhCpdiq5GqyStycfz6gQBzWb (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/zhCpdiq5GqyStycfz6gQBzWb?response-content-disposition=inline%3B%20filename%3D%22art1_pp.jpg%22%3B%20filename%2A%3DUTF-8%27%27art1_pp.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T174228Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=39dfa7dbd3790d6bfa4ab49d6dc18fe177393c4d9582014c75af53b422ee74f0)[0m
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/zhCpdiq5GqyStycfz6gQBzWb?response-content-disposition=inline%3B%20filename%3D%22art1_pp.jpg%22%3B%20filename%2A%3DUTF-8%27%27art1_pp.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T174228Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=39dfa7dbd3790d6bfa4ab49d6dc18fe177393c4d9582014c75af53b422ee74f0
+[36m  S3 Storage (1.8ms) [0m[34mGenerated URL for file at key: rBLmp7UCVkqsFXLf81KjJUA7 (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/rBLmp7UCVkqsFXLf81KjJUA7?response-content-disposition=inline%3B%20filename%3D%22imagefile1.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile1.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T174228Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3564041fd4b74d550794d30acc1ea7718384cb724cc4368f754e04f12c654672)[0m
+Completed 302 Found in 45ms (ActiveRecord: 4.9ms)
+
+
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/rBLmp7UCVkqsFXLf81KjJUA7?response-content-disposition=inline%3B%20filename%3D%22imagefile1.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile1.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T174228Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3564041fd4b74d550794d30acc1ea7718384cb724cc4368f754e04f12c654672
+Completed 302 Found in 45ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/api/albums/66/" for ::1 at 2020-06-11 13:42:32 -0400
+Processing by Api::AlbumsController#show as JSON
+  Parameters: {"id"=>"66"}
+  [1m[36mAlbum Load (8.7ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (11.3ms)
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (8.7ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (1.0ms)
+  Rendered api/albums/show.json.jbuilder (53.4ms)
+Completed 200 OK in 148ms (Views: 58.4ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/api/artists/53/" for ::1 at 2020-06-11 13:44:20 -0400
+Processing by Api::ArtistsController#show as JSON
+  Parameters: {"id"=>"53"}
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/api/artists_controller.rb:9
+  Rendering api/artists/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (7.6ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/artists/show.json.jbuilder:7
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/artists/show.json.jbuilder:10
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 53]]
+  ↳ app/views/api/artists/show.json.jbuilder:10
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (6.9ms)
+  Rendered api/artists/show.json.jbuilder (27.3ms)
+Completed 200 OK in 43ms (Views: 37.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/api/albums/66/" for ::1 at 2020-06-11 13:44:24 -0400
+Processing by Api::AlbumsController#show as JSON
+  Parameters: {"id"=>"66"}
+  [1m[36mAlbum Load (0.9ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (7.6ms)
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (4.9ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (0.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (0.3ms)
+  Rendered api/albums/show.json.jbuilder (29.5ms)
+Completed 200 OK in 44ms (Views: 36.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 13:44:45 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 626ms (Views: 621.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 13:44:53 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 13:51:05 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 772ms (Views: 770.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 13:51:52 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 824ms (Views: 821.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 13:58:13 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 525ms (Views: 523.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 13:59:54 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 667ms (Views: 664.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 14:02:31 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 788ms (Views: 783.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/albums/66/" for ::1 at 2020-06-11 14:02:35 -0400
+Started GET "/api/songs/?albumId=66" for ::1 at 2020-06-11 14:02:35 -0400
+Processing by Api::AlbumsController#show as JSON
+  Parameters: {"id"=>"66"}
+  [1m[36mAlbum Load (1.1ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (23.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (1427.0ms)
+ActionController::RoutingError (No route matches [GET] "/api/songs"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (3.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (6.5ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (0.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (1.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (0.4ms)
+  Rendered api/albums/show.json.jbuilder (1483.9ms)
+Completed 200 OK in 1549ms (Views: 1459.7ms | ActiveRecord: 85.9ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 14:02:50 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/artists/53/" for ::1 at 2020-06-11 14:02:51 -0400
+Processing by Api::ArtistsController#show as JSON
+  Parameters: {"id"=>"53"}
+  [1m[36mArtist Load (1.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/api/artists_controller.rb:9
+  Rendering api/artists/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (496.6ms)
+  [1m[35m (12.4ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/artists/show.json.jbuilder:7
+  [1m[36mAlbum Load (3.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/artists/show.json.jbuilder:10
+  [1m[36mArtist Load (5.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 53]]
+  ↳ app/views/api/artists/show.json.jbuilder:10
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (42.9ms)
+  Rendered api/artists/show.json.jbuilder (646.6ms)
+Completed 200 OK in 661ms (Views: 628.7ms | ActiveRecord: 28.7ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e4c97a3afb55800e058bef7f1bccac19b06d668e/art1_pp.jpg" for ::1 at 2020-06-11 14:02:52 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97ec852686c851fa3ad3b49247294596dc497be9/imagefile1.jpg" for ::1 at 2020-06-11 14:02:52 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e4c97a3afb55800e058bef7f1bccac19b06d668e", "filename"=>"art1_pp"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97ec852686c851fa3ad3b49247294596dc497be9", "filename"=>"imagefile1"}
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.8ms) [0m[34mGenerated URL for file at key: zhCpdiq5GqyStycfz6gQBzWb (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/zhCpdiq5GqyStycfz6gQBzWb?response-content-disposition=inline%3B%20filename%3D%22art1_pp.jpg%22%3B%20filename%2A%3DUTF-8%27%27art1_pp.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T180252Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=575ef5141965dc54ceb97218801fc635905af19fada2561d3f053a6d1cad6d6d)[0m
+  [1m[36mActiveStorage::Blob Load (3.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/zhCpdiq5GqyStycfz6gQBzWb?response-content-disposition=inline%3B%20filename%3D%22art1_pp.jpg%22%3B%20filename%2A%3DUTF-8%27%27art1_pp.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T180252Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=575ef5141965dc54ceb97218801fc635905af19fada2561d3f053a6d1cad6d6d
+[36m  S3 Storage (2.7ms) [0m[34mGenerated URL for file at key: rBLmp7UCVkqsFXLf81KjJUA7 (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/rBLmp7UCVkqsFXLf81KjJUA7?response-content-disposition=inline%3B%20filename%3D%22imagefile1.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile1.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T180252Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=57a7c84d68d6a59d07c8bc97489a3c98eb8a84d20a4b12d6e270045ecf671bba)[0m
+Completed 302 Found in 31ms (ActiveRecord: 0.8ms)
+
+
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/rBLmp7UCVkqsFXLf81KjJUA7?response-content-disposition=inline%3B%20filename%3D%22imagefile1.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile1.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T180252Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=57a7c84d68d6a59d07c8bc97489a3c98eb8a84d20a4b12d6e270045ecf671bba
+Completed 302 Found in 72ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/api/albums/66/" for ::1 at 2020-06-11 14:02:55 -0400
+Started GET "/api/songs/?albumId=66" for ::1 at 2020-06-11 14:02:55 -0400
+Processing by Api::AlbumsController#show as JSON
+  Parameters: {"id"=>"66"}
+  
+ActionController::RoutingError (No route matches [GET] "/api/songs"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mAlbum Load (26.0ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (7.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (5.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (133.5ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (9.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (3.8ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (0.8ms)
+  Rendered api/albums/show.json.jbuilder (223.6ms)
+Completed 200 OK in 354ms (Views: 212.9ms | ActiveRecord: 45.4ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 14:06:47 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 672ms (Views: 669.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/albums/66/" for ::1 at 2020-06-11 14:06:51 -0400
+Started GET "/api/songs/?albumId=66" for ::1 at 2020-06-11 14:06:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/songs"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Processing by Api::AlbumsController#show as JSON
+  Parameters: {"id"=>"66"}
+  [1m[36mAlbum Load (1.0ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (80.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (5.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (92.9ms)
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (1.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (21.6ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (1.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (0.8ms)
+  Rendered api/albums/show.json.jbuilder (136.8ms)
+Completed 200 OK in 152ms (Views: 57.5ms | ActiveRecord: 93.4ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 14:10:17 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 587ms (Views: 583.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 14:10:57 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/albums/66/" for ::1 at 2020-06-11 14:10:58 -0400
+Processing by Api::AlbumsController#show as JSON
+  Parameters: {"id"=>"66"}
+Started GET "/api/songs/?albumId=66" for ::1 at 2020-06-11 14:10:58 -0400
+  [1m[36mAlbum Load (2.8ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  
+ActionController::RoutingError (No route matches [GET] "/api/songs"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mActiveStorage::Attachment Load (9.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (13.9ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (6.5ms)
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (0.7ms)
+  Rendered api/albums/show.json.jbuilder (38.2ms)
+Completed 200 OK in 55ms (Views: 35.5ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97ec852686c851fa3ad3b49247294596dc497be9/imagefile1.jpg" for ::1 at 2020-06-11 14:10:58 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97ec852686c851fa3ad3b49247294596dc497be9", "filename"=>"imagefile1"}
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.0ms) [0m[34mGenerated URL for file at key: rBLmp7UCVkqsFXLf81KjJUA7 (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/rBLmp7UCVkqsFXLf81KjJUA7?response-content-disposition=inline%3B%20filename%3D%22imagefile1.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile1.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T181058Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2d3a49a8fbcc5b9506186b6314ddeea6d69fdcc758cb4fc14759a31571290bf6)[0m
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/rBLmp7UCVkqsFXLf81KjJUA7?response-content-disposition=inline%3B%20filename%3D%22imagefile1.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile1.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T181058Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2d3a49a8fbcc5b9506186b6314ddeea6d69fdcc758cb4fc14759a31571290bf6
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 14:11:08 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/songs/?albumId=66" for ::1 at 2020-06-11 14:11:33 -0400
+Started GET "/api/albums/66/" for ::1 at 2020-06-11 14:11:33 -0400
+Processing by Api::AlbumsController#show as JSON
+  
+  Parameters: {"id"=>"66"}
+ActionController::RoutingError (No route matches [GET] "/api/songs"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mAlbum Load (1.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (142.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (283.5ms)
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (3.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (10.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (85.6ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (0.3ms)
+  Rendered api/albums/show.json.jbuilder (394.9ms)
+Completed 200 OK in 433ms (Views: 245.3ms | ActiveRecord: 162.8ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 14:15:52 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 567ms (Views: 563.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/albums/66/" for ::1 at 2020-06-11 14:15:57 -0400
+Processing by Api::AlbumsController#show as JSON
+  Parameters: {"id"=>"66"}
+  [1m[36mAlbum Load (9.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (712.6ms)
+  [1m[35m (11.3ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (3.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (23.6ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (0.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (0.3ms)
+  Rendered api/albums/show.json.jbuilder (795.0ms)
+Completed 200 OK in 816ms (Views: 786.7ms | ActiveRecord: 28.4ms)
+
+
+Started GET "/api/songs/?albumId=66" for ::1 at 2020-06-11 14:16:01 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97ec852686c851fa3ad3b49247294596dc497be9/imagefile1.jpg" for ::1 at 2020-06-11 14:16:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/songs"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97ec852686c851fa3ad3b49247294596dc497be9", "filename"=>"imagefile1"}
+  [1m[36mActiveStorage::Blob Load (1.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.5ms) [0m[34mGenerated URL for file at key: rBLmp7UCVkqsFXLf81KjJUA7 (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/rBLmp7UCVkqsFXLf81KjJUA7?response-content-disposition=inline%3B%20filename%3D%22imagefile1.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile1.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T181601Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a971fe2e69b8b1b1f964cbd5ac8845c824f6fd889562917661b830d1a6119451)[0m
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/rBLmp7UCVkqsFXLf81KjJUA7?response-content-disposition=inline%3B%20filename%3D%22imagefile1.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile1.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T181601Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a971fe2e69b8b1b1f964cbd5ac8845c824f6fd889562917661b830d1a6119451
+Completed 302 Found in 10ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 14:19:23 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 662ms (Views: 658.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/albums/66/" for ::1 at 2020-06-11 14:19:26 -0400
+Processing by Api::AlbumsController#show as JSON
+  Parameters: {"id"=>"66"}
+  [1m[36mAlbum Load (9.7ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (2.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (463.6ms)
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (7.0ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (0.6ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (0.5ms)
+  Rendered api/albums/show.json.jbuilder (491.9ms)
+Completed 200 OK in 559ms (Views: 536.2ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 14:21:08 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 698ms (Views: 695.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/albums/66/" for ::1 at 2020-06-11 14:21:11 -0400
+Processing by Api::AlbumsController#show as JSON
+  Parameters: {"id"=>"66"}
+  [1m[36mAlbum Load (49.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (66.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (432.4ms)
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (22.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (29.0ms)
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 66]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (0.3ms)
+  Rendered api/albums/show.json.jbuilder (778.5ms)
+Completed 200 OK in 838ms (Views: 686.4ms | ActiveRecord: 150.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97ec852686c851fa3ad3b49247294596dc497be9/imagefile1.jpg" for ::1 at 2020-06-11 14:21:14 -0400
+Started GET "/api/tracks/" for ::1 at 2020-06-11 14:21:14 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97ec852686c851fa3ad3b49247294596dc497be9", "filename"=>"imagefile1"}
+Processing by Api::TracksController#index as JSON
+  [1m[36mActiveStorage::Blob Load (70.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.1ms) [0m[34mGenerated URL for file at key: rBLmp7UCVkqsFXLf81KjJUA7 (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/rBLmp7UCVkqsFXLf81KjJUA7?response-content-disposition=inline%3B%20filename%3D%22imagefile1.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile1.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T182114Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4bf76d89b64836f5dddcabb5cfab6fd135364c15866ae19a2677e1b08b9897c1)[0m
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/rBLmp7UCVkqsFXLf81KjJUA7?response-content-disposition=inline%3B%20filename%3D%22imagefile1.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile1.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T182114Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4bf76d89b64836f5dddcabb5cfab6fd135364c15866ae19a2677e1b08b9897c1
+Completed 302 Found in 77ms (ActiveRecord: 70.4ms)
+
+
+  Rendering api/tracks/index.json.jbuilder
+  [1m[36mTrack Load (1.9ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/api/tracks/index.json.jbuilder:1
+  Rendered api/tracks/_track.json.jbuilder (0.7ms)
+  Rendered api/tracks/_track.json.jbuilder (0.1ms)
+  Rendered api/tracks/_track.json.jbuilder (0.1ms)
+  Rendered api/tracks/_track.json.jbuilder (0.1ms)
+  Rendered api/tracks/_track.json.jbuilder (0.1ms)
+  Rendered api/tracks/index.json.jbuilder (9.8ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 1.9ms)
+
+
+  [1m[36mAlbum Load (0.9ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+  [1m[36mAlbum Load (0.8ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mTrack Load (0.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 66]]
+Started GET "/api/artists/" for ::1 at 2020-06-11 14:29:14 -0400
+Processing by Api::ArtistsController#index as JSON
+  Rendering api/artists/index.json.jbuilder
+  [1m[36mArtist Load (1.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/api/artists/index.json.jbuilder:9
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 53], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (8.2ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 53]]
+  ↳ app/views/api/artists/index.json.jbuilder:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 54], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (3.5ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 54]]
+  ↳ app/views/api/artists/index.json.jbuilder:13
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 55], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (3.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 55]]
+  ↳ app/views/api/artists/index.json.jbuilder:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 56], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (3.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 56]]
+  ↳ app/views/api/artists/index.json.jbuilder:13
+  Rendered api/artists/index.json.jbuilder (31.4ms)
+Completed 200 OK in 44ms (Views: 35.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2c902dcfb477307e5ba06e91f783910445a17698/art2_pp.jpg" for ::1 at 2020-06-11 14:29:15 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2c902dcfb477307e5ba06e91f783910445a17698", "filename"=>"art2_pp"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.4ms) [0m[34mGenerated URL for file at key: RiEpEwzor8Jn1LkGiYmrEeNY (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/RiEpEwzor8Jn1LkGiYmrEeNY?response-content-disposition=inline%3B%20filename%3D%22art2_pp.jpg%22%3B%20filename%2A%3DUTF-8%27%27art2_pp.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T182915Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=80d383e0c335ecd47d06ff1ca7abb89263626c4168a11b79a311c1ae016afbad)[0m
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/RiEpEwzor8Jn1LkGiYmrEeNY?response-content-disposition=inline%3B%20filename%3D%22art2_pp.jpg%22%3B%20filename%2A%3DUTF-8%27%27art2_pp.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T182915Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=80d383e0c335ecd47d06ff1ca7abb89263626c4168a11b79a311c1ae016afbad
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-06-11 14:29:17 -0400
+Processing by RootController#root as HTML
+  Rendering root/root.html.erb within layouts/application
+  Rendered root/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 49ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/artists/54/" for ::1 at 2020-06-11 14:29:17 -0400
+Processing by Api::ArtistsController#show as JSON
+  Parameters: {"id"=>"54"}
+  [1m[36mArtist Load (4.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/api/artists_controller.rb:9
+  Rendering api/artists/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 54], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (6.2ms)
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 54]]
+  ↳ app/views/api/artists/show.json.jbuilder:7
+  [1m[36mAlbum Load (1.0ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 54]]
+  ↳ app/views/api/artists/show.json.jbuilder:10
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 54]]
+  ↳ app/views/api/artists/show.json.jbuilder:10
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 67], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (8.4ms)
+  [1m[36mActiveStorage::Attachment Load (28.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 70], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (4.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (38.0ms)
+  Rendered api/artists/show.json.jbuilder (80.9ms)
+Completed 200 OK in 108ms (Views: 49.2ms | ActiveRecord: 46.5ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--60e7a3306d8b5f46d3d0d70e59ac2fd408b5be8a/imagefile2.jpg" for ::1 at 2020-06-11 14:29:17 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3009c6e0576bbf2b96f3d9ddb66425a43d703373/imagefile5.jpg" for ::1 at 2020-06-11 14:29:17 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3009c6e0576bbf2b96f3d9ddb66425a43d703373", "filename"=>"imagefile5"}
+  [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (4.8ms) [0m[34mGenerated URL for file at key: YJZ1QdyZLMpL4RnufCgAesCH (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/YJZ1QdyZLMpL4RnufCgAesCH?response-content-disposition=inline%3B%20filename%3D%22imagefile5.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile5.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T182917Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3b412c0b65eaf4dafcfb4ab962809d6089dfd76f86e9881bdb7d9d3c919ecaa9)[0m
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/YJZ1QdyZLMpL4RnufCgAesCH?response-content-disposition=inline%3B%20filename%3D%22imagefile5.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile5.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T182917Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3b412c0b65eaf4dafcfb4ab962809d6089dfd76f86e9881bdb7d9d3c919ecaa9
+Completed 302 Found in 9ms (ActiveRecord: 1.3ms)
+
+
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--60e7a3306d8b5f46d3d0d70e59ac2fd408b5be8a", "filename"=>"imagefile2"}
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ /Users/viviennevanvliet/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.7ms) [0m[34mGenerated URL for file at key: JSs6vk6xKw7it92bZMefWymr (https://active-storage-aa-ravecave-dev.s3.amazonaws.com/JSs6vk6xKw7it92bZMefWymr?response-content-disposition=inline%3B%20filename%3D%22imagefile2.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile2.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T182917Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=94ba89ca2adccc3a2929e188f7dc8f17a68d8dd3b24923ae99214c53eccb4c76)[0m
+Redirected to https://active-storage-aa-ravecave-dev.s3.amazonaws.com/JSs6vk6xKw7it92bZMefWymr?response-content-disposition=inline%3B%20filename%3D%22imagefile2.jpg%22%3B%20filename%2A%3DUTF-8%27%27imagefile2.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5LCMEIAXAKB7TDHG%2F20200611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200611T182917Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=94ba89ca2adccc3a2929e188f7dc8f17a68d8dd3b24923ae99214c53eccb4c76
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/api/albums/67/" for ::1 at 2020-06-11 14:29:19 -0400
+Processing by Api::AlbumsController#show as JSON
+  Parameters: {"id"=>"67"}
+  [1m[36mAlbum Load (1.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 67], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (6.2ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 67]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 54], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (5.5ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 54]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 67]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 67]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (0.6ms)
+  Rendered api/albums/show.json.jbuilder (28.5ms)
+Completed 200 OK in 43ms (Views: 34.7ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/api/tracks/" for ::1 at 2020-06-11 14:29:19 -0400
+Processing by Api::TracksController#index as JSON
+  Rendering api/tracks/index.json.jbuilder
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/api/tracks/index.json.jbuilder:1
+  Rendered api/tracks/_track.json.jbuilder (0.5ms)
+  Rendered api/tracks/_track.json.jbuilder (0.1ms)
+  Rendered api/tracks/_track.json.jbuilder (0.1ms)
+  Rendered api/tracks/_track.json.jbuilder (0.2ms)
+  Rendered api/tracks/_track.json.jbuilder (0.1ms)
+  Rendered api/tracks/index.json.jbuilder (8.1ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mAlbum Load (1.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 67]]
+  [1m[36mAlbum Load (2.0ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  [1m[36mTrack Load (2.7ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 67]]
+  [1m[36mTrack Load (0.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 67]]
+Started GET "/api/artists/54/" for ::1 at 2020-06-11 14:31:29 -0400
+Processing by Api::ArtistsController#show as JSON
+  Parameters: {"id"=>"54"}
+  [1m[36mArtist Load (2.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/api/artists_controller.rb:9
+  Rendering api/artists/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 54], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (8.4ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 54]]
+  ↳ app/views/api/artists/show.json.jbuilder:7
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 54]]
+  ↳ app/views/api/artists/show.json.jbuilder:10
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 54]]
+  ↳ app/views/api/artists/show.json.jbuilder:10
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 67], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (5.5ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 70], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (4.4ms)
+  Rendered api/artists/show.json.jbuilder (27.8ms)
+Completed 200 OK in 43ms (Views: 35.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/api/albums/70/" for ::1 at 2020-06-11 14:31:30 -0400
+Processing by Api::AlbumsController#show as JSON
+  Parameters: {"id"=>"70"}
+  [1m[36mAlbum Load (1.0ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/controllers/api/albums_controller.rb:9
+  Rendering api/albums/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 70], ["record_type", "Album"], ["name", "artwork"], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/api/albums/_album.json.jbuilder:3
+  Rendered api/albums/_album.json.jbuilder (5.8ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "tracks"."id" FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 70]]
+  ↳ app/views/api/albums/show.json.jbuilder:7
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/views/api/albums/show.json.jbuilder:11
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 54], ["record_type", "Artist"], ["name", "profile_pic"], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/api/artists/_artist.json.jbuilder:7
+  Rendered api/artists/_artist.json.jbuilder (4.5ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "albums"."id" FROM "albums" WHERE "albums"."artist_id" = $1[0m  [["artist_id", 54]]
+  ↳ app/views/api/albums/show.json.jbuilder:12
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 70]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 70]]
+  ↳ app/views/api/albums/show.json.jbuilder:15
+  Rendered api/tracks/_track.json.jbuilder (0.4ms)
+  Rendered api/tracks/_track.json.jbuilder (0.1ms)
+  Rendered api/albums/show.json.jbuilder (24.8ms)
+Completed 200 OK in 38ms (Views: 31.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/tracks/" for ::1 at 2020-06-11 14:31:30 -0400
+Processing by Api::TracksController#index as JSON
+  Rendering api/tracks/index.json.jbuilder
+  [1m[36mTrack Load (0.7ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/api/tracks/index.json.jbuilder:1
+  Rendered api/tracks/_track.json.jbuilder (0.8ms)
+  Rendered api/tracks/_track.json.jbuilder (0.1ms)
+  Rendered api/tracks/_track.json.jbuilder (0.2ms)
+  Rendered api/tracks/_track.json.jbuilder (0.1ms)
+  Rendered api/tracks/_track.json.jbuilder (0.1ms)
+  Rendered api/tracks/index.json.jbuilder (10.4ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mAlbum Load (1.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  [1m[36mTrack Load (0.8ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = $1[0m  [["album_id", 70]]
