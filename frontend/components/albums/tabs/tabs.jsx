@@ -115,7 +115,7 @@ export default class Tabs extends React.Component {
             </div>
         ) : (
                 <div>
-                    merch
+                    Coming soon
                 </div>
             );
 

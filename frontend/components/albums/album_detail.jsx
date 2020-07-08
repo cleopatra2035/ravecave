@@ -46,7 +46,16 @@ class AlbumDetail extends React.Component {
                                 </div>
                                 <ul id="legal" className="horizontal-legal">
                                     <li>
-                                        <a href="#">test</a>
+                                        <a href="http://viviennevanvliet.com/" target="_blank">About Me</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/cleopatra2035" target="_blank">Github</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/viviennevanvliet/" target="_blank">LinkedIn</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://angel.co/u/viviennevanvliet" target="_blank">AngelList</a>
                                     </li>
                                 </ul>
                             </div>

@@ -24,7 +24,7 @@ class Carousel extends React.Component {
                                             From the fringes of the indie rock, punk, and metal scenes, a group of artists bent on inventive deconstruction is starting to coalesce.</p>
                                         <div className="read-more-button">
                                             <div className="read-more">
-                                                <Link to="/artists">read more</Link>
+                                                <Link to="/albums/66">read more</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@ class Carousel extends React.Component {
                             <li className="carousel-small-item3">
                                 <div className="carousel-item-overlay"></div>
                                 <div className="carousel-item-hover-overlay"></div>
-                                <a href="https://bandcamp.com?show=366" className="carousel-small-bcweekly-link">
+                                <a href="#" className="carousel-small-bcweekly-link">
                                     <div href="#" className="carousel-bcweekly-play-button"><span className="icon"></span></div>
                                     <div className="carousel-small-item-content">
                                         <h3 className="carousel-small-item-title">Bandcamp Weekly</h3>
