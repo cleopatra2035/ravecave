@@ -8,7 +8,7 @@ const NavBar = ({ currentUser, logout, openModal }) => {
                 <div id="menubar" className="menubar-2018">
                     <ul id="site-nav" className="menubar-section horizontal">
                         <li className="logoLogged">
-                            <img src="http://shyeyez.com/ravecave/assets/images/ravecave-logotype-color-optimized.svg" alt="logo" />
+                            <img src="https://ravecave-seeds.s3.amazonaws.com/assets/ravecave-logotype-color-optimized.svg" alt="logo" />
                         </li>
                     </ul>
                     <ul id="user-nav" className="menubar-section horizontal">
@@ -26,7 +26,7 @@ const NavBar = ({ currentUser, logout, openModal }) => {
                     <div className="row">
                         <div className="col col-7-12">
                             <div className="logo">
-                                <img src="http://shyeyez.com/ravecave/assets/images/ravecave-logotype-color-optimized.svg" alt="logo" />
+                                <img src="https://ravecave-seeds.s3.amazonaws.com/assets/ravecave-logotype-color-optimized.svg" alt="logo" />
                             </div>
                             <h2 className="hd-subtitle">
                                 Bridging the gap between artists and their fans. <span className="blue-gradient">Enter the Ravecave.</span>
