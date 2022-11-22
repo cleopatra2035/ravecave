@@ -16,7 +16,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   },
   "description": "A no-nonsense music app for bridging the gap between artists and fans",
   "version": "1.0.0",
